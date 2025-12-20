@@ -17,8 +17,6 @@ export default function ArabicHome() {
 
         <meta name="keywords" content="خدمة المركبات الكهربائية, صيانة السيارات الكهربائية" />
         <meta httpEquiv="Content-Language" content="ar" />
-
-        <link rel="stylesheet" href="/legacy/css/ar.css" />
       </Head>
 
       {/* RTL WRAPPER */}
