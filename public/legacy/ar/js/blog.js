@@ -1,0 +1,147 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Pagination variables
+  let currentPage = 1;
+  const blogsPerPage = 12;
+
+  // Fetch and process the XML file to generate paginated blogs
+  fetch('https://evsuae.com/blogs-ar.xml') // Replace with your actual XML URL
+    .then(response => response.text())
+    .then(xmlString => {
+      // Parse the XML string into a DOM object
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlString, "application/xml");
+
+      // Get all <blog> elements
+      const blogs = Array.from(xmlDoc.getElementsByTagName("blog"));
+
+      // Sort blogs by publish date (latest first)
+      blogs.sort((a, b) => {
+        const dateA = new Date(a.getElementsByTagName("publisheddate")[0]?.textContent || 0);
+        const dateB = new Date(b.getElementsByTagName("publisheddate")[0]?.textContent || 0);
+        return dateB - dateA; // Descending order
+      });
+
+      // Calculate total pages
+      const totalPages = Math.ceil(blogs.length / blogsPerPage);
+
+      // Function to render blogs for the current page
+      function renderBlogs() {
+        // Get container and clear previous content
+        const container = document.getElementById("blog-container");
+        container.innerHTML = "";
+
+        // Calculate start and end index for blogs to display
+        const startIndex = (currentPage - 1) * blogsPerPage;
+        const endIndex = Math.min(startIndex + blogsPerPage, blogs.length);
+
+        // Display blogs for the current page
+        blogs.slice(startIndex, endIndex).forEach(blog => {
+          const blogTitle = blog.getElementsByTagName("blogtitle")[0]?.textContent || "No Title";
+          const blogUrl = blog.getElementsByTagName("blogurl")[0]?.textContent || "#";
+          const blogImage = blog.getElementsByTagName("blogimage")[0]?.textContent || "default.jpg";
+          const publishDate = formatDate(blog.getElementsByTagName("publisheddate")[0]?.textContent || "Unknown Date");
+
+          // Create a blog HTML structure
+          const blogHTML = `
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-3">
+              <figure class="position-relative mb-0 box-hover">
+                <div class="blog-image">
+                  <img loading="lazy" src="${blogImage}&q=70&w=640"
+                    srcset="
+                      ${blogImage}&q=70&w=320 320w,
+                      ${blogImage}&q=70&w=500 500w,
+                      ${blogImage}&q=70&w=768 768w
+                    " alt="${blogTitle}" width="297" height="414" />
+                  <span class="box-overlay"></span>
+                  <span class="bg-gradient-gray-light-dark-transparent position-absolute opacity-6 top-0px left-0px w-100 h-100"></span>
+                </div>
+                <figcaption class="d-flex flex-column h-100">
+                  <div class="my-auto w-100 text-center blog-hover-icon"><a href="${blogUrl}" aria-label="Read more about ${blogTitle}" class="d-inline-block"><i class="line-icon-Arrow-OutRight icon-extra-large text-white"></i></a></div>
+                  <div class="position-relative post-content p-14 text-center last-paragraph-no-margin">
+                    <div class="position-relative z-index-2 overflow-hidden">
+                      <a href="${blogUrl}" aria-label="Read more about ${blogTitle}" class="d-inline-block fs-15 text-base-color urbanist mb-20px text-uppercase fw-600">${publishDate}</a>
+                      <a href="${blogUrl}"  aria-label="Read more about ${blogTitle}" class="card-title fs-20 alt-font fw-500 text-white mb-0 d-block">${blogTitle}</a>
+                      <div class="hover-text"><a href="${blogUrl}" class="btn btn-link-gradient btn-medium text-white thin mt-20px mb-5px opacity-6 fw-300">متابعة القراءة<span class="bg-white"></span></a></div>
+                    </div>
+                    <div class="box-overlay"></div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          `;
+
+          // Append the blog to the container
+          container.innerHTML += blogHTML;
+        });
+
+        // Render pagination controls
+        renderPaginationControls(totalPages);
+      }
+
+      // Function to render pagination controls
+      function renderPaginationControls(totalPages) {
+        const paginationContainer = document.getElementById("pagination");
+        paginationContainer.innerHTML = ""; // Clear previous pagination
+
+        // Create pagination list
+        const paginationList = document.createElement("ul");
+        paginationList.className = "pagination pagination-style-01 fs-13 fw-500 mb-0";
+
+        // Previous button
+        const prevItem = document.createElement("li");
+        prevItem.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
+        prevItem.innerHTML = `<a class="page-link" href="#"><i class="feather icon-feather-arrow-left fs-18 d-xs-none"></i></a>`;
+        prevItem.onclick = () => {
+          if (currentPage > 1) {
+            currentPage--;
+            renderBlogs();
+          }
+        };
+        paginationList.appendChild(prevItem);
+
+        // Page number buttons
+        for (let i = 1; i <= totalPages; i++) {
+          const pageItem = document.createElement("li");
+          pageItem.className = `page-item ${i === currentPage ? 'active' : ''}`;
+          pageItem.innerHTML = `<a class="page-link" href="#">${String(i).padStart(2, '0')}</a>`;
+          pageItem.onclick = () => {
+            currentPage = i;
+            renderBlogs();
+          };
+          paginationList.appendChild(pageItem);
+        }
+
+        // Next button
+        const nextItem = document.createElement("li");
+        nextItem.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
+        nextItem.innerHTML = `<a class="page-link" href="#"><i class="feather icon-feather-arrow-right fs-18 d-xs-none"></i></a>`;
+        nextItem.onclick = () => {
+          if (currentPage < totalPages) {
+            currentPage++;
+            renderBlogs();
+          }
+        };
+        paginationList.appendChild(nextItem);
+
+        // Append pagination list to container
+        paginationContainer.appendChild(paginationList);
+      }
+
+      // Initial render
+      renderBlogs();
+    })
+    .catch(error => {
+      console.error("Error fetching or processing XML:", error);
+      document.getElementById("loader").textContent = "ما قدرنا نحمّل المقالات. حاول مرة ثانية بعدين.";
+    });
+
+  // Format the date to DD/MM/YYYY
+  function formatDate(dateString) {
+    const date = new Date(dateString);
+    if (isNaN(date)) return dateString; // Return the original string if it's not a valid date
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+  }
+});
