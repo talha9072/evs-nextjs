@@ -5,7 +5,7 @@ import ServicesMarquee from "@/components/homepage/ServicesMarquee";
 import BranchesSection from "@/components/common/BranchesSection";
 import StatsCounterSection from "@/components/common/StatsCounterSection";
 import CustomerReviewsSection from "@/components/common/CustomerReviewsSection";
-import Header from "@/components/Header";
+import Header from "@/components/HeaderMain";
 
 export default function Home() {
   return (
@@ -38,6 +38,7 @@ export default function Home() {
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
       </Head>
 
+<Header />
       <HeroSection />
       <ServicesHighlight />
       <ServicesMarquee />
@@ -52,7 +53,7 @@ export default function Home() {
 export async function getStaticProps() {
   return {
     props: {
-      noHeader: false,
+      noHeader: true,
       noFooter: false, // optional
     },
   };

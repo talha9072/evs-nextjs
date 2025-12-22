@@ -33,37 +33,32 @@ export default function App({ Component, pageProps }) {
   }, [isArabic]);
 
   /* =====================================================
-     🔁 GLOBAL LEGACY JS RE-INITIALIZATION (CRITICAL)
-     - Fixes swiper freeze
-     - Fixes refresh issues
-     - Fixes route change bugs
+     🔁 GLOBAL LEGACY JS RE-INITIALIZATION
+     (Litho / Swiper / Counters / Marquee safe)
   ===================================================== */
   useEffect(() => {
     const reInitLegacy = () => {
       if (typeof window === "undefined") return;
 
-      // Prevent double execution
       if (window.__LEGACY_REINIT_RUNNING__) return;
       window.__LEGACY_REINIT_RUNNING__ = true;
 
-      // Litho / legacy init
       if (window.litho && typeof window.litho.init === "function") {
         window.litho.init();
       }
 
-      // Force layout recalculation (swiper / marquee / counters)
+      // force layout recalculation
       window.dispatchEvent(new Event("resize"));
 
-      // Small delay to allow DOM settle
       setTimeout(() => {
         window.__LEGACY_REINIT_RUNNING__ = false;
       }, 300);
     };
 
-    // Run once on first load
+    // first load
     setTimeout(reInitLegacy, 400);
 
-    // Run on every route change
+    // route change
     router.events.on("routeChangeComplete", reInitLegacy);
 
     return () => {
@@ -72,22 +67,42 @@ export default function App({ Component, pageProps }) {
   }, [router.events]);
 
   /* =====================================================
-     🔑 HEADER / FOOTER OVERRIDE LOGIC
+     🔑 LAYOUT CONTROL (THIS IS THE KEY PART)
   ===================================================== */
+
+  // Header / Footer visibility
   const showHeader = pageProps?.noHeader !== true;
   const showFooter = pageProps?.noFooter !== true;
 
+  // Language override
   const forceArabicHeader = pageProps?.useArabicHeader === true;
   const forceEnglishHeader = pageProps?.useEnglishHeader === true;
 
   const useArabicLayout =
     forceArabicHeader || (isArabic && !forceEnglishHeader);
 
+  // Legacy JS control
   const loadLegacy = pageProps?.noLegacy !== true;
+
+  // 🔥 SCROLL CONTAINER CONTROL (YOUR MARZI)
+  // Default = true
+  // Page can disable by: useScrollContainer: false
+  const useScrollContainer = pageProps?.useScrollContainer !== false;
+
+  /* =====================================================
+     🧱 SHARED PAGE CONTENT
+  ===================================================== */
+  const PageContent = (
+    <>
+      {showHeader && (useArabicLayout ? <HeaderAr /> : <Header />)}
+      <Component {...pageProps} />
+      {showFooter && (useArabicLayout ? <FooterAr /> : <Footer />)}
+    </>
+  );
 
   return (
     <>
-      {/* ===== LEGACY JS (ORDER IS CRITICAL) ===== */}
+      {/* ===== LEGACY JS (ORDER MATTERS) ===== */}
       {loadLegacy && (
         <>
           <Script src="/legacy/js/jquery.js" strategy="beforeInteractive" />
@@ -102,17 +117,12 @@ export default function App({ Component, pageProps }) {
         <link rel="stylesheet" href="/legacy/ar/css/ar.css" />
       )}
 
-      {/* ===== PAGE LAYOUT ===== */}
-      <div className="scroll-container">
-        {/* HEADER */}
-        {showHeader && (useArabicLayout ? <HeaderAr /> : <Header />)}
-
-        {/* PAGE CONTENT */}
-        <Component {...pageProps} />
-
-        {/* FOOTER */}
-        {showFooter && (useArabicLayout ? <FooterAr /> : <Footer />)}
-      </div>
+      {/* ===== PAGE LAYOUT (CONDITIONAL) ===== */}
+      {useScrollContainer ? (
+        <div className="scroll-container">{PageContent}</div>
+      ) : (
+        PageContent
+      )}
     </>
   );
 }
