@@ -1,7 +1,4 @@
 import Head from "next/head";
-import BranchesSection from "@/components/ar/common/Branches";
-import StatsCounterSection from "@/components/ar/common/CounterStats";
-import CustomerReviewsSection from "@/components/ar/common/Customer";
 import ScrollProgress from "@/components/ar/common/ScrollProgress";
 
 
@@ -9,7 +6,7 @@ import ScrollProgress from "@/components/ar/common/ScrollProgress";
 export default function ArabicHome() {
   return (
     <>
-       (
+       
     <Head>
       {/* ================= SEO TITLE ================= */}
       <title>
