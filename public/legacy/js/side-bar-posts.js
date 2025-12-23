@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch('https://evsuae.com/blogs.xml')
+  fetch('/blogs.xml')
     .then(response => response.text())
     .then(xmlString => {
       const parser = new DOMParser();

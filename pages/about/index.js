@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import BranchesSection from "@/components/common/BranchesSection";
+
 
 export default function About() {
   return (

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentPage = 1;
   const blogsPerPage = 12;
 
-  fetch('https://evsuae.com/blogs.xml')
+  fetch('/blogs.xml')
     .then(response => response.text())
     .then(xmlString => {
       const parser = new DOMParser();

@@ -5,7 +5,8 @@ import ServicesMarquee from "@/components/homepage/ServicesMarquee";
 import BranchesSection from "@/components/common/BranchesSection";
 import StatsCounterSection from "@/components/common/StatsCounterSection";
 import CustomerReviewsSection from "@/components/common/CustomerReviewsSection";
-import Header from "@/components/HeaderMain";
+import Script from "next/script";
+
 
 export default function Home() {
   return (
@@ -36,15 +37,53 @@ export default function Home() {
 		<meta name="twitter:image" content="https://evsuae.com//.netlify/images?url=/img/graph-img.webp" />
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<Script src="/legacy/js/blog.js" strategy="beforeInteractive" />
+    
       </Head>
 
-<Header />
       <HeroSection />
       <ServicesHighlight />
       <ServicesMarquee />
       <BranchesSection />
       <StatsCounterSection />
       <CustomerReviewsSection />
+
+      <section className="snap-section pt-0 ps-7 pe-7 xl-ps-2 xl-pe-2 xs-px-0">
+  <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-15px mb-4 text-center">
+    Latest Blog Posts<span className="text-base-color">.</span>
+  </h2>
+
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-12">
+
+        {/* Loader */}
+        <div
+          id="loader"
+          className="loader mx-auto d-flex justify-content-center"
+        ></div>
+
+        {/* Blog Grid (REQUIRED by blog.js) */}
+        <div
+          id="blog-container"
+          className="row blog-simple blog-wrapper grid-loading grid grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large"
+        ></div>
+
+        {/* Pagination (REQUIRED by blog.js) */}
+        <div
+          id="pagination"
+          className="mt-5 d-flex justify-content-center"
+        ></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
     </>
   );
 }
@@ -53,7 +92,7 @@ export default function Home() {
 export async function getStaticProps() {
   return {
     props: {
-      noHeader: true,
+      noHeader: false,
       noFooter: false, // optional
     },
   };
