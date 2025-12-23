@@ -95,6 +95,8 @@ export async function getStaticProps() {
     props: {
       noHeader: false,
       noFooter: false, // optional
+      extraScripts: ["/js/blog.js"],
     },
+    
   };
 }

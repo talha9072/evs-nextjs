@@ -34,20 +34,18 @@ export default function App({ Component, pageProps }) {
 
   /* =====================================================
      🔁 GLOBAL LEGACY JS RE-INITIALIZATION
-     (Litho / Swiper / Counters / Marquee safe)
   ===================================================== */
   useEffect(() => {
     const reInitLegacy = () => {
       if (typeof window === "undefined") return;
-
       if (window.__LEGACY_REINIT_RUNNING__) return;
+
       window.__LEGACY_REINIT_RUNNING__ = true;
 
       if (window.litho && typeof window.litho.init === "function") {
         window.litho.init();
       }
 
-      // force layout recalculation
       window.dispatchEvent(new Event("resize"));
 
       setTimeout(() => {
@@ -55,10 +53,7 @@ export default function App({ Component, pageProps }) {
       }, 300);
     };
 
-    // first load
     setTimeout(reInitLegacy, 400);
-
-    // route change
     router.events.on("routeChangeComplete", reInitLegacy);
 
     return () => {
@@ -67,27 +62,23 @@ export default function App({ Component, pageProps }) {
   }, [router.events]);
 
   /* =====================================================
-     🔑 LAYOUT CONTROL (THIS IS THE KEY PART)
+     🔑 PAGE-LEVEL CONTROLS
   ===================================================== */
-
-  // Header / Footer visibility
   const showHeader = pageProps?.noHeader !== true;
   const showFooter = pageProps?.noFooter !== true;
 
-  // Language override
   const forceArabicHeader = pageProps?.useArabicHeader === true;
   const forceEnglishHeader = pageProps?.useEnglishHeader === true;
 
   const useArabicLayout =
     forceArabicHeader || (isArabic && !forceEnglishHeader);
 
-  // Legacy JS control
   const loadLegacy = pageProps?.noLegacy !== true;
-
-  // 🔥 SCROLL CONTAINER CONTROL (YOUR MARZI)
-  // Default = true
-  // Page can disable by: useScrollContainer: false
   const useScrollContainer = pageProps?.useScrollContainer !== false;
+
+  // ✅ NEW: Page-level extra assets
+  const extraScripts = pageProps?.extraScripts || [];
+  const extraCSS = pageProps?.extraCSS || [];
 
   /* =====================================================
      🧱 SHARED PAGE CONTENT
@@ -102,23 +93,30 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      {/* ===== LEGACY JS (ORDER MATTERS) ===== */}
+      {/* ===== LEGACY JS ===== */}
       {loadLegacy && (
         <>
           <Script src="/js/jquery.js" strategy="beforeInteractive" />
           <Script src="/js/vendors.js" strategy="beforeInteractive" />
           <Script src="/js/main.js" strategy="afterInteractive" />
           <Script src="/js/converter.js" strategy="afterInteractive" />
-          <Script src="/js/blog.js" strategy="afterInteractive" />
         </>
       )}
 
-      {/* ===== RTL CSS (ONLY FOR ARABIC) ===== */}
-      {isArabic && (
-        <link rel="stylesheet" href="/ar/css/ar.css" />
-      )}
+      {/* ===== PAGE-LEVEL EXTRA JS ===== */}
+      {extraScripts.map((src) => (
+        <Script key={src} src={src} strategy="afterInteractive" />
+      ))}
 
-      {/* ===== PAGE LAYOUT (CONDITIONAL) ===== */}
+      {/* ===== PAGE-LEVEL EXTRA CSS ===== */}
+      {extraCSS.map((href) => (
+        <link key={href} rel="stylesheet" href={href} />
+      ))}
+
+      {/* ===== RTL CSS ===== */}
+      {isArabic && <link rel="stylesheet" href="/ar/css/ar.css" />}
+
+      {/* ===== PAGE LAYOUT ===== */}
       {useScrollContainer ? (
         <div className="scroll-container">{PageContent}</div>
       ) : (
