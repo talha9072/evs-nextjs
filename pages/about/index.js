@@ -3,6 +3,7 @@ import Link from "next/link";
 import CustomerReviewsSection from "@/components/common/Customer";
 import StatsCounterSection from "@/components/common/StatsCounter";
 import BranchesSection from "@/components/common/Branches";
+import ScrollProgressEn from "@/components/common/ScrollProgress";
 
 export default function About() {
   return (
@@ -324,12 +325,9 @@ export default function About() {
       {/* Branches Section with Tabs */}
       <BranchesSection />
           
-           <div class="scroll-progress d-none d-xxl-block">
-            <a href="#" class="scroll-top" aria-label="scroll">
-                <span class="scroll-text">Scroll</span><span class="scroll-line"><span class="scroll-point"></span></span>
-            </a>
-        </div>
+          
 
+<ScrollProgressEn />
     </>
   );
 }
