@@ -6,11 +6,11 @@ export default function Document() {
     <Html>
       <Head>
         {/* ===== BASE CSS ===== */}
-        <link rel="stylesheet" href="/legacy/css/vendors.min.css" />
-        <link rel="stylesheet" href="/legacy/css/icon.min.css" />
-        <link rel="stylesheet" href="/legacy/css/style.min.css" />
-        <link rel="stylesheet" href="/legacy/css/responsive.min.css" />
-        <link rel="stylesheet" href="/legacy/css/evs.css" />
+        <link rel="stylesheet" href="/css/vendors.min.css" />
+        <link rel="stylesheet" href="/css/icon.min.css" />
+        <link rel="stylesheet" href="/css/style.min.css" />
+        <link rel="stylesheet" href="/css/responsive.min.css" />
+        <link rel="stylesheet" href="/css/evs.css" />
 
         
       </Head>

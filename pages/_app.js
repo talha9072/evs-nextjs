@@ -105,17 +105,17 @@ export default function App({ Component, pageProps }) {
       {/* ===== LEGACY JS (ORDER MATTERS) ===== */}
       {loadLegacy && (
         <>
-          <Script src="/legacy/js/jquery.js" strategy="beforeInteractive" />
-          <Script src="/legacy/js/vendors.js" strategy="beforeInteractive" />
-          <Script src="/legacy/js/main.js" strategy="afterInteractive" />
-          <Script src="/legacy/js/converter.js" strategy="afterInteractive" />
-          <Script src="/legacy/js/blog.js" strategy="afterInteractive" />
+          <Script src="/js/jquery.js" strategy="beforeInteractive" />
+          <Script src="/js/vendors.js" strategy="beforeInteractive" />
+          <Script src="/js/main.js" strategy="afterInteractive" />
+          <Script src="/js/converter.js" strategy="afterInteractive" />
+          <Script src="/js/blog.js" strategy="afterInteractive" />
         </>
       )}
 
       {/* ===== RTL CSS (ONLY FOR ARABIC) ===== */}
       {isArabic && (
-        <link rel="stylesheet" href="/legacy/ar/css/ar.css" />
+        <link rel="stylesheet" href="/ar/css/ar.css" />
       )}
 
       {/* ===== PAGE LAYOUT (CONDITIONAL) ===== */}
