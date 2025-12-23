@@ -109,6 +109,7 @@ export default function App({ Component, pageProps }) {
           <Script src="/legacy/js/vendors.js" strategy="beforeInteractive" />
           <Script src="/legacy/js/main.js" strategy="afterInteractive" />
           <Script src="/legacy/js/converter.js" strategy="afterInteractive" />
+          <Script src="/legacy/js/blog.js" strategy="afterInteractive" />
         </>
       )}
 

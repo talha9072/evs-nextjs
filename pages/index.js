@@ -38,7 +38,8 @@ export default function Home() {
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<Script src="/legacy/js/blog.js" strategy="beforeInteractive" />
+
+
     
       </Head>
 
