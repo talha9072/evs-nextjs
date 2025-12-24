@@ -9,18 +9,23 @@ import ScrollProgress from "@/components/ar/common/ScrollProgress";
 export default function ArabicHome() {
   return (
     <>
-      <head>
+      
+
+<Head>
   <title>عن إي في إس الإمارات | أفضل مركز خدمة المركبات الكهربائية في دبي</title>
+
   <meta
     name="description"
     content="تعرف على إي في إس الإمارات، الرائد في خدمات المركبات الكهربائية في دبي. نقدم حلول صيانة وإصلاح احترافية للحفاظ على مركبتك الكهربائية بأفضل أداء."
   />
+
   <meta
     name="keywords"
     content="خدمة المركبات الكهربائية, صيانة السيارات الكهربائية, إصلاح السيارات الكهربائية, مركز المركبات الكهربائية دبي, صيانة المركبات الكهربائية"
   />
 
   <link rel="canonical" href="https://evsuae.com/ar/about" />
+
   <meta
     name="robots"
     content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
@@ -30,13 +35,16 @@ export default function ArabicHome() {
   <meta name="publisher" content="خدمات المركبات الكهربائية الإمارات" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  {/* ✅ FIXED JSX ATTRIBUTES */}
+  <meta httpEquiv="Content-Language" content="ar" />
+  <link rel="alternate" hrefLang="en" href="https://evsuae.com/about" />
+  <link rel="alternate" hrefLang="ar" href="https://evsuae.com/ar/about" />
 
-  <meta http-equiv="Content-Language" content="ar" />
-  <link rel="alternate" hreflang="en" href="https://evsuae.com/about" />
-  <link rel="alternate" hreflang="ar" href="https://evsuae.com/ar/about" />
-
-
-  <meta property="og:title" content="عن إي في إس الإمارات | أفضل مركز خدمة المركبات الكهربائية في دبي" />
+  {/* Open Graph */}
+  <meta
+    property="og:title"
+    content="عن إي في إس الإمارات | أفضل مركز خدمة المركبات الكهربائية في دبي"
+  />
   <meta
     property="og:description"
     content="تعرف على إي في إس الإمارات، الرائد في خدمات المركبات الكهربائية في دبي. نقدم حلول صيانة وإصلاح احترافية."
@@ -48,8 +56,12 @@ export default function ArabicHome() {
     content="https://evsuae.com/.netlify/images?url=/img/graph-img.webp"
   />
 
+  {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="عن إي في إس الإمارات | أفضل مركز خدمة المركبات الكهربائية في دبي" />
+  <meta
+    name="twitter:title"
+    content="عن إي في إس الإمارات | أفضل مركز خدمة المركبات الكهربائية في دبي"
+  />
   <meta
     name="twitter:description"
     content="تعرف على إي في إس الإمارات، الرائد في خدمات المركبات الكهربائية في دبي."
@@ -59,19 +71,22 @@ export default function ArabicHome() {
     content="https://evsuae.com/.netlify/images?url=/img/graph-img.webp"
   />
 
+  {/* Icons */}
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="manifest" href="/site.webmanifest" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  {/* Fonts */}
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
+  {/* Required */}
+  <meta charSet="UTF-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+</Head>
 
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-</head>
 
       {/* RTL WRAPPER */}
       <div dir="rtl" className="arabic-page">
