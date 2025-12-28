@@ -1,27 +1,39 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export default function ServiceMarquee() {
+  const swiperInstances = useRef([]);
+
   useEffect(() => {
-    // Wait for DOM + Swiper global
-    const initSwiper = () => {
-      if (typeof window !== "undefined" && window.Swiper) {
-        document.querySelectorAll(".swiper").forEach((el) => {
-          if (!el.swiper) {
-            const options = JSON.parse(
-              el.getAttribute("data-slider-options") || "{}"
-            );
-            new window.Swiper(el, options);
-          }
-        });
+    if (typeof window === "undefined" || !window.Swiper) return;
+
+    const elements = document.querySelectorAll(".swiper");
+
+    elements.forEach((el) => {
+      // Prevent double initialization
+      if (el.swiper) return;
+
+      let options = {};
+      try {
+        options = JSON.parse(el.getAttribute("data-slider-options") || "{}");
+      } catch (e) {
+        console.error("Invalid Swiper options JSON", e);
       }
+
+      const instance = new window.Swiper(el, options);
+      swiperInstances.current.push(instance);
+    });
+
+    return () => {
+      // Proper cleanup on unmount / route change
+      swiperInstances.current.forEach((swiper) => {
+        if (swiper && swiper.destroy) {
+          swiper.destroy(true, true);
+        }
+      });
+      swiperInstances.current = [];
     };
-
-    // Delay ensures React render is finished
-    const timer = setTimeout(initSwiper, 300);
-
-    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -30,7 +42,17 @@ export default function ServiceMarquee() {
         <div className="row position-relative">
           <div
             className="col swiper text-center"
-            data-slider-options='{ "slidesPerView":"auto","spaceBetween":0,"centeredSlides":true,"speed":12000,"loop":true,"allowTouchMove":false,"autoplay":{"delay":1,"disableOnInteraction":false},"keyboard":{"enabled":true},"effect":"slide" }'
+            data-slider-options='{
+              "slidesPerView":"auto",
+              "spaceBetween":0,
+              "centeredSlides":true,
+              "speed":12000,
+              "loop":true,
+              "allowTouchMove":false,
+              "autoplay":{"delay":1,"disableOnInteraction":false},
+              "keyboard":{"enabled":true},
+              "effect":"slide"
+            }'
           >
             <div className="swiper-wrapper swiper-width-auto marquee-slide">
               {[

@@ -16,12 +16,43 @@ export default function ServiceMarqueeAr({
     "مساعدة الطريق للمركبات الكهربائية",
   ],
 }) {
-
   useEffect(() => {
-    // 👇 This re-triggers Swiper if theme JS is already loaded
-    if (window?.initSwiper) {
-      window.initSwiper();
-    }
+    let swiperInstance = null;
+
+    const startSwiper = () => {
+      // 1️⃣ trigger existing theme swiper init
+      if (window?.initSwiper) {
+        window.initSwiper();
+      }
+
+      // 2️⃣ find swiper instance
+      setTimeout(() => {
+        const el = document.querySelector(".swiper");
+        if (el?.swiper) {
+          swiperInstance = el.swiper;
+
+          // 🔥 FORCE FIX
+          swiperInstance.update();
+          swiperInstance.autoplay?.start();
+        }
+      }, 100);
+    };
+
+    startSwiper();
+
+    // 3️⃣ TAB SWITCH FIX (main reason of bug)
+    const onVisibilityChange = () => {
+      if (!document.hidden && swiperInstance) {
+        swiperInstance.update();
+        swiperInstance.autoplay?.start();
+      }
+    };
+
+    document.addEventListener("visibilitychange", onVisibilityChange);
+
+    return () => {
+      document.removeEventListener("visibilitychange", onVisibilityChange);
+    };
   }, []);
 
   return (
