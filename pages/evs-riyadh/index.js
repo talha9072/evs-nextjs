@@ -1,5 +1,4 @@
  import Head from "next/head";
-import Link from "next/link";
 import PageTitleWithMap from "@/components/locations/PageTitleWithMap";
 import ServiceMarquee from "@/components/locations/ServiceMarquee";
 import CustomerReviewsSection from "@/components/common/Customer";
@@ -145,13 +144,15 @@ export default function About() {
     </Head>
 
 <PageTitleWithMap
-      eyebrowTitle="Electric Vehicle Service Center"
-      title="EVS Riyadh"
-      description="Electric Vehicle Servicing & repair near Riyadh"
-      buttonText="Visit KSA Website"
-      buttonUrl="https://evsksa.com"
-      mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28961.185254125718!2d46.56376409073753!3d24.858788963514993!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee74711ce7e8b%3A0x63ef4f728a34144f!2sEVS%20-%20Electric%20Vehicle%20Service%20Center!5e0!3m2!1sen!2s!4v1746009235770!5m2!1sen!2s"
-    />
+  eyebrowTitle="Electric Vehicle Service Center"
+  title="EVS Riyadh"
+  description="Electric Vehicle Servicing & repair near Riyadh"
+
+  primaryButtonText="Visit KSA Website"
+  primaryButtonUrl="https://evsksa.com"
+
+  mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28961.185254125718!2d46.56376409073753!3d24.858788963514993!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee74711ce7e8b%3A0x63ef4f728a34144f!2sEVS%20-%20Electric%20Vehicle%20Service%20Center!5e0!3m2!1sen!2s!4v1746009235770!5m2!1sen!2s"
+/>
 
 <ServiceMarquee />
 

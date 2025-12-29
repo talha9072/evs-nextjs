@@ -104,70 +104,20 @@ export default function ArabicHome() {
         {/* ✅ YAHAN SE BODY KA CONTENT AAYEGA */}
         {/* header/footer automatic via _app.js */}
 
-<section
-  className="ipad-top-space-margin pt-5 bg-black overflow-hidden p-0 page-title-big-typography"
-  dir="rtl"
->
-  <div className="container">
-    <div className="row justify-content-center small-screen">
-      <div
-        className="col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-end page-title-extra-small sm-pt-50px sm-pb-50px"
-        data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'
-      >
-        <h1 className="ls-0px fw-600 text-white d-inline-block text-decoration-line-bottom-medium border-color-base-color mb-25px">
-          مركز خدمات المركبات الكهربائية
-        </h1>
+<PageHeroWithMap
+  eyebrowTitle="مركز خدمات المركبات الكهربائية"
+  mainTitle="إي في إس دبي"
+  highlightDot={true}
+  description="خدمات وإصلاح المركبات الكهربائية بالقرب من دبي"
 
-        <h2 className="fw-700 alt-font ls-minus-1px text-white w-80 mb-15px lg-w-100 text-end">
-          إي في إس دبي<span className="text-base-color">.</span>
-        </h2>
+  primaryButtonText="احصل على الاتجاهات"
+  primaryButtonUrl="https://maps.app.goo.gl/ZqGdaDk6r2vpE5cXA?g_st=iwb"
 
-        <h2 className="location-desc fw-400 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100 text-end">
-          خدمات وإصلاح المركبات الكهربائية بالقرب من دبي
-        </h2>
+  secondaryButtonText="اتصل بنا"
+  secondaryButtonUrl="tel:+9710566017771"
 
-        <a
-          href="https://maps.app.goo.gl/ZqGdaDk6r2vpE5cXA?g_st=iwb"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="احصل على الاتجاهات إلى فرع EVS دبي"
-          className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
-        >
-          احصل على الاتجاهات
-          <i className="fa fa-location-arrow"></i>
-          <span className="bg-white"></span>
-        </a>
-
-        <a
-          href="tel:+9710566017771"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="اتصل بفرع EVS دبي"
-          className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
-        >
-          اتصل بنا
-          <i className="fa fa-phone-alt"></i>
-          <span className="bg-white"></span>
-        </a>
-      </div>
-
-      <div className="col-md-6">
-        <div className="outside-box-left-20 sm-outside-box-right-20 h-100 sm-h-300px xs-h-250px cover-background">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.14588427663!2d55.4240151!3d25.164551499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6be92144ffef%3A0xccfadb5aedd3afcc!2sEVS%20Electric%20Vehicle%20Services.!5e0!3m2!1sen!2s!4v1745993230504!5m2!1sen!2s"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="موقع EVS دبي على الخريطة"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.14588427663!2d55.4240151!3d25.164551499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6be92144ffef%3A0xccfadb5aedd3afcc!2sEVS%20Electric%20Vehicle%20Services.!5e0!3m2!1sen!2s!4v1745993230504!5m2!1sen!2s"
+/>
 
 <ServiceMarqueeAr />
 

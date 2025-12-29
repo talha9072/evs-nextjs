@@ -1,10 +1,18 @@
+"use client";
 export default function PageTitleWithMap({
   eyebrowTitle = "Electric Vehicle Service Center",
   title = "EVS Riyadh",
   highlight = ".",
   description = "Electric Vehicle Servicing & repair near Riyadh",
-  buttonText = "Visit KSA Website",
-  buttonUrl = "https://evsksa.com",
+
+  // 🔘 Button 1 (Primary)
+  primaryButtonText = "",
+  primaryButtonUrl = "",
+
+  // 🔘 Button 2 (Secondary)
+  secondaryButtonText = "",
+  secondaryButtonUrl = "",
+
   mapEmbedUrl = "",
 }) {
   return (
@@ -29,19 +37,31 @@ export default function PageTitleWithMap({
               {description}
             </h2>
 
-            {buttonUrl && (
+            {/* ✅ Primary Button */}
+            {primaryButtonUrl && (
               <a
+                href={primaryButtonUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                href={buttonUrl}
-                className="mt-3 btn-hero tp-caption rev-btn alt-font bg-base-color text-dark-gray d-inline-block text-uppercase border-radius-4px rs-hover-ready"
-                style={{
-                  padding: "19px 23px",
-                  fontWeight: 600,
-                  fontSize: "15px",
-                }}
+                className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
               >
-                {buttonText}
+                {primaryButtonText}
+                <i className="fa fa-location-arrow ms-10px"></i>
+                <span className="bg-white"></span>
+              </a>
+            )}
+
+            {/* ✅ Secondary Button */}
+            {secondaryButtonUrl && (
+              <a
+                href={secondaryButtonUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
+              >
+                {secondaryButtonText}
+                <i className="fa fa-phone-alt ms-10px"></i>
+                <span className="bg-white"></span>
               </a>
             )}
           </div>
@@ -58,6 +78,7 @@ export default function PageTitleWithMap({
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  title={`${title} Location Map`}
                 />
               )}
             </div>

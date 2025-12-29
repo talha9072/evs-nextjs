@@ -14,22 +14,22 @@ export default function About() {
      
        <Head>
       {/* Title */}
-      <title>EVS Dubai | Best Electric Vehicle Service Center in Dubai</title>
+      <title>EVS Abu Dhabi | Professional Electric Vehicle Care – EVS UAE</title>
 
       {/* Meta Description */}
       <meta
         name="description"
-        content="Learn more about EVS UAE, the leading electric vehicle service center in Dubai. We provide expert diagnostics, maintenance, and repair services for all electric vehicles."
+        content="EVS UAE delivers expert electric vehicle services in Abu Dhabi. From diagnostics to full maintenance and repair, trust our certified EV specialists for all major brands."
       />
 
-      {/* Meta Keywords */}
+      {/* Keywords */}
       <meta
         name="keywords"
-        content="electric vehicle service Dubai, EV car service Dubai, electric car repair Dubai, EV garage Dubai, electric vehicle maintenance Dubai, EV software solutions UAE"
+        content="EV service Abu Dhabi, electric vehicle maintenance Abu Dhabi, EV repair UAE, Tesla service Abu Dhabi, EV diagnostics Abu Dhabi, certified EV technicians UAE"
       />
 
       {/* Canonical */}
-      <link rel="canonical" href="https://evsuae.com/evs-dubai" />
+      <link rel="canonical" href="https://evsuae.com/evs-abu-dhabi" />
 
       {/* Robots */}
       <meta
@@ -37,31 +37,42 @@ export default function About() {
         content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
       />
 
-      {/* Author / Publisher */}
+      {/* Author & Publisher */}
       <meta name="author" content="Admin" />
       <meta name="publisher" content="Electric Vehicle Services UAE" />
-
-      {/* Viewport */}
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
       {/* Language */}
       <meta httpEquiv="Content-Language" content="en" />
 
-      {/* Hreflang */}
-      <link rel="alternate" hrefLang="en" href="https://evsuae.com/evs-dubai" />
-      <link rel="alternate" hrefLang="ar" href="https://evsuae.com/ar/evs-dubai" />
+      {/* Hreflang (FIXED) */}
+      <link
+        rel="alternate"
+        hrefLang="en"
+        href="https://evsuae.com/evs-abu-dhabi"
+      />
+      <link
+        rel="alternate"
+        hrefLang="ar"
+        href="https://evsuae.com/ar/evs-abu-dhabi"
+      />
+      <link
+        rel="alternate"
+        hrefLang="x-default"
+        href="https://evsuae.com/evs-abu-dhabi"
+      />
 
       {/* Open Graph */}
       <meta
         property="og:title"
-        content="EVS Dubai | Best Electric Vehicle Service Center in Dubai"
+        content="EVS Abu Dhabi | Professional Electric Vehicle Care – EVS UAE"
       />
       <meta
         property="og:description"
-        content="Learn more about EVS UAE, the leading electric vehicle service center in Dubai. We provide expert diagnostics, maintenance, and repair services for all electric vehicles."
+        content="EVS UAE delivers expert electric vehicle services in Abu Dhabi. From diagnostics to full maintenance and repair, trust our certified EV specialists for all major brands."
       />
-      <meta property="og:url" content="https://evsuae.com/evs-dubai" />
+      <meta property="og:url" content="https://evsuae.com/evs-abu-dhabi" />
       <meta property="og:type" content="website" />
+      <meta property="og:locale" content="en_AE" />
       <meta
         property="og:image"
         content="https://evsuae.com/.netlify/images?url=/img/graph-img.webp"
@@ -71,11 +82,11 @@ export default function About() {
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"
-        content="EVS Dubai | Best Electric Vehicle Service Center in Dubai"
+        content="EVS Abu Dhabi | Professional Electric Vehicle Care – EVS UAE"
       />
       <meta
         name="twitter:description"
-        content="Learn more about EVS UAE, the leading electric vehicle service center in Dubai. We provide expert diagnostics, maintenance, and repair services for all electric vehicles."
+        content="EVS UAE delivers expert electric vehicle services in Abu Dhabi. From diagnostics to full maintenance and repair."
       />
       <meta
         name="twitter:image"
@@ -89,32 +100,36 @@ export default function About() {
       <link rel="shortcut icon" href="/favicon.ico" />
       <link rel="manifest" href="/site.webmanifest" />
 
+      {/* Performance */}
+      <meta charSet="UTF-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
       {/* Fonts */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
 
-      {/* Charset / Compatibility */}
-      <meta charSet="UTF-8" />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-
-      {/* LocalBusiness Schema – Dubai */}
+      {/* JSON-LD LocalBusiness */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "EVS UAE - Dubai",
-            image: "https://evsuae.com/path-to-logo-or-feature-image.jpg",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Dubai, United Arab Emirates",
-              addressLocality: "Dubai",
-              addressCountry: "UAE",
-            },
+            "@id": "https://evsuae.com/evs-abu-dhabi#localbusiness",
+            name: "EVS UAE - Abu Dhabi",
+            image: "https://evsuae.com/.netlify/images?url=/img/EVS-logo.svg",
+            url: "https://evsuae.com/evs-abu-dhabi",
             telephone: "+971547133313",
             email: "info@evsuae.com",
-            url: "https://evsuae.com/evs-dubai",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "6th Street - Musaffah - M14",
+              addressLocality: "Abu Dhabi",
+              addressCountry: "UAE",
+            },
+            hasMap:
+              "https://maps.google.com/?q=6th+Street+Musaffah+M14+Abu+Dhabi",
             openingHoursSpecification: [
               {
                 "@type": "OpeningHoursSpecification",
@@ -129,17 +144,10 @@ export default function About() {
                 opens: "09:00",
                 closes: "18:00",
               },
-              {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: "Friday",
-                opens: "00:00",
-                closes: "00:00",
-                description: "Closed",
-              },
             ],
             areaServed: {
               "@type": "Place",
-              name: "Dubai, UAE",
+              name: "Abu Dhabi, UAE",
             },
           }),
         }}
@@ -148,17 +156,17 @@ export default function About() {
 
 <PageTitleWithMap
   eyebrowTitle="Electric Vehicle Service Center"
-  title="EVS Dubai"
+  title="EVS Abu Dhabi"
   highlight="."
-  description="Electric Vehicle Servicing & repair near Dubai"
+  description="Electric Vehicle Servicing & repair near Abu Dhabi"
 
   primaryButtonText="Get Directions"
-  primaryButtonUrl="https://maps.app.goo.gl/ZqGdaDk6r2vpE5cXA?g_st=iwb"
+  primaryButtonUrl="https://maps.app.goo.gl/8yhst7aDcJW8mWs59"
 
   secondaryButtonText="Call Us"
-  secondaryButtonUrl="tel:+9710566017771"
+  secondaryButtonUrl="tel:+971547133313"
 
-  mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.14588427663!2d55.4240151!3d25.164551499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6be92144ffef%3A0xccfadb5aedd3afcc!2sEVS%20Electric%20Vehicle%20Services.!5e0!3m2!1sen!2s!4v1745993230504!5m2!1sen!2s"
+  mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14536.141623796122!2d54.4866373!3d24.3800717!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e4123c214e723%3A0xc54ea8fd417956bf!2sEVS%20Abu%20Dhabi%20(%20Electric%20Vehicle%20Services)!5e0!3m2!1sen!2s!4v1745990694578!5m2!1sen!2s"
 />
 
 
@@ -175,7 +183,7 @@ export default function About() {
       className="row row-cols-1 row-cols-lg-3 row-cols-sm-2 justify-content-center"
       data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
     >
-      {/* Feature box 1 */}
+      {/* Address */}
       <div className="col icon-with-text-style-03">
         <div className="feature-box p-8">
           <div className="feature-box-icon">
@@ -184,14 +192,15 @@ export default function About() {
           <div className="feature-box-content last-paragraph-no-margin">
             <span className="d-block">
               <a
-                href="https://maps.app.goo.gl/ZqGdaDk6r2vpE5cXA?g_st=iwb"
+                href="https://maps.app.goo.gl/8yhst7aDcJW8mWs59"
                 className="text-white fw-600"
               >
-                International City 1 - Emirati Cluster, Warehouse #39.
+                6th Street - Musaffah - M14 - Abu Dhabi
               </a>
             </span>
+
             <a
-              href="https://maps.app.goo.gl/ZqGdaDk6r2vpE5cXA?g_st=iwb"
+              href="https://maps.app.goo.gl/8yhst7aDcJW8mWs59"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
@@ -203,36 +212,38 @@ export default function About() {
         </div>
       </div>
 
-      {/* Feature box 2 */}
+      {/* Phone */}
       <div className="col icon-with-text-style-03">
         <div className="feature-box p-8">
           <div className="feature-box-icon">
             <i className="bi bi-telephone icon-double-large text-base-color mb-20px"></i>
           </div>
           <div className="feature-box-content last-paragraph-no-margin">
-            <p className="text-white fw-600">EVS Dubai Branch</p>
+            <p className="text-white fw-600">EVS Abu Dhabi Branch</p>
+
             <span className="d-block">
               <a
-                href="tel:+9710566017771"
+                href="tel:+971547133313"
                 className="text-white fw-600 text-decoration-line-bottom"
               >
-                +971 056 601 7771
+                +971 54 713 3313
               </a>
             </span>
+
             <a
-              href="tel:+9710566017771"
+              href="tel:+971547133313"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
             >
-              Call Us
+              Call us
               <span className="bg-white"></span>
             </a>
           </div>
         </div>
       </div>
 
-      {/* Feature box 3 */}
+      {/* Email */}
       <div className="col icon-with-text-style-03">
         <div className="feature-box p-8">
           <div className="feature-box-icon">
@@ -240,6 +251,7 @@ export default function About() {
           </div>
           <div className="feature-box-content last-paragraph-no-margin">
             <p className="text-white fw-600">Send us an email</p>
+
             <span className="d-block">
               <a
                 href="mailto:info@evsuae.com"
@@ -248,6 +260,7 @@ export default function About() {
                 info@evsuae.com
               </a>
             </span>
+
             <a
               href="mailto:info@evsuae.com"
               target="_blank"
@@ -263,6 +276,7 @@ export default function About() {
     </div>
   </div>
 </section>
+
 
 
           {/* Customer Reviews Section with Swiper Slider */}
