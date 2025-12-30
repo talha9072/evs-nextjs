@@ -2,12 +2,17 @@
 
 export default function FullHero({
   id = "full-hero",
-  sectionClass = "overflow-hidden tesla-section d-flex align-items-center dark-overlay",
+  sectionClass =
+    "overflow-hidden tesla-section d-flex align-items-center dark-overlay",
+
   backgroundImage,
   minHeight = "100vh",
 
-  title,
-  highlight,
+  // 👇 FULL CONTROL OVER TITLE
+  titlePrefix,   // e.g. "Expert Care for Your"
+  highlight,     // e.g. "ROX 01"
+  titleSuffix,   // e.g. "at EVS"  OR empty ""
+
   description,
 
   ctaText,
@@ -30,7 +35,9 @@ export default function FullHero({
           <div className="col-md-8 d-flex flex-column justify-content-center">
             <div className="title alt-font text-white mt-3">
               <h1 className="d-block pb-2">
-                {title} <span>{highlight}</span> EV Service Center
+                {titlePrefix}{" "}
+                {highlight && <span>{highlight}</span>}{" "}
+                {titleSuffix}
               </h1>
             </div>
 

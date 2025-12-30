@@ -1,12 +1,10 @@
 import Head from "next/head";
-import Link from "next/link";
 import FullHeroCars from "@/components/car-brands/FullHero.js";
 import CarAbout from "@/components/car-brands/CarAbout.js";
 import CarServices from "@/components/car-brands/CarServices.js";
 import CarFaq from "@/components/car-brands/CarFaq.js";
 import CustomerReviewsSection from "@/components/common/Customer";
 import LatestBlogsLoader from "@/components/car-brands/LatestBlogsLoader";
-import StatsCounterSection from "@/components/common/StatsCounter";
 import BranchesSection from "@/components/common/Branches";
 import ScrollProgressEn from "@/components/common/ScrollProgress";
 
@@ -117,8 +115,9 @@ export default function About() {
 
 <FullHeroCars
   backgroundImage="https://evsuae.com/.netlify/images?url=/img/ev/rox-car-1.jpg&q=70&w=1920"
-  title="Expert"
+  titlePrefix="Expert"
   highlight="ROX"
+  titleSuffix="EV Service Center"
   description="At EVS, our experienced team handles all aspects of Rox electric vehicles servicing and support. From routine maintenance to warranty-related repairs, we offer complete care designed to keep your vehicle running smoothly. Every service is carried out with attention to detail to help maintain long-term performance."
   ctaText="Book Service"
   ctaLink="https://evsuae.com/contact"
