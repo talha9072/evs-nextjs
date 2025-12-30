@@ -155,7 +155,7 @@ export default function About() {
           {/* start contact form */}
           <form
             method="POST"
-            action="/thank-you.html"
+            action="/thank-you"
             data-netlify="true"
             name="contact-form"
             className="row contact-form-style-02"

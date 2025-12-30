@@ -126,7 +126,7 @@ export default function ArabicHome() {
           {/* start contact form */}
           <form
             method="POST"
-            action="/ar/thank-you.html"
+            action="/ar/thank-you"
             data-netlify="true"
             name="contact-form"
             className="row contact-form-style-02"
