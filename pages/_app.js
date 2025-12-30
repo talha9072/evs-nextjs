@@ -123,22 +123,7 @@ export default function App({ Component, pageProps }) {
         PageContent
       )}
 
-{/* 🔒 GLOBAL NETLIFY FORM (STATIC REGISTRATION) */}
-<form
-  name="contact-form"
-  method="POST"
-  data-netlify="true"
-  data-netlify-honeypot="bot-field"
-  hidden
->
-  <input type="hidden" name="form-name" value="contact-form" />
 
-  <input type="text" name="name" />
-  <input type="tel" name="phone" />
-  <input type="email" name="email" />
-  <select name="location"></select>
-  <textarea name="comment"></textarea>
-</form>
 
     </>
   );
