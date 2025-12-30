@@ -377,17 +377,18 @@
                                 </div>
                             </div>
                             <!-- start contact form -->
-                           <form
+                          <form
   method="POST"
   data-netlify="true"
   name="contact-form"
+  action="/thank-you.html"
   class="row contact-form-style-02"
 >
   <!-- 🔑 REQUIRED FOR NETLIFY -->
-  <input type="hidden" name="form-name" value="contact-form">
+  <input type="hidden" name="form-name" value="contact-form" />
 
-  <!-- ✅ REDIRECT AFTER SUBMIT -->
-  <input type="hidden" name="redirect" value="/thank-you">
+  <!-- optional but recommended (spam protection) -->
+  <input type="hidden" name="bot-field" />
 
   <div class="col-md-6 mb-30px">
     <input
@@ -446,6 +447,7 @@
     </button>
   </div>
 </form>
+
                             <!-- end contact form -->
                         </div>
                     </div>
