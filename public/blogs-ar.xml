@@ -290,7 +290,7 @@
   </blog>
   <blog>
     <blogtitle>أهمية تحديثات البرامج للسيارات الكهربائية</blogtitle>
-    <blogurl>https://evsuae.com/blog/importance-software-updates-electric-vehicles</blogurl>
+    <blogurl>https://evsuae.com/ar/blog/importance-software-updates-electric-vehicles</blogurl>
     <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/EVS-80.jpg&amp;q=70&amp;w=1920</blogimage>
     <publisheddate>Fri Oct 03 2025 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
     <author>EVS Team</author>
@@ -299,7 +299,7 @@
   </blog>
   <blog>
     <blogtitle>هل تستحق تعديلات الأداء في السيارات الكهربائية؟</blogtitle>
-    <blogurl>https://evsuae.com/blog/ev-performance-mods-worth-it</blogurl>
+    <blogurl>https://evsuae.com/ar/blog/ev-performance-mods-worth-it</blogurl>
     <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/EVS-36.jpg&amp;q=70&amp;w=1920</blogimage>
     <publisheddate>Fri Oct 10 2025 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
     <author>EVS Team</author>
@@ -308,7 +308,7 @@
   </blog>
   <blog>
     <blogtitle>كيف تعمل محركات السيارات الكهربائية ولماذا تتعطل؟</blogtitle>
-    <blogurl>https://evsuae.com/blog/how-ev-motors-work-why-they-fail</blogurl>
+    <blogurl>https://evsuae.com/ar/blog/how-ev-motors-work-why-they-fail</blogurl>
     <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/EVS-5.jpg&amp;q=70&amp;w=1920</blogimage>
     <publisheddate>Fri Oct 17 2025 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
     <author>EVS Team</author>
@@ -317,7 +317,7 @@
   </blog>
   <blog>
     <blogtitle>لماذا يعتبر الامتثال لمعايير مجلس التعاون الخليجي مهمًا للسيارات الكهربائية؟</blogtitle>
-    <blogurl>https://evsuae.com/blog/gcc-compliance-electric-vehicles</blogurl>
+    <blogurl>https://evsuae.com/ar/blog/gcc-compliance-electric-vehicles</blogurl>
     <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/EVS-26.jpg&amp;q=70&amp;w=1920</blogimage>
     <publisheddate>Fri Oct 24 2025 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
     <author>EVS Team</author>
@@ -326,7 +326,7 @@
   </blog>
   <blog>
     <blogtitle>تحدّيات التأمين على السيارات الكهربائية في 2025 | تأمين EV الإمارات</blogtitle>
-    <blogurl>https://evsuae.com/blog/ev-insurance-challenges-2025</blogurl>
+    <blogurl>https://evsuae.com/ar/blog/ev-insurance-challenges-2025</blogurl>
     <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/ev-insurance-challenges-2025.webp&amp;q=70&amp;w=1920</blogimage>
     <publisheddate>Mon Nov 03 2025 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
     <author>EVS Team</author>
@@ -335,7 +335,7 @@
   </blog>
   <blog>
     <blogtitle>كيف تختلف تشخيصات السيارات الكهربائية والفحوصات الميكانيكية في 2025</blogtitle>
-    <blogurl>https://evsuae.com/blog/ev-diagnostics-mechanical-checkups</blogurl>
+    <blogurl>https://evsuae.com/ar/blog/ev-diagnostics-mechanical-checkups</blogurl>
     <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/ev-diagnostics-mechanical-checkups.webp&amp;q=70&amp;w=1920</blogimage>
     <publisheddate>Mon Nov 10 2025 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
     <author>EVS Team</author>
@@ -344,7 +344,7 @@
   </blog>
   <blog>
     <blogtitle>تـخُدم السيارات الكهربائية مقابل سيارات الاحتراق الداخلي: الفروق الرئيسية التي يجب أن يعرفها سائقو الإمارات</blogtitle>
-    <blogurl>https://evsuae.com/blog/ev-vs-ice-servicing-differences</blogurl>
+    <blogurl>https://evsuae.com/ar/blog/ev-vs-ice-servicing-differences</blogurl>
     <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/ev-vs-ice-servicing-differences.webp&amp;q=70&amp;w=1920</blogimage>
     <publisheddate>Mon Nov 17 2025 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
     <author>EVS Team</author>
@@ -353,11 +353,83 @@
   </blog>
   <blog>
     <blogtitle>كيف تعمل خدمة المساعدة على الطريق لأصحاب السيارات الكهربائية</blogtitle>
-    <blogurl>https://evsuae.com/blog/ev-roadside-assistance-uae</blogurl>
+    <blogurl>https://evsuae.com/ar/blog/ev-roadside-assistance-uae</blogurl>
     <blogimage>https://evsuae.com/.netlify/images?url=/img/sos/sos-hero.jpg&amp;q=70&amp;w=1920</blogimage>
     <publisheddate>Mon Nov 24 2025 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
     <author>EVS Team</author>
     <category>Article</category>
     <blurb>تزداد شعبية السيارات الكهربائية في جميع أنحاء الإمارات، لما توفره من تجربة قيادة أنظف وأكثر هدوءًا وكفاءة.</blurb>
+  </blog>
+  <blog>
+    <blogtitle>ECU واستبدال الحساسات: عقل سيارتك الكهربائية</blogtitle>
+    <blogurl>https://evsuae.com/ar/blog/ecu-sensor-replacements-ev</blogurl>
+    <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/ecu-sensor-replacements-ev.webp&amp;q=70&amp;w=1920</blogimage>
+    <publisheddate>Thu Dec 04 2025 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
+    <author>EVS Team</author>
+    <category>Article</category>
+    <blurb>تعتمد السيارات الكهربائية على الدقة والذكاء وسرعة الاستجابة. وفي قلب هالمنظومة توجد وحدة التحكم الإلكترونية (ECU)، إلى جانب شبكة معقدة من الحساسات.</blurb>
+  </blog>
+  <blog>
+    <blogtitle>نصائح معالجة الخدوش والانبعاجات وإعادة طلاء سيارات الكهرباء</blogtitle>
+    <blogurl>https://evsuae.com/ar/blog/ev-scratch-dent-paint-refinishing</blogurl>
+    <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/ev-scratch-dent-paint-refinishing.webp&amp;q=70&amp;w=1920</blogimage>
+    <publisheddate>Thu Dec 11 2025 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
+    <author>EVS Team</author>
+    <category>Article</category>
+    <blurb>تُعرف السيارات الكهربائية مو بس بأدائها واستدامتها، لكن بعد بشكلها الأنيق وتصميمها العصري.</blurb>
+  </blog>
+  <blog>
+    <blogtitle>ضبط زوايا الإطارات وترصيصها للسيارات الكهربائية: التعامل مع وزن البطارية</blogtitle>
+    <blogurl>https://evsuae.com/ar/blog/ev-tire-alignment-battery-weight</blogurl>
+    <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/ev-tire-alignment-battery-weight.webp&amp;q=70&amp;w=1920</blogimage>
+    <publisheddate>Thu Dec 18 2025 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
+    <author>EVS Team</author>
+    <category>Article</category>
+    <blurb>توفّر السيارات الكهربائية تسارعًا سلسًا وانبعاثات أقل ومزايا هندسية حديثة، لكنها في نفس الوقت تواجه تحديات خاصة بسبب الوزن الإضافي لحزم البطاريات.</blurb>
+  </blog>
+  <blog>
+    <blogtitle>إصلاح وحدة الدفع في تسلا: كل ما تحتاج معرفته</blogtitle>
+    <blogurl>https://evsuae.com/ar/blog/tesla-drive-unit-repairs</blogurl>
+    <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/tesla-drive-unit-repairs.webp&amp;q=70&amp;w=1920</blogimage>
+    <publisheddate>Thu Dec 25 2025 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
+    <author>EVS Team</author>
+    <category>Article</category>
+    <blurb>تم تصميم وحدات الدفع الكهربائية في تسلا لتقديم قوة سلسة واعتمادية طويلة المدى. وباعتبارها قلب نظام نقل الحركة في سيارات تسلا، تجمع وحدة الدفع بين المحرك،</blurb>
+  </blog>
+  <blog>
+    <blogtitle>تقدير أضرار السيارات الكهربائية لمطالبات التأمين</blogtitle>
+    <blogurl>https://evsuae.com/ar/blog/ev-damage-estimation-insurance-claims</blogurl>
+    <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/R5S29260.webp&amp;q=70&amp;w=1920</blogimage>
+    <publisheddate>Sun Jan 04 2026 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
+    <author>EVS Team</author>
+    <category>Article</category>
+    <blurb>مع الانتشار السريع للسيارات الكهربائية في دولة الإمارات، بدأت شركات التأمين وورش الإصلاح تتكيّف مع جيل جديد من أساليب تقييم الأضرار.</blurb>
+  </blog>
+  <blog>
+    <blogtitle>كيف يسهّل الفوترة المباشرة مع شركات التأمين إصلاح السيارات الكهربائية</blogtitle>
+    <blogurl>https://evsuae.com/ar/blog/direct-insurance-billing-ev-repairs</blogurl>
+    <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/IMG_2071.webp&amp;q=70&amp;w=1920</blogimage>
+    <publisheddate>Sun Jan 11 2026 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
+    <author>EVS Team</author>
+    <category>Article</category>
+    <blurb>الفوترة المباشرة تغيّر طريقة التعامل مع إصلاح السيارات الكهربائية في دولة الإمارات. وبدل ما يضطر المالك للتعامل مع إجراءات تأمين معقّدة ودفع مبالغ مقدّمًا،</blurb>
+  </blog>
+  <blog>
+    <blogtitle>أفضل ممارسات العناية الداخلية والخارجية للسيارات الكهربائية</blogtitle>
+    <blogurl>https://evsuae.com/ar/blog/ev-detailing-best-practices</blogurl>
+    <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/IMG_2079.webp&amp;q=70&amp;w=1920</blogimage>
+    <publisheddate>Sun Jan 18 2026 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
+    <author>EVS Team</author>
+    <category>Article</category>
+    <blurb>السيارات الكهربائية آلات مصمّمة بدقة عالية، تجمع بين التقنيات المتقدمة والتصميم الفاخر.</blurb>
+  </blog>
+  <blog>
+    <blogtitle>مستقبل التعديل المخصص للسيارات الكهربائية</blogtitle>
+    <blogurl>https://evsuae.com/ar/blog/future-of-custom-ev-tuning</blogurl>
+    <blogimage>https://evsuae.com/.netlify/images?url=/img/blog/IMG_2084.webp&amp;q=70&amp;w=1920</blogimage>
+    <publisheddate>Sun Jan 25 2026 00:00:00 GMT+0400 (Gulf Standard Time)</publisheddate>
+    <author>EVS Team</author>
+    <category>Article</category>
+    <blurb>مع استمرار انتشار السيارات الكهربائية واعتمادها على نطاق واسع، بدأ يتشكّل عصر جديد من التخصيص.</blurb>
   </blog>
 </blogs>
