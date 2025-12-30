@@ -2075,10 +2075,7 @@ $(document).on('click', '.submit', function () {
         termsObj.addClass('is-invalid');
     }
 
-    // Prevent submission if validation failed
-    if (error) {
-        event.preventDefault();
-    }
+    
 });
 
 // Validate each field on blur
