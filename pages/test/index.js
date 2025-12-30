@@ -13,9 +13,10 @@ export default function TestFormPage() {
         <form
           name="test-form"
           method="POST"
+          action="/thank-you.html"
           data-netlify="true"
+          enctype="application/x-www-form-urlencoded"
         >
-          {/* REQUIRED */}
           <input type="hidden" name="form-name" value="test-form" />
 
           <p>
