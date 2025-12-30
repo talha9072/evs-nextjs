@@ -377,36 +377,75 @@
                                 </div>
                             </div>
                             <!-- start contact form -->
-                            <form method="POST" action="/thank-you.html" data-netlify="true" class="row contact-form-style-02" name="contact-form">
-                                <div class="col-md-6 mb-30px">
-                                    <input class="input-name form-control required" type="text" name="name" placeholder="Your name*" />
-                                </div>
-                                <div class="col-md-6 mb-30px">
-                                    <input class="form-control required" type="tel"  name="phone" placeholder="Your phone*" />
-                                </div>
-                                <div class="col-md-6 mb-30px">
-                                    <input class="form-control required" type="email" name="email" placeholder="Your email address*" />
-                                </div>
-                                <div class="col-md-6 mb-30px">
-									<select class="form-control required" name="location">
-										<option value="" disabled selected>Select EVS Location*</option>
-										<option value="EVS Dubai">EVS Dubai</option>
-										<option value="EVS Abu Dhabi">EVS Abu Dhabi</option>
-										<option value="EVS Ajman">EVS Ajman</option>
-										<option value="EVS Alain">EVS Alain</option>
-									</select>
-								</div>
-                                <div class="col-md-12 mb-30px">
-                                    <textarea class="form-control" cols="40" rows="2" name="comment" placeholder="Your message"></textarea>
-                                </div>
-                                <div class="col-xl-5 col-md-4 sm-mt-25px">
-                                    <input type="hidden" name="redirect" value="">
-                                    <button class="btn btn-medium btn-round-edge btn-dark-gray btn-slide-right submit" type="submit">Send message<span class="bg-base-color"></span></button>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-results mt-20px d-none text-center"></div>
-                                </div>
-                            </form>
+                           <form
+  method="POST"
+  data-netlify="true"
+  name="contact-form"
+  class="row contact-form-style-02"
+>
+  <!-- 🔑 REQUIRED FOR NETLIFY -->
+  <input type="hidden" name="form-name" value="contact-form">
+
+  <!-- ✅ REDIRECT AFTER SUBMIT -->
+  <input type="hidden" name="redirect" value="/thank-you">
+
+  <div class="col-md-6 mb-30px">
+    <input
+      class="input-name form-control"
+      type="text"
+      name="name"
+      placeholder="Your name*"
+      required
+    />
+  </div>
+
+  <div class="col-md-6 mb-30px">
+    <input
+      class="form-control"
+      type="tel"
+      name="phone"
+      placeholder="Your phone*"
+      required
+    />
+  </div>
+
+  <div class="col-md-6 mb-30px">
+    <input
+      class="form-control"
+      type="email"
+      name="email"
+      placeholder="Your email address*"
+      required
+    />
+  </div>
+
+  <div class="col-md-6 mb-30px">
+    <select class="form-control" name="location" required>
+      <option value="">Select EVS Location*</option>
+      <option value="EVS Dubai">EVS Dubai</option>
+      <option value="EVS Abu Dhabi">EVS Abu Dhabi</option>
+      <option value="EVS Ajman">EVS Ajman</option>
+      <option value="EVS Alain">EVS Alain</option>
+    </select>
+  </div>
+
+  <div class="col-md-12 mb-30px">
+    <textarea
+      class="form-control"
+      name="comment"
+      placeholder="Your message"
+    ></textarea>
+  </div>
+
+  <div class="col-xl-5 col-md-4 sm-mt-25px">
+    <button
+      class="btn btn-medium btn-round-edge btn-dark-gray btn-slide-right"
+      type="submit"
+    >
+      Send message<span class="bg-base-color"></span>
+    </button>
+  </div>
+</form>
                             <!-- end contact form -->
                         </div>
                     </div>
