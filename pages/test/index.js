@@ -41,15 +41,15 @@ export default function TestPage() {
         <h1>Contact Form (Netlify)</h1>
 
         <form
-          name="contact"                    // Yeh name hidden HTML file mein bhi same hona chahiye
+          name="my-new-contact-form"          // ← Naya unique name
           onSubmit={handleSubmit}
           data-netlify="true"
           netlify-honeypot="bot-field"
         >
-          {/* Yeh hidden field Netlify ko batata hai ki kaunsa form hai */}
-          <input type="hidden" name="form-name" value="contact" />
+          {/* Hidden field – ye Netlify ko form ka naam batata hai */}
+          <input type="hidden" name="form-name" value="my-new-contact-form" />
 
-          {/* Honeypot field - spam bots fill karte hain, humans nahi dekhte */}
+          {/* Honeypot */}
           <div hidden>
             <label>
               Don’t fill this out if you're human:
@@ -137,7 +137,7 @@ export async function getStaticProps() {
       noHeader: false,
       noFooter: false, // optional
       useScrollContainer: false,
-      
+      extraScripts: ["/js/blog.js"],
     },
     
   };

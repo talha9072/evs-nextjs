@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hidden Netlify Form</title>
+    <title>Hidden Netlify Form Detection</title>
   </head>
   <body>
-    <!-- Ye form hidden hai, site pe show nahi hoga -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-      <!-- Apne saare fields yahan add karo, exact same 'name' attributes ke saath -->
-      <!-- Honeypot for spam protection -->
-      <p hidden>
-        <label>Don’t fill this: <input name="bot-field" /></label>
-      </p>
+    <form name="my-new-contact-form" netlify netlify-honeypot="bot-field">
+      <input type="text" name="name" hidden />
+      <input type="email" name="email" hidden />
+      <textarea name="message" hidden></textarea>
+      
+      <!-- Honeypot for spam -->
+      <input type="text" name="bot-field" hidden />
     </form>
   </body>
 </html>
