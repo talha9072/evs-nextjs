@@ -1,135 +1,73 @@
-import { useState } from 'react';
+import { useState } from "react";
+import Head from "next/head";
 
 export default function TestPage() {
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setStatus('');
+    setStatus("");
 
-    const form = e.target;
-    const formData = new FormData(form);
+    const formData = new FormData(e.target);
 
     try {
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      const res = await fetch("/__netlify-form.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
       });
 
-      if (response.ok) {
-        setStatus('✅ Success! Aapka message send ho gaya.');
-        form.reset();
+      if (res.ok) {
+        setStatus("✅ Message sent successfully");
+        e.target.reset();
       } else {
-        setStatus('❌ Kuch error aaya. Please try again.');
+        setStatus("❌ Submission failed");
       }
-    } catch (err) {
-      setStatus('❌ Network error. Check your connection.');
+    } catch {
+      setStatus("❌ Network error");
     }
+
     setLoading(false);
   };
 
   return (
     <>
-      <head>
-        <title>Test Form - Netlify</title>
-      </head>
+      <Head>
+        <title>Netlify Test Form</title>
+      </Head>
 
-      <div style={{ maxWidth: '600px', margin: '50px auto', padding: '20px' }}>
-        <h1>Contact Form (Netlify)</h1>
+      <form
+        name="my-new-contact-form"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
+      >
+        <input type="hidden" name="form-name" value="my-new-contact-form" />
 
-        <form
-          name="my-new-contact-form"          // ← Naya unique name
-          onSubmit={handleSubmit}
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-        >
-          {/* Hidden field – ye Netlify ko form ka naam batata hai */}
-          <input type="hidden" name="form-name" value="my-new-contact-form" />
+        <p hidden>
+          <label>
+            Don’t fill this out:
+            <input name="bot-field" />
+          </label>
+        </p>
 
-          {/* Honeypot */}
-          <div hidden>
-            <label>
-              Don’t fill this out if you're human:
-              <input name="bot-field" />
-            </label>
-          </div>
+        <input name="name" required placeholder="Name" />
+        <input name="email" type="email" required placeholder="Email" />
+        <textarea name="message" required placeholder="Message" />
 
-          <div style={{ marginBottom: '15px' }}>
-            <label>
-              Name <span style={{ color: 'red' }}>*</span>
-              <input
-                type="text"
-                name="name"
-                required
-                style={{ width: '100%', padding: '10px', marginTop: '5px' }}
-                placeholder="Aapka naam"
-              />
-            </label>
-          </div>
+        <button disabled={loading}>
+          {loading ? "Sending..." : "Send"}
+        </button>
 
-          <div style={{ marginBottom: '15px' }}>
-            <label>
-              Email <span style={{ color: 'red' }}>*</span>
-              <input
-                type="email"
-                name="email"
-                required
-                style={{ width: '100%', padding: '10px', marginTop: '5px' }}
-                placeholder="you@example.com"
-              />
-            </label>
-          </div>
-
-          <div style={{ marginBottom: '15px' }}>
-            <label>
-              Message <span style={{ color: 'red' }}>*</span>
-              <textarea
-                name="message"
-                required
-                rows="6"
-                style={{ width: '100%', padding: '10px', marginTop: '5px' }}
-                placeholder="Aapka message yahan likhein"
-              ></textarea>
-            </label>
-          </div>
-
-          <button
-            type="submit"
-            disabled={loading}
-            style={{
-              padding: '12px 30px',
-              background: loading ? '#ccc' : '#0070f3',
-              color: 'white',
-              border: 'none',
-              borderRadius: '5px',
-              cursor: loading ? 'not-allowed' : 'pointer',
-              fontSize: '16px',
-            }}
-          >
-            {loading ? 'Sending...' : 'Send Message'}
-          </button>
-
-          {status && (
-            <p
-              style={{
-                marginTop: '20px',
-                padding: '15px',
-                background: status.includes('Success') ? '#d4edda' : '#f8d7da',
-                borderRadius: '5px',
-                color: status.includes('Success') ? '#155724' : '#721c24',
-              }}
-            >
-              {status}
-            </p>
-          )}
-        </form>
-      </div>
+        {status && <p>{status}</p>}
+      </form>
     </>
   );
 }
+
 
 export async function getStaticProps() {
   return {
@@ -137,7 +75,7 @@ export async function getStaticProps() {
       noHeader: false,
       noFooter: false, // optional
       useScrollContainer: false,
-      extraScripts: ["/js/blog.js"],
+      
     },
     
   };
