@@ -10,17 +10,14 @@ export default function FranchiseFormAR() {
     const formData = new FormData(e.target);
 
     try {
-      const res = await fetch("/__netlify-form-ar.html", {
+      const res = await fetch("/__netlify-form.html", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
         body: new URLSearchParams(formData).toString(),
       });
 
       if (!res.ok) throw new Error("Failed");
 
-      // ✅ FULL PAGE reload (important for your case)
+      // ✅ SAME franchise submission + Arabic thank-you
       window.location.href = "/ar/thank-you";
     } catch (err) {
       alert("حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.");
@@ -50,23 +47,15 @@ export default function FranchiseFormAR() {
                 </div>
               </div>
 
-              {/* FORM */}
+              {/* ✅ FORM (SAME AS ENGLISH SUBMISSION) */}
               <form
-                name="franchise-ar"
+                name="franchise"            // ✅ SAME form
                 method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
                 className="row contact-form-style-02"
               >
-                <input type="hidden" name="form-name" value="franchise-ar" />
-
-                {/* Honeypot */}
-                <p hidden>
-                  <label>
-                    لا تملأ هذا الحقل: <input name="bot-field" />
-                  </label>
-                </p>
+                {/* REQUIRED */}
+                <input type="hidden" name="form-name" value="franchise" />
 
                 <div className="col-md-6 mb-30px">
                   <input
@@ -123,7 +112,7 @@ export default function FranchiseFormAR() {
                   </p>
                 </div>
 
-                {/* 🔒 BUTTON ALIGNMENT SAME AS ORIGINAL */}
+                {/* 🔒 BUTTON ALIGNMENT UNCHANGED */}
                 <div className="col-xl-5 col-md-4 text-center text-md-start sm-mt-25px">
                   <button
                     type="submit"
