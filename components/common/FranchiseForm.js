@@ -1,50 +1,17 @@
-import { useState } from "react";
-
 export default function FranchiseForm() {
-  const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState("");
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setStatus("");
-
-    const formData = new FormData(e.target);
-
-    try {
-      const res = await fetch("/__netlify-form.html", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams(formData).toString(),
-      });
-
-      if (res.ok) {
-        setStatus("✅ Thank you! Our team will contact you shortly.");
-        e.target.reset();
-      } else {
-        setStatus("❌ Submission failed. Please try again.");
-      }
-    } catch (err) {
-      setStatus("❌ Network error. Please try again.");
-    }
-
-    setLoading(false);
-  };
-
   return (
     <form
       name="franchise"
       method="POST"
+      action="/thank-you"
       data-netlify="true"
       netlify-honeypot="bot-field"
-      onSubmit={handleSubmit}
       className="row contact-form-style-02"
     >
+      {/* REQUIRED for Netlify */}
       <input type="hidden" name="form-name" value="franchise" />
 
-      {/* Honeypot */}
+      {/* Honeypot (anti-spam) */}
       <p hidden>
         <label>
           Don’t fill this out:
@@ -110,18 +77,11 @@ export default function FranchiseForm() {
         <button
           type="submit"
           className="btn btn-medium btn-round-edge btn-dark-gray"
-          disabled={loading}
         >
-          {loading ? "Sending..." : "Send message"}
+          Send message
           <span className="bg-white"></span>
         </button>
       </div>
-
-      {status && (
-        <div className="col-12 mt-20px text-center">
-          <p>{status}</p>
-        </div>
-      )}
     </form>
   );
 }
