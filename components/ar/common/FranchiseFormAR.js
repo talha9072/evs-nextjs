@@ -1,34 +1,4 @@
-import { useState } from "react";
-
 export default function FranchiseFormAR() {
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log("SUBMIT FIRED"); // 🔍 debug
-    setLoading(true);
-
-    const formData = new FormData(e.target);
-
-    try {
-      const res = await fetch("/__netlify-form.html", {
-        method: "POST",
-        body: new URLSearchParams(formData).toString(),
-      });
-
-      console.log("FETCH SENT");
-
-      if (!res.ok) throw new Error("Failed");
-
-      // ✅ FULL reload Arabic thank-you
-      window.location.href = "/ar/thank-you";
-    } catch (err) {
-      console.error(err);
-      alert("حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.");
-      setLoading(false);
-    }
-  };
-
   return (
     <section className="position-relative pt-100px mb-50px" dir="rtl">
       <div className="container">
@@ -50,15 +20,25 @@ export default function FranchiseFormAR() {
                 </div>
               </div>
 
-              {/* ✅ FORM */}
+              {/* ✅ NATIVE NETLIFY FORM (SAME AS ENGLISH) */}
               <form
-                name="franchise"
+                name="franchise"                  // SAME form
                 method="POST"
-                noValidate                 // 🔥 IMPORTANT
-                onSubmit={handleSubmit}
+                action="/ar/thank-you"            // Arabic thank-you
+                data-netlify="true"
+                netlify-honeypot="bot-field"
                 className="row contact-form-style-02"
               >
+                {/* REQUIRED */}
                 <input type="hidden" name="form-name" value="franchise" />
+
+                {/* Honeypot */}
+                <p hidden>
+                  <label>
+                    لا تملأ هذا الحقل:
+                    <input name="bot-field" />
+                  </label>
+                </p>
 
                 <div className="col-md-6 mb-30px">
                   <input
@@ -110,7 +90,8 @@ export default function FranchiseFormAR() {
 
                 <div className="col-xl-7 col-md-8 pb-30px">
                   <p className="text-center text-md-end fs-15 lh-26">
-                    نحن ملتزمون بحماية خصوصيتك.
+                    نحن ملتزمون بحماية خصوصيتك. لن نجمع معلومات عنك دون موافقتك
+                    الصريحة.
                   </p>
                 </div>
 
@@ -119,10 +100,8 @@ export default function FranchiseFormAR() {
                   <button
                     type="submit"
                     className="btn btn-medium btn-round-edge btn-dark-gray btn-slide-right"
-                    disabled={loading}
-                    onClick={(e) => e.currentTarget.form.requestSubmit()} // 🔥 backup
                   >
-                    {loading ? "جارٍ الإرسال..." : "إرسال الرسالة"}
+                    إرسال الرسالة
                     <span className="bg-white"></span>
                   </button>
                 </div>
