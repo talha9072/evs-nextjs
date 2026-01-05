@@ -1,8 +1,6 @@
-import { useRouter } from "next/router";
 import { useState } from "react";
 
 export default function FranchiseForm() {
-  const router = useRouter();
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -13,7 +11,7 @@ export default function FranchiseForm() {
     const formData = new FormData(form);
 
     try {
-      await fetch("/__netlify-form.html", {
+      const res = await fetch("/__netlify-form.html", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -21,8 +19,10 @@ export default function FranchiseForm() {
         body: new URLSearchParams(formData).toString(),
       });
 
-      // ✅ SIMPLE REDIRECT (Next.js page)
-      router.push("/thank-you");
+      if (!res.ok) throw new Error("Failed");
+
+      // ✅ PROPER REDIRECT (FULL PAGE RELOAD)
+      window.location.href = "/thank-you";
     } catch (err) {
       alert("Submission failed. Please try again.");
       setLoading(false);
@@ -43,43 +43,74 @@ export default function FranchiseForm() {
       {/* Honeypot */}
       <p hidden>
         <label>
-          Don’t fill this out: <input name="bot-field" />
+          Don’t fill this out:
+          <input name="bot-field" />
         </label>
       </p>
 
       <div className="col-md-6 mb-30px">
-        <input className="form-control" name="name" required placeholder="Your name*" />
+        <input
+          className="form-control required"
+          type="text"
+          name="name"
+          placeholder="Your name*"
+          required
+        />
       </div>
 
       <div className="col-md-6 mb-30px">
-        <input className="form-control" name="phone" required placeholder="Your phone*" />
+        <input
+          className="form-control required"
+          type="tel"
+          name="phone"
+          placeholder="Your phone*"
+          required
+        />
+      </div>
+
+      <div className="col-md-6 mb-30px">
+        <input
+          className="form-control required"
+          type="email"
+          name="email"
+          placeholder="Your email address*"
+          required
+        />
       </div>
 
       <div className="col-md-6 mb-30px">
         <input
           className="form-control"
-          type="email"
-          name="email"
-          required
-          placeholder="Your email address*"
+          type="text"
+          name="subject"
+          placeholder="Your subject"
         />
       </div>
 
-      <div className="col-md-6 mb-30px">
-        <input className="form-control" name="subject" placeholder="Your subject" />
-      </div>
-
       <div className="col-md-12 mb-30px">
-        <textarea className="form-control" name="comment" placeholder="Your message" />
+        <textarea
+          className="form-control"
+          rows="4"
+          name="comment"
+          placeholder="Your message"
+        />
       </div>
 
-      <div className="col-xl-5 col-md-4 text-center text-md-end">
+      <div className="col-xl-7 col-md-8 pb-30px">
+        <p className="fs-15 lh-26">
+          We respect your privacy. Your information will never be shared.
+        </p>
+      </div>
+
+      {/* 🔒 BUTTON ALIGNMENT SAME AS BEFORE */}
+      <div className="col-xl-5 col-md-4 text-center text-md-end sm-mt-25px">
         <button
           type="submit"
-          className="btn btn-dark-gray"
+          className="btn btn-medium btn-round-edge btn-dark-gray"
           disabled={loading}
         >
           {loading ? "Sending..." : "Send message"}
+          <span className="bg-white"></span>
         </button>
       </div>
     </form>
