@@ -5,6 +5,7 @@ export default function FranchiseFormAR() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("SUBMIT FIRED"); // 🔍 debug
     setLoading(true);
 
     const formData = new FormData(e.target);
@@ -15,11 +16,14 @@ export default function FranchiseFormAR() {
         body: new URLSearchParams(formData).toString(),
       });
 
+      console.log("FETCH SENT");
+
       if (!res.ok) throw new Error("Failed");
 
-      // ✅ SAME franchise submission + Arabic thank-you
+      // ✅ FULL reload Arabic thank-you
       window.location.href = "/ar/thank-you";
     } catch (err) {
+      console.error(err);
       alert("حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.");
       setLoading(false);
     }
@@ -38,8 +42,7 @@ export default function FranchiseFormAR() {
                   </h2>
                   <p className="mb-40px">
                     املأ النموذج أدناه، وسيتواصل فريقنا معك لمناقشة كيف يمكنك
-                    إحضار حلول إي في إس المبتكرة إلى مجتمعك. دعنا نعمل معًا
-                    لتشغيل مستقبل الحركة!
+                    إحضار حلول إي في إس المبتكرة إلى مجتمعك.
                   </p>
                 </div>
                 <div className="col-3 text-start">
@@ -47,19 +50,19 @@ export default function FranchiseFormAR() {
                 </div>
               </div>
 
-              {/* ✅ FORM (SAME AS ENGLISH SUBMISSION) */}
+              {/* ✅ FORM */}
               <form
-                name="franchise"            // ✅ SAME form
+                name="franchise"
                 method="POST"
+                noValidate                 // 🔥 IMPORTANT
                 onSubmit={handleSubmit}
                 className="row contact-form-style-02"
               >
-                {/* REQUIRED */}
                 <input type="hidden" name="form-name" value="franchise" />
 
                 <div className="col-md-6 mb-30px">
                   <input
-                    className="input-name form-control required pe-13"
+                    className="input-name form-control pe-13"
                     type="text"
                     name="name"
                     placeholder="اسمك*"
@@ -69,7 +72,7 @@ export default function FranchiseFormAR() {
 
                 <div className="col-md-6 mb-30px">
                   <input
-                    className="form-control required pe-13 text-end"
+                    className="form-control pe-13 text-end"
                     type="tel"
                     name="phone"
                     placeholder="رقم هاتفك*"
@@ -79,7 +82,7 @@ export default function FranchiseFormAR() {
 
                 <div className="col-md-6 mb-30px">
                   <input
-                    className="form-control required pe-13"
+                    className="form-control pe-13"
                     type="email"
                     name="email"
                     placeholder="بريدك الإلكتروني*"
@@ -107,17 +110,17 @@ export default function FranchiseFormAR() {
 
                 <div className="col-xl-7 col-md-8 pb-30px">
                   <p className="text-center text-md-end fs-15 lh-26">
-                    نحن ملتزمون بحماية خصوصيتك. لن نجمع معلومات عنك دون موافقتك
-                    الصريحة.
+                    نحن ملتزمون بحماية خصوصيتك.
                   </p>
                 </div>
 
-                {/* 🔒 BUTTON ALIGNMENT UNCHANGED */}
+                {/* 🔒 BUTTON — SAME ALIGNMENT */}
                 <div className="col-xl-5 col-md-4 text-center text-md-start sm-mt-25px">
                   <button
                     type="submit"
                     className="btn btn-medium btn-round-edge btn-dark-gray btn-slide-right"
                     disabled={loading}
+                    onClick={(e) => e.currentTarget.form.requestSubmit()} // 🔥 backup
                   >
                     {loading ? "جارٍ الإرسال..." : "إرسال الرسالة"}
                     <span className="bg-white"></span>
