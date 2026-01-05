@@ -151,3 +151,15 @@ const WhyChooseEVSAr = () => {
 };
 
 export default WhyChooseEVSAr;
+
+
+export async function getStaticProps() {
+  return {
+    props: {
+      noHeader: false,
+      noFooter: false, // optional
+      extraScripts: ["/ar/js/main.js"],
+    },
+    
+  };
+}
