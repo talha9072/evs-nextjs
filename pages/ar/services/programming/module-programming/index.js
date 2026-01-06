@@ -193,7 +193,7 @@ export default function ArabicHome() {
 
 
 <ServiceBenefitsAr
-  heading="فوائد برمجة الوحدات"
+  title="فوائد برمجة الوحدات"
   items={[
     {
       title: "تكامل وحدة جديدة",

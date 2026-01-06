@@ -18,25 +18,25 @@ export default function About() {
    <Head>
   {/* Title */}
   <title>
-    EV System Calibration and Diagnostics in Dubai | Precision Testing and Alignment
+    EV App Integration in Dubai | Android Auto and Custom Platform Setup
   </title>
 
   {/* Meta Description */}
   <meta
     name="description"
-    content="EVS Dubai provides expert calibration and diagnostics for electric vehicles. We test, align, and verify system performance to ensure accurate and reliable operation."
+    content="EVS Dubai provides app integration for electric vehicles, including Android Auto and custom apps. Improve connectivity, infotainment, and driving experience."
   />
 
   {/* Meta Keywords */}
   <meta
     name="keywords"
-    content="EV diagnostics Dubai, system calibration EV, electric vehicle sensor alignment, EV performance testing UAE, EV software diagnostics"
+    content="EV app integration Dubai, Android Auto EV, electric vehicle connectivity, custom infotainment setup, EV smartphone integration UAE"
   />
 
   {/* Canonical */}
   <link
     rel="canonical"
-    href="https://evsuae.com/services/programming/system-calibration-diagnostics"
+    href="https://evsuae.com/services/programming/app-integration-android"
   />
 
   {/* Robots */}
@@ -56,26 +56,26 @@ export default function About() {
   <link
     rel="alternate"
     hrefLang="en"
-    href="https://evsuae.com/services/programming/system-calibration-diagnostics"
+    href="https://evsuae.com/services/programming/app-integration-android"
   />
   <link
     rel="alternate"
     hrefLang="ar"
-    href="https://evsuae.com/ar/services/programming/system-calibration-diagnostics"
+    href="https://evsuae.com/ar/services/programming/app-integration-android"
   />
 
   {/* Open Graph */}
   <meta
     property="og:title"
-    content="EV System Calibration and Diagnostics in Dubai | Precision Testing and Alignment"
+    content="EV App Integration in Dubai | Android Auto and Custom Platform Setup"
   />
   <meta
     property="og:description"
-    content="EVS Dubai provides expert calibration and diagnostics for electric vehicles. We test, align, and verify system performance to ensure accurate and reliable operation."
+    content="EVS Dubai provides app integration for electric vehicles, including Android Auto and custom apps. Improve connectivity, infotainment, and driving experience."
   />
   <meta
     property="og:url"
-    content="https://evsuae.com/services/programming/system-calibration-diagnostics"
+    content="https://evsuae.com/services/programming/app-integration-android"
   />
   <meta property="og:type" content="website" />
   <meta
@@ -87,11 +87,11 @@ export default function About() {
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="EV System Calibration and Diagnostics in Dubai | Precision Testing and Alignment"
+    content="EV App Integration in Dubai | Android Auto and Custom Platform Setup"
   />
   <meta
     name="twitter:description"
-    content="EVS Dubai provides expert calibration and diagnostics for electric vehicles. We test, align, and verify system performance to ensure accurate and reliable operation."
+    content="EVS Dubai provides app integration for electric vehicles, including Android Auto and custom apps. Improve connectivity, infotainment, and driving experience."
   />
   <meta
     name="twitter:image"
@@ -109,17 +109,17 @@ export default function About() {
   <meta charSet="UTF-8" />
   <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
-  {/* Structured Data – System Calibration & Diagnostics */}
+  {/* Structured Data – App Integration Service */}
   <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{
       __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        name: "System Calibration & Diagnostics for Electric Vehicles",
+        name: "EV App Integration & Android Auto Setup",
         description:
-          "EVS UAE offers precision system calibration and diagnostics for electric vehicles. We test, align, and fine-tune EV subsystems, sensors, and control modules to ensure accurate, safe, and reliable operation.",
-        serviceType: "EV System Calibration & Diagnostics",
+          "EVS UAE provides professional app integration services for electric vehicles, including Android Auto and custom platform setup. Enhance infotainment, connectivity, and smart feature access with expert configuration.",
+        serviceType: "EV App Integration",
         provider: {
           "@type": "AutomotiveBusiness",
           name: "Electric Vehicle Services UAE",
@@ -144,7 +144,7 @@ export default function About() {
             name: "Dubai, UAE",
           },
         },
-        url: "https://evsuae.com/services/programming/system-calibration-diagnostics",
+        url: "https://evsuae.com/services/programming/app-integration-android",
         inLanguage: "en",
       }),
     }}
@@ -155,8 +155,8 @@ export default function About() {
   backgroundImage="https://evsuae.com/.netlify/images?url=/img/blog/must-do-ev-checks-before-hitting-the-road-for-a-long-trip.jpg&q=70&w=1920"
   tagText="EVS"
   subtitleText="Electric Vehicle Programming Services"
-  title="System Calibration and Diagnostics for Electric Vehicles"
-  description="At EVS, our calibration and diagnostics services are designed to test and fine-tune each system in your EV."
+  title="App Integration for Electric Vehicles"
+  description="At EVS, we help you connect your smartphone and apps to your electric vehicle through professional app integration services."
   buttonText="Book Your EV Check"
   buttonLink="https://evsuae.com/contact"
 />
@@ -177,41 +177,42 @@ export default function About() {
   imageAlt="EV Maintenance and Repairs"
   badgeText="EV Programming Services"
   title="About the Service"
-  description="Electric vehicles depend on highly accurate systems to operate safely and efficiently. Whether it's the battery management system, steering sensors, or autonomous driving modules, precision matters. At EVS, our calibration and diagnostics services are designed to test and fine-tune each system in your EV. Using brand-specific software and advanced tools, we ensure every component is functioning correctly, aligned properly, and communicating with the vehicle as intended."
+  description="Modern EV drivers expect more than just mobility—they want seamless digital integration. At EVS, we help you connect your smartphone and apps to your electric vehicle through professional app integration services. From Android Auto to brand-specific platforms and custom infotainment applications, our team ensures a smooth, functional setup that enhances your overall driving experience without disrupting system performance."
 />
 
+
 <ServiceBenefits
-  title="Benefits of System Calibration and Diagnostics"
+  title="Benefits of App Integration"
   items={[
     {
-      title: "Accurate Fault Detection",
+      title: "Android Auto Setup",
       description:
-        "Our tools identify issues that general diagnostic scans may overlook.",
+        "Full integration with your EV’s display, allowing access to navigation, music, and calls.",
     },
     {
-      title: "Sensor and Camera Calibration",
+      title: "Custom App Support",
       description:
-        "We align ADAS components such as lane-keeping cameras, proximity sensors, and radar modules.",
+        "Configure unique infotainment or fleet management apps that align with your driving needs.",
     },
     {
-      title: "Battery and Motor Diagnostics",
+      title: "Cross-Platform Compatibility",
       description:
-        "Check voltage balance, temperature regulation, and energy flow for peak performance.",
+        "We ensure your apps function across Android and other supported systems.",
     },
     {
-      title: "Error Code Resolution",
+      title: "Improved Driver Convenience",
       description:
-        "Clear system warnings and identify root causes to prevent further issues.",
+        "Access real-time maps, traffic updates, voice assistants, and in-car entertainment with ease.",
     },
     {
-      title: "ECU Communication Checks",
+      title: "Safe Operation",
       description:
-        "Ensure all control units are synced and responding as expected.",
+        "Maintain system responsiveness and safe use while driving through optimized interface setup.",
     },
     {
-      title: "Improved Efficiency and Safety",
+      title: "Enhanced Vehicle Value",
       description:
-        "Proper calibration helps avoid energy loss, braking errors, or misaligned system responses.",
+        "App integration can improve both day-to-day use and long-term resale value.",
     },
   ]}
 />
@@ -229,29 +230,29 @@ export default function About() {
   heading="Frequently Asked Questions"
   faqs={[
     {
-      question: "When should I get my EV systems calibrated?",
+      question: "Can you install Android Auto on any EV?",
       answer:
-        "System calibration is recommended after a collision, module replacement, software update, or if you notice performance inconsistencies.",
+        "We support most EVs with Android-compatible systems. If your model doesn’t support it by default, we’ll explore alternative integration options.",
     },
     {
-      question: "What systems are included in the diagnostics?",
+      question: "What about apps that aren’t available through Android Auto?",
       answer:
-        "We check battery management systems, electric drive units, sensor arrays, ECUs, and more, depending on the vehicle make.",
+        "We can configure certain custom or third-party apps, depending on the vehicle’s operating system and display unit compatibility.",
     },
     {
-      question: "Is calibration only for advanced driver-assist systems?",
+      question: "Is the integration permanent or reversible?",
       answer:
-        "No. While ADAS calibration is critical, we also calibrate thermal systems, steering, regenerative braking, and charging components.",
+        "It’s fully reversible. Settings and apps can be updated or removed if needed, without affecting your vehicle’s core systems.",
     },
     {
-      question: "How long does the diagnostic and calibration process take?",
+      question: "Does app integration impact battery or performance?",
       answer:
-        "Most diagnostics are completed in a few hours. If calibration is required, the timeline depends on the system and EV model.",
+        "No. When done correctly, integration works through existing infotainment systems and has no impact on range or vehicle performance.",
     },
     {
-      question: "Can this service help improve performance or range?",
+      question: "How long does app integration take?",
       answer:
-        "Yes. Properly calibrated systems reduce inefficiencies, help avoid system conflict, and ensure smoother, safer driving.",
+        "Most setups are completed within 1 to 2 hours, depending on the app platform and the level of customization required.",
     },
   ]}
 />

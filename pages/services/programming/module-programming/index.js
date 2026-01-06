@@ -183,7 +183,7 @@ export default function About() {
 
 
 <ServiceBenefits
-  heading="Benefits of Module Programming"
+  title="Benefits of Module Programming"
   items={[
     {
       title: "New Module Integration",
