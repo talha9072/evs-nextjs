@@ -124,6 +124,12 @@ export default function App({ Component, pageProps }) {
       )}
 
 
+{/* ✅ WHATSAPP BUTTON */}
+    <a href="https://wa.me/971566017771" className="whatsapp-button" target="_blank" rel="noreferrer"
+    >
+      <img src="/img/whatsapp.svg" alt="WhatsApp" loading="lazy"
+      />
+    </a>
 
     </>
   );
