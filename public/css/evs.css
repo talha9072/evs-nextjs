@@ -460,3 +460,8 @@ footer .nav-link {
     display: block !important;
   }
 }
+
+.pagination-style-01{
+    display: flex;
+    flex-wrap: wrap !important;
+}

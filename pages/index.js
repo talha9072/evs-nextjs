@@ -102,7 +102,7 @@ export default function Home() {
         {/* Pagination (REQUIRED by blog.js) */}
         <div
           id="pagination"
-          className="mt-5 d-flex justify-content-center"
+          className="mt-5 d-flex justify-content-center flex-wrap gap-2"
         ></div>
 
       </div>

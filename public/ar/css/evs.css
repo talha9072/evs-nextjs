@@ -365,4 +365,8 @@ footer .nav-link {
     line-height: 2.2em; /* increased spacing between items */
   }
 
- 
+
+.pagination-style-01{
+    display: flex;
+    flex-wrap: wrap !important;
+}
