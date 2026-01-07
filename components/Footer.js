@@ -101,7 +101,7 @@ export default function Footer() {
           <div className="row align-items-center">
             <div className="col-lg-4 text-center text-lg-start md-mb-15px">
               <span className="fs-16 fw-500">
-                © Copyright 2025 EVS - Electric Vehicle Services.
+                © Copyright 2026 EVS - Electric Vehicle Services.
                 <br />
                 Website crafted by{" "}
                 <a
