@@ -269,3 +269,10 @@ header .push-menu .close-menu{
     display: block !important;
   }
 }
+
+@media (max-width: 1024px) {
+  .arabic-page section.ipad-top-space-margin {
+   margin-top: 0 !important;
+        padding-top: 10rem !important;
+  }
+}
