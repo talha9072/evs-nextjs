@@ -1,30 +1,31 @@
 import Head from "next/head";
-import ScrollProgressEn from "@/components/common/ScrollProgress";
+import ScrollProgress from "@/components/ar/common/ScrollProgress";
 import ContactForm from "@/components/common/ContactForm";
 
 
-export default function About() {
+
+
+export default function ArabicHome() {
   return (
     <>
-      {/* ================= SEO HEAD ================= */}
-      <Head>
+     <Head>
   {/* Title */}
-  <title>Contact EVS UAE | Book Your Electric Vehicle Service Today</title>
+  <title>تواصل مع إي في إس الإمارات | احجز خدمة مركبتك الكهربائية اليوم</title>
 
   {/* Meta Description */}
   <meta
     name="description"
-    content="Get in touch with EVS UAE for expert electric vehicle services. Book appointments, ask questions, or locate your nearest EV service center across the UAE."
+    content="تواصل مع إي في إس الإمارات لخدمات المركبات الكهربائية المتخصصة. احجز مواعيد، اطرح أسئلة، أو حدد أقرب مركز خدمة في الإمارات."
   />
 
   {/* Meta Keywords */}
   <meta
     name="keywords"
-    content="contact EVS UAE, EV service booking UAE, electric vehicle support Dubai, schedule EV maintenance, EV service center UAE"
+    content="تواصل مع إي في إس الإمارات, حجز خدمة المركبات الكهربائية الإمارات, دعم المركبات الكهربائية دبي, التواصل مع إي في إس, جدولة صيانة المركبات الكهربائية, تواصل مع مركز المركبات الكهربائية الإمارات, الوصول إلى متخصصي المركبات الكهربائية الإمارات"
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://evsuae.com/contact" />
+  <link rel="canonical" href="https://evsuae.com/ar/contact" />
 
   {/* Robots */}
   <meta
@@ -32,28 +33,31 @@ export default function About() {
     content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
   />
 
-  {/* Author / Publisher */}
-  <meta name="author" content="Admin" />
-  <meta name="publisher" content="Electric Vehicle Services UAE" />
+  {/* Author & Publisher */}
+  <meta name="author" content="الإدارة" />
+  <meta name="publisher" content="خدمات المركبات الكهربائية الإمارات" />
 
   {/* Viewport */}
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   {/* Language */}
-  <meta httpEquiv="Content-Language" content="en" />
+  <meta httpEquiv="Content-Language" content="ar" />
+
+  {/* Language alternates */}
   <link rel="alternate" hrefLang="en" href="https://evsuae.com/contact" />
   <link rel="alternate" hrefLang="ar" href="https://evsuae.com/ar/contact" />
+  <link rel="alternate" hrefLang="x-default" href="https://evsuae.com/contact" />
 
   {/* Open Graph */}
   <meta
     property="og:title"
-    content="Contact EVS UAE | Book Your Electric Vehicle Service Today"
+    content="تواصل مع إي في إس الإمارات | احجز خدمة مركبتك الكهربائية اليوم"
   />
   <meta
     property="og:description"
-    content="Get in touch with EVS UAE for expert electric vehicle services. Book appointments, ask questions, or locate your nearest EV service center across the UAE."
+    content="تواصل مع إي في إس الإمارات لخدمات المركبات الكهربائية المتخصصة. احجز مواعيد، اطرح أسئلة، أو حدد أقرب مركز خدمة في الإمارات."
   />
-  <meta property="og:url" content="https://evsuae.com/contact" />
+  <meta property="og:url" content="https://evsuae.com/ar/contact" />
   <meta property="og:type" content="website" />
   <meta
     property="og:image"
@@ -64,116 +68,106 @@ export default function About() {
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="Contact EVS UAE | Book Your Electric Vehicle Service Today"
+    content="تواصل مع إي في إس الإمارات | احجز خدمة مركبتك الكهربائية اليوم"
   />
   <meta
     name="twitter:description"
-    content="Get in touch with EVS UAE for expert electric vehicle services across the UAE."
+    content="تواصل مع إي في إس الإمارات لخدمات المركبات الكهربائية المتخصصة. احجز مواعيد، اطرح أسئلة، أو حدد أقرب مركز خدمة في الإمارات."
   />
   <meta
     name="twitter:image"
     content="https://evsuae.com/.netlify/images?url=/img/graph-img.webp"
   />
 
-  {/* Structured Data – Contact Page */}
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "ContactPage",
-        name: "Contact Electric Vehicle Services UAE",
-        description:
-          "Get in touch with Electric Vehicle Services UAE for service inquiries, appointments, or general support.",
-        url: "https://evsuae.com/contact",
-        mainEntity: {
-          "@type": "AutomotiveBusiness",
-          name: "Electric Vehicle Services UAE",
-          url: "https://evsuae.com/",
-          logo:
-            "https://evsuae.com/.netlify/images?url=/img/EVS-logo.svg",
-          telephone: "+971600500387",
-          email: "contact@evsuae.com",
-          address: {
-            "@type": "PostalAddress",
-            addressCountry: "AE",
-          },
-          contactPoint: {
-            "@type": "ContactPoint",
-            telephone: "+971600500387",
-            email: "contact@evsuae.com",
-            contactType: "Customer Service",
-            availableLanguage: ["English", "Arabic"],
-          },
-        },
-      }),
-    }}
+  {/* Favicons */}
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  {/* Preconnect */}
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+    crossOrigin="anonymous"
   />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossOrigin="anonymous"
+  />
+
+  {/* Charset & Compatibility */}
+  <meta charSet="UTF-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 </Head>
 
+      {/* RTL WRAPPER */}
+      <div dir="rtl" className="arabic-page">
+        {/* ✅ YAHAN SE BODY KA CONTENT AAYEGA */}
+        {/* header/footer automatic via _app.js */}
 
-{/* start page title */}
-      <section className="ipad-top-space-margin bg-black overflow-hidden p-0 page-title-big-typography pt-5">
-        <div className="container">
-          <div className="row justify-content-center">
+<section className="ipad-top-space-margin bg-black overflow-hidden p-0 page-title-big-typography pt-5" dir="rtl">
+  <div className="container">
+    <div className="row justify-content-center">
 
-            {/* LEFT */}
-            <div
-              className="col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start page-title-extra-small sm-pt-50px sm-pb-50px"
-              data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'
-            >
-              <h2 className="fw-700 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100">
-                Contact Us<span className="text-base-color">.</span>
-              </h2>
+      {/* LEFT CONTENT */}
+      <div
+        className="col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start page-title-extra-small sm-pt-50px sm-pb-50px"
+        data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'
+      >
+        <h2 className="fw-700 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100 text-end">
+          تواصلوا معنا<span className="text-base-color">.</span>
+        </h2>
 
-              <div className="d-flex align-items-center gap-3 flex-wrap">
-                <a
-                  href="tel:600500387"
-                  className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
-                >
-                  600 500 387 <i className="fa fa-phone-alt"></i>
-                  <span className="bg-white"></span>
-                </a>
+        <div className="d-flex align-items-center gap-3 flex-wrap">
+          <a
+            href="tel:600500387"
+            className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
+          >
+            600 500 387 <i className="fa fa-phone-alt"></i>
+            <span className="bg-white"></span>
+          </a>
 
-                <a
-                  href="https://wa.me/971566017771"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
-                >
-                  WHATSAPP US <i className="fa-brands fa-whatsapp"></i>
-                  <span className="bg-white"></span>
-                </a>
-              </div>
-            </div>
-
-            {/* RIGHT */}
-            <div className="col-md-6">
-              <div className="py-5">
-                <div className="row">
-                  <div className="col-9">
-                    <h2 className="fw-700 ls-minus-1px alt-font text-white">
-                      Send us a <span className="text-base-color">message</span>
-                    </h2>
-                  </div>
-                  <div className="col-3 text-end">
-                    <i className="bi bi-send icon-large text-base-color"></i>
-                  </div>
-                </div>
-
-                {/* NETLIFY FORM */}
-                <ContactForm />
-              </div>
-            </div>
-
-          </div>
+          <a
+            href="https://wa.me/971566017771"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
+          >
+            تواصلوا معنا عبر واتساب <i className="fa-brands fa-whatsapp"></i>
+            <span className="bg-white"></span>
+          </a>
         </div>
-      </section>
-      {/* end page title */}
+      </div>
+
+      {/* RIGHT FORM */}
+      <div className="col-md-6">
+        <div className="py-5">
+          <div className="row">
+            <div className="col-9">
+              <h2 className="fw-700 ls-minus-1px alt-font text-white">
+                أرسلوا لنا <span className="text-base-color">رسالة</span>
+              </h2>
+            </div>
+            <div className="col-3 text-start">
+              <i className="bi bi-send icon-large text-base-color"></i>
+            </div>
+          </div>
+
+          {/* ✅ REUSED ENGLISH CONTACT FORM COMPONENT */}
+          <ContactForm />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
-      {/* start section */}
-<section className="position-relative">
+
+<section className="position-relative" dir="rtl">
   <div
     className="background-position-center-top position-absolute top-0 left-0px w-100 h-100"
     style={{
@@ -202,26 +196,33 @@ export default function About() {
           ></iframe>
 
           <div className="feature-box-content last-paragraph-no-margin">
-            <a href="/evs-abu-dhabi" className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3">
-              EVS Abu Dhabi
+            <a
+              href="/ar/evs-abu-dhabi"
+              className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3"
+            >
+              إي في إس أبوظبي
             </a>
+
             <span className="d-block">
-              <span className="text-white fw-600">T:</span>{" "}
-              <a href="tel:+971547133313">+971 54 713 3313</a>
+              <span className="text-white fw-600">هـ:</span>{" "}
+              <a href="tel:+971547133313" dir="ltr">+971 54 713 3313</a>
             </span>
+
             <span className="d-block">
-              <span className="text-white fw-600">E:</span>{" "}
+              <span className="text-white fw-600">بـ:</span>{" "}
               <a href="mailto:info@evsuae.com" className="text-white fw-600">
                 info@evsuae.com
               </a>
             </span>
+
             <a
               href="https://maps.app.goo.gl/8yhst7aDcJW8mWs59"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
             >
-              Get Directions <i className="fa fa-location-arrow"></i>
+              احصل على الاتجاهات
+              <i className="fa fa-location-arrow"></i>
               <span className="bg-white"></span>
             </a>
           </div>
@@ -242,26 +243,33 @@ export default function About() {
           ></iframe>
 
           <div className="feature-box-content last-paragraph-no-margin">
-            <a href="/evs-dubai" className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3">
-              EVS Dubai
+            <a
+              href="/ar/evs-dubai"
+              className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3"
+            >
+              إي في إس دبي
             </a>
+
             <span className="d-block">
-              <span className="text-white fw-600">T:</span>{" "}
-              <a href="tel:+971566017771">+971 56 60 17771</a>
+              <span className="text-white fw-600">هـ:</span>{" "}
+              <a href="tel:+971566017771" dir="ltr">+971 56 60 17771</a>
             </span>
+
             <span className="d-block">
-              <span className="text-white fw-600">E:</span>{" "}
+              <span className="text-white fw-600">بـ:</span>{" "}
               <a href="mailto:info@evsuae.com" className="text-white fw-600">
                 info@evsuae.com
               </a>
             </span>
+
             <a
               href="https://maps.app.goo.gl/ZqGdaDk6r2vpE5cXA"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
             >
-              Get Directions <i className="fa fa-location-arrow"></i>
+              احصل على الاتجاهات
+              <i className="fa fa-location-arrow"></i>
               <span className="bg-white"></span>
             </a>
           </div>
@@ -282,26 +290,33 @@ export default function About() {
           ></iframe>
 
           <div className="feature-box-content last-paragraph-no-margin">
-            <a href="/evs-ajman" className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3">
-              EVS Ajman
+            <a
+              href="/ar/evs-ajman"
+              className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3"
+            >
+              إي في إس عجمان
             </a>
+
             <span className="d-block">
-              <span className="text-white fw-600">T:</span>{" "}
-              <a href="tel:+971564556555">+971 56 455 6555</a>
+              <span className="text-white fw-600">هـ:</span>{" "}
+              <a href="tel:+971564556555" dir="ltr">+971 56 455 6555</a>
             </span>
+
             <span className="d-block">
-              <span className="text-white fw-600">E:</span>{" "}
+              <span className="text-white fw-600">بـ:</span>{" "}
               <a href="mailto:info@evsuae.com" className="text-white fw-600">
                 info@evsuae.com
               </a>
             </span>
+
             <a
               href="https://maps.app.goo.gl/etWuGuKCFgaQ21ta8"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
             >
-              Get Directions <i className="fa fa-location-arrow"></i>
+              احصل على الاتجاهات
+              <i className="fa fa-location-arrow"></i>
               <span className="bg-white"></span>
             </a>
           </div>
@@ -322,26 +337,33 @@ export default function About() {
           ></iframe>
 
           <div className="feature-box-content last-paragraph-no-margin">
-            <a href="/evs-alain" className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3">
-              EVS Alain
+            <a
+              href="/ar/evs-alain"
+              className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3"
+            >
+              إي في إس العين
             </a>
+
             <span className="d-block">
-              <span className="text-white fw-600">T:</span>{" "}
-              <a href="tel:600500387">600 500 387</a>
+              <span className="text-white fw-600">هـ:</span>{" "}
+              <a href="tel:600500387" dir="ltr">600 500 387</a>
             </span>
+
             <span className="d-block">
-              <span className="text-white fw-600">E:</span>{" "}
+              <span className="text-white fw-600">بـ:</span>{" "}
               <a href="mailto:info@evsuae.com" className="text-white fw-600">
                 info@evsuae.com
               </a>
             </span>
+
             <a
               href="https://maps.app.goo.gl/wUXqKuLDtkWffKPf6"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
             >
-              Get Directions <i className="fa fa-location-arrow"></i>
+              احصل على الاتجاهات
+              <i className="fa fa-location-arrow"></i>
               <span className="bg-white"></span>
             </a>
           </div>
@@ -353,7 +375,7 @@ export default function About() {
         <div className="feature-box p-8">
           <iframe
             className="mb-3 border-radius-15px"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.334979669202!2d55.650398!3d25.3600874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f3002c630b0b%3A0x10a29e496b6bbf28!2sEVS%20Electric%20Vehicle%20Services%20-%20Sharjah!5e0!3m2!1sen!2s!4v1764054203991!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.334979669202!2d55.650398!3d25.3600874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f3002c630b0b%3A0x10a29e496b6bbf28!2sEVS%20Electric%20Vehicle%20Services%20-%20Sharjah!5e0!3m2!1sar!2s!4v1764054203991!5m2!1sar!2s"
             width="100%"
             height="300"
             style={{ border: 0 }}
@@ -362,26 +384,33 @@ export default function About() {
           ></iframe>
 
           <div className="feature-box-content last-paragraph-no-margin">
-            <a href="/evs-sharjah" className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3">
-              EVS Sharjah
+            <a
+              href="/ar/evs-sharjah"
+              className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3"
+            >
+              إي في إس الشارقة
             </a>
+
             <span className="d-block">
-              <span className="text-white fw-600">T:</span>{" "}
-              <a href="tel:0569863920">056 986 3920</a>
+              <span className="text-white fw-600">هـ:</span>{" "}
+              <a href="tel:+971569863920" dir="ltr">+971 56 986 3920</a>
             </span>
+
             <span className="d-block">
-              <span className="text-white fw-600">E:</span>{" "}
+              <span className="text-white fw-600">بـ:</span>{" "}
               <a href="mailto:info@evsuae.com" className="text-white fw-600">
                 info@evsuae.com
               </a>
             </span>
+
             <a
               href="https://maps.app.goo.gl/nrLKQJuTK27B7K2i7"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
             >
-              Get Directions <i className="fa fa-location-arrow"></i>
+              احصل على الاتجاهات
+              <i className="fa fa-location-arrow"></i>
               <span className="bg-white"></span>
             </a>
           </div>
@@ -391,24 +420,27 @@ export default function About() {
     </div>
   </div>
 </section>
-{/* end section */}
 
 
-      
+        
+ <ScrollProgress />
 
 
-          
-          
-          
 
-<ScrollProgressEn />
+      </div>
     </>
   );
 }
+
+
 export async function getStaticProps() {
   return {
     props: {
+      noHeader: false,
+      noFooter: false, // optional
       useScrollContainer: false,
+      extraScripts: ["/js/blog.js"],
     },
+    
   };
 }
