@@ -246,7 +246,7 @@ export default function About() {
 
                 <div className="feature-box-content last-paragraph-no-margin">
                   <a
-                    href="./evs-abu-dhabi.html"
+                    href="./evs-abu-dhabi"
                     className="d-inline-block fw-700 text-white mb-5px alt-font fs-19"
                   >
                     EVS Abu Dhabi
@@ -293,7 +293,7 @@ export default function About() {
 
                 <div className="feature-box-content last-paragraph-no-margin">
                   <a
-                    href="./evs-dubai.html"
+                    href="./evs-dubai"
                     className="d-inline-block fw-700 text-white mb-5px alt-font fs-19"
                   >
                     EVS Dubai
@@ -340,7 +340,7 @@ export default function About() {
 
                 <div className="feature-box-content last-paragraph-no-margin">
                   <a
-                    href="./evs-ajman.html"
+                    href="./evs-ajman"
                     className="d-inline-block fw-700 text-white mb-5px alt-font fs-19"
                   >
                     EVS Ajman
@@ -387,7 +387,7 @@ export default function About() {
 
                 <div className="feature-box-content last-paragraph-no-margin">
                   <a
-                    href="./evs-alain.html"
+                    href="./evs-alain"
                     className="d-inline-block fw-700 text-white mb-5px alt-font fs-19"
                   >
                     EVS Alain
@@ -434,7 +434,7 @@ export default function About() {
 
                 <div className="feature-box-content last-paragraph-no-margin">
                   <a
-                    href="./evs-sharjah.html"
+                    href="./evs-sharjah"
                     className="d-inline-block fw-700 text-white mb-5px alt-font fs-19"
                   >
                     EVS Sharjah

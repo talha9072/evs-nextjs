@@ -134,7 +134,7 @@ export default function ArabicHome() {
           <div className="service-box-content">
             {/* ✅ THIS is the important anchor */}
             <a
-              href="https://evsuae.com/ar/zeekr/zeekr-x.html"
+              href="https://evsuae.com/ar/zeekr/zeekr-x"
               aria-label="تعرف على المزيد عن زيكر إكس"
               className="d-block text-decoration-none"
             >
@@ -154,7 +154,7 @@ export default function ArabicHome() {
 
             {/* Button anchor stays separate */}
             <a
-              href="https://evsuae.com/ar/zeekr/zeekr-x.html"
+              href="https://evsuae.com/ar/zeekr/zeekr-x"
               className="btn btn-medium btn-base-color btn-round-edge btn-box-shadow fs-16 mt-2"
               aria-label="تعرف على المزيد عن زيكر"
             >

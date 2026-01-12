@@ -142,7 +142,7 @@ export default function ArabicHome() {
       {/* ================= BYD HAN ================= */}
       <div className="col-lg-4 mb-4">
         <div className="service-box">
-          <a href="/ar/byd/byd-han.html" aria-label="تعرف على المزيد عن بي واي دي هان">
+          <a href="/ar/byd/byd-han" aria-label="تعرف على المزيد عن بي واي دي هان">
             <img
               src="https://evsuae.com/.netlify/images?url=/img/brands/BYD-han.jpg&q=70"
               srcSet="
@@ -159,7 +159,7 @@ export default function ArabicHome() {
           </a>
 
           <div className="service-box-content">
-            <a href="/ar/byd/byd-han.html">
+            <a href="/ar/byd/byd-han">
               <h3 className="fs-26 fw-500 alt-font ls-1 text-uppercase text-white mb-0">
                 بي واي دي هان
               </h3>
@@ -172,7 +172,7 @@ export default function ArabicHome() {
               </p>
             </a>
 
-            <a href="/ar/byd/byd-han.html" className="btn btn-medium btn-base-color btn-round-edge btn-box-shadow fs-16 mt-2">
+            <a href="/ar/byd/byd-han" className="btn btn-medium btn-base-color btn-round-edge btn-box-shadow fs-16 mt-2">
               تعرف على المزيد
             </a>
           </div>
@@ -222,7 +222,7 @@ export default function ArabicHome() {
       {/* ================= BYD ATTO 3 ================= */}
       <div className="col-lg-4 mb-4">
         <div className="service-box">
-          <a href="/ar/byd/byd-atto-3.html">
+          <a href="/ar/byd/byd-atto-3">
             <img
               src="https://evsuae.com/.netlify/images?url=/img/brands/BYD-Atto3.jpg&q=70"
               srcSet="
@@ -239,7 +239,7 @@ export default function ArabicHome() {
           </a>
 
           <div className="service-box-content">
-            <a href="/ar/byd/byd-atto-3.html">
+            <a href="/ar/byd/byd-atto-3">
               <h3 className="fs-26 fw-500 alt-font ls-1 text-uppercase text-white mb-0">
                 بي واي دي آتو 3
               </h3>
@@ -253,7 +253,7 @@ export default function ArabicHome() {
               </p>
             </a>
 
-            <a href="/ar/byd/byd-atto-3.html" className="btn btn-medium btn-base-color btn-round-edge btn-box-shadow fs-16 mt-2">
+            <a href="/ar/byd/byd-atto-3" className="btn btn-medium btn-base-color btn-round-edge btn-box-shadow fs-16 mt-2">
               تعرف على المزيد
             </a>
           </div>
@@ -263,7 +263,7 @@ export default function ArabicHome() {
       {/* ================= BYD SONG PLUS ================= */}
       <div className="col-lg-4 mb-4">
         <div className="service-box">
-          <a href="/ar/byd/byd-song-plus.html">
+          <a href="/ar/byd/byd-song-plus">
             <img
               src="https://evsuae.com/.netlify/images?url=/img/brands/BYD-Songplus.jpg&q=70"
               width="377"
@@ -273,7 +273,7 @@ export default function ArabicHome() {
           </a>
 
           <div className="service-box-content">
-            <a href="/ar/byd/byd-song-plus.html">
+            <a href="/ar/byd/byd-song-plus">
               <h3 className="fs-26 fw-500 alt-font ls-1 text-uppercase text-white mb-0">
                 بي واي دي سونغ بلاس
               </h3>
@@ -287,7 +287,7 @@ export default function ArabicHome() {
               </p>
             </a>
 
-            <a href="/ar/byd/byd-song-plus.html" className="btn btn-medium btn-base-color btn-round-edge btn-box-shadow fs-16 mt-2">
+            <a href="/ar/byd/byd-song-plus" className="btn btn-medium btn-base-color btn-round-edge btn-box-shadow fs-16 mt-2">
               تعرف على المزيد
             </a>
           </div>

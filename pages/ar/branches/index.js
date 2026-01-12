@@ -176,7 +176,7 @@ export default function ArabicHome() {
 
                 <div className="feature-box-content last-paragraph-no-margin">
                   <a
-                    href="https://evsuae.com/ar/evs-abu-dhabi.html"
+                    href="https://evsuae.com/ar/evs-abu-dhabi"
                     className="d-inline-block fw-700 text-white mb-5px alt-font fs-19"
                   >
                     إي في إس أبوظبي
@@ -222,7 +222,7 @@ export default function ArabicHome() {
 
                 <div className="feature-box-content last-paragraph-no-margin">
                   <a
-                    href="https://evsuae.com/ar/evs-dubai.html"
+                    href="https://evsuae.com/ar/evs-dubai"
                     className="d-inline-block fw-700 text-white mb-5px alt-font fs-19"
                   >
                     إي في إس دبي
@@ -268,7 +268,7 @@ export default function ArabicHome() {
 
                 <div className="feature-box-content last-paragraph-no-margin">
                   <a
-                    href="https://evsuae.com/ar/evs-ajman.html"
+                    href="https://evsuae.com/ar/evs-ajman"
                     className="d-inline-block fw-700 text-white mb-5px alt-font fs-19"
                   >
                     إي في إس عجمان
@@ -314,7 +314,7 @@ export default function ArabicHome() {
 
                 <div className="feature-box-content last-paragraph-no-margin">
                   <a
-                    href="https://evsuae.com/ar/evs-alain.html"
+                    href="https://evsuae.com/ar/evs-alain"
                     className="d-inline-block fw-700 text-white mb-5px alt-font fs-19"
                   >
                     إي في إس العين
@@ -360,7 +360,7 @@ export default function ArabicHome() {
 
                 <div className="feature-box-content last-paragraph-no-margin">
                   <a
-                    href="https://evsuae.com/ar/evs-sharjah.html"
+                    href="https://evsuae.com/ar/evs-sharjah"
                     className="d-inline-block fw-700 text-white mb-5px alt-font fs-19"
                   >
                     إي في إس الشارقة

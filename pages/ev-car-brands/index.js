@@ -197,7 +197,7 @@ export default function EVBrands() {
         {/* spacer pushes button down */}
         <div className="btn-box mt-auto pb-4 mx-auto">
           <a
-            href="rox.html"
+            href="rox"
             className="btn btn-large btn-round-edge bg-base-color btn-slide-right me-15px mb-2"
           >
             ROX Models<span className="bg-white"></span>
@@ -237,7 +237,7 @@ export default function EVBrands() {
 
         <div className="btn-box mx-auto">
           <a
-            href="zeekr.html"
+            href="zeekr"
             className="btn btn-large btn-round-edge bg-base-color btn-slide-right me-15px mb-2"
           >
             Zeekr Models<span className="bg-white"></span>
@@ -279,7 +279,7 @@ export default function EVBrands() {
         {/* spacer pushes button down */}
         <div className="btn-box mt-auto pb-4 mx-auto">
           <a
-            href="avatr.html"
+            href="avatr"
             className="btn btn-large btn-round-edge bg-base-color btn-slide-right me-15px mb-2"
           >
             AVATR Models<span className="bg-white"></span>
@@ -319,7 +319,7 @@ export default function EVBrands() {
 
         <div className="btn-box mx-auto">
           <a
-            href="byd.html"
+            href="byd"
             className="btn btn-large btn-round-edge bg-base-color btn-slide-right me-15px mb-2"
           >
             BYD Models<span className="bg-white"></span>
@@ -359,7 +359,7 @@ export default function EVBrands() {
 
         <div className="btn-box align-self-end mx-auto">
           <a
-            href="tesla.html"
+            href="tesla"
             className="btn btn-large btn-round-edge bg-base-color btn-slide-right me-15px mb-2"
           >
             Tesla Service<span className="bg-white"></span>

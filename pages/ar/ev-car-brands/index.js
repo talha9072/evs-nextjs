@@ -176,7 +176,7 @@ export default function ArabicHome() {
 
         <div className="btn-box mt-auto pb-4 mx-auto">
           <a
-            href="/ar/rox.html"
+            href="/ar/rox"
             className="btn btn-large btn-round-edge bg-base-color btn-slide-right me-15px mb-2"
           >
             طرازات روكس<span className="bg-white"></span>
@@ -215,7 +215,7 @@ export default function ArabicHome() {
 
         <div className="btn-box mx-auto">
           <a
-            href="/ar/zeekr.html"
+            href="/ar/zeekr"
             className="btn btn-large btn-round-edge bg-base-color btn-slide-right me-15px mb-2"
           >
             طرازات زيكر<span className="bg-white"></span>
@@ -254,7 +254,7 @@ export default function ArabicHome() {
 
         <div className="btn-box mt-auto pb-4 mx-auto">
           <a
-            href="/ar/avatr.html"
+            href="/ar/avatr"
             className="btn btn-large btn-round-edge bg-base-color btn-slide-right me-15px mb-2"
           >
             طرازات أفاتر<span className="bg-white"></span>
@@ -293,7 +293,7 @@ export default function ArabicHome() {
 
         <div className="btn-box mx-auto">
           <a
-            href="/ar/byd.html"
+            href="/ar/byd"
             className="btn btn-large btn-round-edge bg-base-color btn-slide-right me-15px mb-2"
           >
             طرازات بي واي دي<span className="bg-white"></span>
@@ -332,7 +332,7 @@ export default function ArabicHome() {
 
         <div className="btn-box align-self-end mx-auto">
           <a
-            href="/ar/tesla.html"
+            href="/ar/tesla"
             className="btn btn-large btn-round-edge bg-base-color btn-slide-right me-15px mb-2"
           >
             خدمة تسلا<span className="bg-white"></span>

@@ -147,7 +147,7 @@ export default function ArabicHome() {
 
             {/* Button kept separate (same as original pattern) */}
             <a
-              href="https://evsuae.com/ar/rox/rox-01.html"
+              href="https://evsuae.com/ar/rox/rox-01"
               className="btn btn-medium btn-base-color btn-round-edge btn-box-shadow fs-16 mt-2"
               aria-label="تعرف على المزيد عن روكس"
             >
