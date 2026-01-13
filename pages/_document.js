@@ -12,10 +12,6 @@ export default function Document() {
         <link rel="stylesheet" href="/css/responsive.min.css" />
         <link rel="stylesheet" href="/css/evs.css" />
 
-<meta
-          name="facebook-domain-verification"
-          content="sk2r8gyeykmhv0dcojlcbgez8lbbcp"
-        />
         
       </Head>
 

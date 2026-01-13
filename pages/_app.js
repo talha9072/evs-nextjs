@@ -93,59 +93,6 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-    {/* ===== GOOGLE TAG MANAGER (OFFICIAL FULL SCRIPT) ===== */}
-<Script id="gtm-init" strategy="afterInteractive">
-  {`
-    (function(w,d,s,l,i){
-      w[l]=w[l]||[];
-      w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-      var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),
-          dl=l!='dataLayer'?'&l='+l:'';
-      j.async=true;
-      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-      f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NT2KKJB');
-  `}
-</Script>
-
-{/* ===== UTM KEEPER ===== */}
-<Script id="utm-keeper" strategy="afterInteractive">
-  {`
-    (function () {
-      function getUTMParams() {
-        const params = new URLSearchParams(window.location.search);
-        const utms = {};
-        for (const [key, value] of params.entries()) {
-          if (key.startsWith('utm_')) utms[key] = value;
-        }
-        return utms;
-      }
-
-      const utms = getUTMParams();
-      if (!Object.keys(utms).length) return;
-
-      document.querySelectorAll('a[href]').forEach(function(link) {
-        const href = link.getAttribute('href');
-        if (
-          href &&
-          !href.startsWith('#') &&
-          !href.startsWith('mailto:') &&
-          !href.startsWith('tel:') &&
-          (href.startsWith('/') || href.includes(window.location.hostname))
-        ) {
-          try {
-            const url = new URL(href, window.location.origin);
-            Object.keys(utms).forEach(function(k) {
-              url.searchParams.set(k, utms[k]);
-            });
-            link.setAttribute('href', url.toString());
-          } catch (e) {}
-        }
-      });
-    })();
-  `}
-</Script>
       {/* ===== LEGACY JS ===== */}
       {loadLegacy && (
         <>
