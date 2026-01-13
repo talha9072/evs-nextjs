@@ -13,7 +13,7 @@ export default function Home() {
     <>
 
 
-import Head from "next/head";
+
 
 <Head>
   {/* ================= PRIMARY META ================= */}
@@ -21,7 +21,7 @@ import Head from "next/head";
 
   <meta
     name="description"
-    content="Trusted EV care since 2020. EVS operates expert electric vehicle service centers across the UAE – Dubai, Abu Dhabi, Ajman, Al Ain & Sharjah."
+    content="Trusted EV care since 2020. EVS runs expert electric vehicle service centers across the UAE, providing professional diagnostics, maintenance, and repair services in Dubai, Abu Dhabi, Ajman, Al Ain & Sharjah."
   />
 
   <meta
