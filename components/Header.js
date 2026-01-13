@@ -622,18 +622,9 @@ export default function Header() {
                   <span className="text-white fs-16 ls-05px">Connect with us</span>
                   <div className="h-1px w-90 lg-w-100 bg-white-transparent-extra-light mt-10px mb-10px"></div>
                   <p className="fs-15 lh-28 w-90 xl-w-100 lg-mb-0">
-                    <a
-  href="#"
-  className="d-block text-white-hover"
-  onClick={(e) => {
-    e.preventDefault();
-    const user = "info";
-    const domain = "evsuae.com";
-    window.location.href = `mailto:${user}@${domain}`;
-  }}
->
-  info@evsuae.com
-</a>
+                    <a href="mailto:info@evsuae.com" className="d-block text-white-hover">
+                      info@evsuae.com
+                    </a>
                     <a href="tel:+971566017771" className="text-white-hover">
                       +971 56 60 17771
                     </a>

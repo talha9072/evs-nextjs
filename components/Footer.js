@@ -22,15 +22,7 @@ export default function Footer() {
             </div>
             <div>
               <i className="feather icon-feather-mail icon-very-small me-10px"></i>
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href = "mailto:info@evsuae.com";
-                }}
-              >
-                info@evsuae.com
-              </a>
+              <a href="mailto:info@evsuae.com">info@evsuae.com</a>
             </div>
 
             <span className="text-white ls-05px d-block fs-17 mb-5px mt-15">Social Media</span>
