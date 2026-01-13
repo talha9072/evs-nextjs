@@ -22,7 +22,15 @@ export default function Footer() {
             </div>
             <div>
               <i className="feather icon-feather-mail icon-very-small me-10px"></i>
-              <a href="mailto:info@evsuae.com">info@evsuae.com</a>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = "mailto:info@evsuae.com";
+                }}
+              >
+                info@evsuae.com
+              </a>
             </div>
 
             <span className="text-white ls-05px d-block fs-17 mb-5px mt-15">Social Media</span>
@@ -76,12 +84,66 @@ export default function Footer() {
           {/* Column 3: Locations */}
           <div className="col-lg-3 col-md-4 col-sm-6 fs-16 lh-26 fw-500 last-paragraph-no-margin xs-mb-30px mt-lg-3">
             <span className="text-white ls-05px d-block fs-26 mb-15px">Locations</span>
-            <div><a href="https://evsuae.com/evs-abu-dhabi" target="_blank">EVS Abu Dhabi</a></div>
-            <div><a href="https://evsuae.com/evs-dubai" target="_blank">EVS Dubai</a></div>
-            <div><a href="https://evsuae.com/evs-ajman" target="_blank">EVS Ajman</a></div>
-            <div><a href="https://evsuae.com/evs-alain" target="_blank">EVS Al Ain</a></div>
-            <div><a href="https://evsuae.com/evs-riyadh" target="_blank">EVS Riyadh</a></div>
-            <div><a href="https://evsuae.com/evs-sharjah" target="_blank">EVS Sharjah</a></div>
+
+            <div>
+              <a
+                href="https://evsuae.com/evs-abu-dhabi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EVS Abu Dhabi
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="https://evsuae.com/evs-dubai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EVS Dubai
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="https://evsuae.com/evs-ajman"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EVS Ajman
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="https://evsuae.com/evs-alain"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EVS Al Ain
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="https://evsuae.com/evs-riyadh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EVS Riyadh
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="https://evsuae.com/evs-sharjah"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EVS Sharjah
+              </a>
+            </div>
           </div>
 
           {/* Column 4: Opening Hours */}
@@ -115,34 +177,58 @@ export default function Footer() {
               </span>
             </div>
             <div className="col-lg-8 text-center text-lg-end">
-              <ul className="footer-navbar fs-16 fw-500">
-                <li className="nav-item">
-                  <a href="https://evsuae.com/services/programming" target="_blank">
-                    Programming & Software
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="https://evsuae.com/services/mechanical" target="_blank">
-                    - Mechanical Services
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="https://evsuae.com/services/battery-electrical" target="_blank">
-                    - Battery & Electrical
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="https://evsuae.com/services/body-paint" target="_blank">
-                    - Body & Paint
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="https://evsuae.com/services/insurance" target="_blank">
-                    - Insurance
-                  </a>
-                </li>
-              </ul>
-            </div>
+  <ul className="footer-navbar fs-16 fw-500">
+    <li className="nav-item">
+      <a
+        href="https://evsuae.com/services/programming"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Programming & Software
+      </a>
+    </li>
+
+    <li className="nav-item">
+      <a
+        href="https://evsuae.com/services/mechanical"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        - Mechanical Services
+      </a>
+    </li>
+
+    <li className="nav-item">
+      <a
+        href="https://evsuae.com/services/battery-electrical"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        - Battery & Electrical
+      </a>
+    </li>
+
+    <li className="nav-item">
+      <a
+        href="https://evsuae.com/services/body-paint"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        - Body & Paint
+      </a>
+    </li>
+
+    <li className="nav-item">
+      <a
+        href="https://evsuae.com/services/insurance"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        - Insurance
+      </a>
+    </li>
+  </ul>
+</div>
           </div>
         </div>
       </div>

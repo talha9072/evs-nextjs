@@ -13,7 +13,10 @@ export default function Home() {
     <>
 
 
+import Head from "next/head";
+
 <Head>
+  {/* ================= PRIMARY META ================= */}
   <title>Expert EV Service Centers Across The UAE | EVS</title>
 
   <meta
@@ -26,8 +29,6 @@ export default function Home() {
     content="electric vehicle service, EV car service, electric car repair, EV garage Dubai, electric vehicle maintenance, EV software solutions"
   />
 
-  <link rel="canonical" href="https://evsuae.com/" />
-
   <meta
     name="robots"
     content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
@@ -36,12 +37,19 @@ export default function Home() {
   <meta name="author" content="Admin" />
   <meta name="publisher" content="Electric Vehicle Services UAE" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  {/* ✅ FIXED JSX ATTRIBUTES */}
+  <meta charSet="UTF-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
   <meta httpEquiv="Content-Language" content="en" />
-  <link rel="alternate" hrefLang="en-ae" href="https://evsuae.com/" />
 
-  {/* Open Graph */}
+  {/* ================= CANONICAL ================= */}
+  <link rel="canonical" href="https://evsuae.com/" />
+
+  {/* ================= HREFLANG ================= */}
+  <link rel="alternate" hrefLang="en-ae" href="https://evsuae.com/" />
+  <link rel="alternate" hrefLang="ar-ae" href="https://evsuae.com/ar" />
+  <link rel="alternate" hrefLang="x-default" href="https://evsuae.com/" />
+
+  {/* ================= OPEN GRAPH ================= */}
   <meta property="og:title" content="Expert EV Service Centers Across The UAE | EVS" />
   <meta
     property="og:description"
@@ -53,8 +61,10 @@ export default function Home() {
     property="og:image"
     content="https://evsuae.com/.netlify/images?url=/img/graph-img.webp"
   />
+  <meta property="og:site_name" content="EVS UAE" />
+  <meta property="og:locale" content="en_AE" />
 
-  {/* Twitter */}
+  {/* ================= TWITTER ================= */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Expert EV Service Centers Across The UAE | EVS" />
   <meta
@@ -66,10 +76,54 @@ export default function Home() {
     content="https://evsuae.com/.netlify/images?url=/img/graph-img.webp"
   />
 
-  {/* ✅ FIXED */}
-  <meta charSet="UTF-8" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+  {/* ================= STRUCTURED DATA: ORGANIZATION ================= */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Electric Vehicle Services UAE",
+        "alternateName": "EVS UAE",
+        "url": "https://evsuae.com/",
+        "logo": "https://evsuae.com/.netlify/images?url=/img/EVS-logo.svg",
+        "foundingDate": "2020",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "AE"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United Arab Emirates"
+        },
+        "sameAs": [
+          "https://www.facebook.com/",
+          "https://www.instagram.com/",
+          "https://www.linkedin.com/"
+        ]
+      })
+    }}
+  />
+
+  {/* ================= STRUCTURED DATA: WEBSITE ================= */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "EVS UAE",
+        "url": "https://evsuae.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://evsuae.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      })
+    }}
+  />
 </Head>
+
 
       <HeroSection />
       <ServicesHighlight />
