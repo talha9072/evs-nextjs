@@ -223,7 +223,52 @@ export default function ArabicHome() {
 <BranchesSection />
 <StatsCounterSection />
 <CustomerReviewsSection />
+
+
+<section className="snap-section pt-0 ps-7 pe-7 xl-ps-2 xl-pe-2 xs-px-0">
+  <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-15px mb-4 text-center">
+    أحدث المقالات<span className="text-base-color">.</span>
+  </h2>
+
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-12">
+
+        {/* Loader */}
+        <div
+          id="loader"
+          className="loader mx-auto d-flex justify-content-center"
+        ></div>
+
+        {/* Blog Grid (REQUIRED by blog.js) */}
+        <div
+          id="blog-container"
+          className="row blog-simple blog-wrapper grid-loading grid grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large"
+        ></div>
+
+        {/* ✅ Pagination (MISSING – REQUIRED by blog.js) */}
+        <div
+          id="pagination"
+          className="mt-5 d-flex justify-content-center flex-wrap gap-2"
+        ></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
       </div>
     </>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      
+      extraScripts: ["/ar/js/blog.js"],
+    },
+    
+  };
 }
