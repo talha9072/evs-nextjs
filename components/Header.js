@@ -350,7 +350,16 @@ export default function Header() {
                     >
                     EVS Dubai - Al Barsha <i className="fa-solid fa-angle-right btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
                     </a>
-                  </li>                  
+                  </li> 
+
+<li className="menu-item">
+                    <a
+                      className="nav-link alt-font text-uppercase text-white btn-sub-dropdown"
+                      href="https://evsuae.com/evs-dubai-al-twar-2"
+                    >
+                    EVS Dubai - Al Twar 2  <i className="fa-solid fa-angle-right btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
+                    </a>
+                  </li>                                    
                   
 
 
@@ -681,7 +690,13 @@ export default function Header() {
                       <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/evs-dubai-al-barsha">
                         EVS Dubai - Al Barsha
                       </a>
-                    </li>                    
+                    </li>  
+
+<li className="menu-item">
+                      <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/evs-dubai-al-twar-2">
+                        EVS Dubai - Al Twar 2
+                      </a>
+                    </li>  
 
                     
                   </ul>
