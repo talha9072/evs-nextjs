@@ -11,7 +11,6 @@ export default function ServiceMarquee() {
     const elements = document.querySelectorAll(".swiper");
 
     elements.forEach((el) => {
-      // Prevent double initialization
       if (el.swiper) return;
 
       let options = {};
@@ -26,7 +25,6 @@ export default function ServiceMarquee() {
     });
 
     return () => {
-      // Proper cleanup on unmount / route change
       swiperInstances.current.forEach((swiper) => {
         if (swiper && swiper.destroy) {
           swiper.destroy(true, true);
@@ -35,6 +33,20 @@ export default function ServiceMarquee() {
       swiperInstances.current = [];
     };
   }, []);
+
+  const services = [
+    "EVS Warranty Activation & Check-up",
+    "Air Conditioning Service",
+    "Air & Cabin Filter Replacement",
+    "Battery Replacement",
+    "Brake Service & Repair",
+    "Oil Change",
+    "Tyre Replacement & Alignment",
+    "Programming & Software Services",
+  ];
+
+  // 🔁 duplicate slides ONLY (no structural change)
+  const fullWidthServices = [...services, ...services];
 
   return (
     <section className="snap-section pt-45px pb-40px border-color-medium-gray sm-pt-35px sm-pb-30px">
@@ -45,7 +57,6 @@ export default function ServiceMarquee() {
             data-slider-options='{
               "slidesPerView":"auto",
               "spaceBetween":0,
-              "centeredSlides":true,
               "speed":12000,
               "loop":true,
               "allowTouchMove":false,
@@ -55,16 +66,7 @@ export default function ServiceMarquee() {
             }'
           >
             <div className="swiper-wrapper swiper-width-auto marquee-slide">
-              {[
-                "EVS Warranty Activation & Check-up",
-                "Air Conditioning Service",
-                "Air & Cabin Filter Replacement",
-                "Battery Replacement",
-                "Brake Service & Repair",
-                "Oil Change",
-                "Tyre Replacement & Alignment",
-                "Programming & Software Services",
-              ].map((text, i) => (
+              {fullWidthServices.map((text, i) => (
                 <div className="swiper-slide" key={i}>
                   <div className="fs-22 sm-fs-20 fw-500 alt-font text-uppercase text-white">
                     <h2 className="service-swiper">

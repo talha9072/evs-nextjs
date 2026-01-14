@@ -3,16 +3,16 @@
 import { useEffect } from "react";
 
 export default function ServiceMarqueeAr({
- services = [
-  "تفعيل ضمان إي في إس وفحص المركبة",
-  "خدمة تكييف الهواء",
-  "استبدال فلتر الهواء وفلتر المقصورة",
-  "استبدال البطارية",
-  "خدمة وإصلاح المكابح",
-  "تغيير الزيت",
-  "استبدال الإطارات وضبط المحاذاة",
-  "البرمجة وخدمات الأنظمة والبرمجيات",
-]
+  services = [
+    "تفعيل ضمان إي في إس وفحص المركبة",
+    "خدمة تكييف الهواء",
+    "استبدال فلتر الهواء وفلتر المقصورة",
+    "استبدال البطارية",
+    "خدمة وإصلاح المكابح",
+    "تغيير الزيت",
+    "استبدال الإطارات وضبط المحاذاة",
+    "البرمجة وخدمات الأنظمة والبرمجيات",
+  ],
 }) {
   useEffect(() => {
     let swiperInstance = null;
@@ -38,7 +38,7 @@ export default function ServiceMarqueeAr({
 
     startSwiper();
 
-    // 3️⃣ TAB SWITCH FIX (main reason of bug)
+    // 3️⃣ TAB SWITCH FIX
     const onVisibilityChange = () => {
       if (!document.hidden && swiperInstance) {
         swiperInstance.update();
@@ -53,6 +53,9 @@ export default function ServiceMarqueeAr({
     };
   }, []);
 
+  // 🔁 duplicate ONLY to force full width
+  const fullWidthServices = [...services, ...services];
+
   return (
     <section className="snap-section pt-45px pb-40px border-color-medium-gray sm-pt-35px sm-pb-30px">
       <div className="container-fluid">
@@ -62,7 +65,6 @@ export default function ServiceMarqueeAr({
             data-slider-options='{ 
               "slidesPerView": "auto",
               "spaceBetween": 0,
-              "centeredSlides": true,
               "speed": 12000,
               "loop": true,
               "allowTouchMove": false,
@@ -72,7 +74,7 @@ export default function ServiceMarqueeAr({
             }'
           >
             <div className="swiper-wrapper swiper-width-auto marquee-slide">
-              {services.map((service, index) => (
+              {fullWidthServices.map((service, index) => (
                 <div className="swiper-slide" key={index}>
                   <div className="fs-22 sm-fs-20 fw-500 alt-font text-uppercase text-white">
                     <h2 className="service-swiper">
