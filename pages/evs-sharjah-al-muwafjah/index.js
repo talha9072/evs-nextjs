@@ -14,22 +14,22 @@ export default function About() {
      
        <Head>
   {/* Title */}
-  <title>EVS Express Dubai Al Barsha | Electric Vehicle Service Center</title>
+  <title>EVS Express Sharjah Al Muwafjah | Electric Vehicle Service Center</title>
 
   {/* Meta Description */}
   <meta
     name="description"
-    content="EVS Express Dubai Al Barsha offers expert electric vehicle diagnostics, maintenance, and repair services. Trusted EV service center in Al Barsha, Dubai."
+    content="EVS Express Sharjah Al Muwafjah provides expert electric vehicle diagnostics, maintenance, and repair services. Trusted EV service center in Al Muwafjah, Sharjah."
   />
 
   {/* Meta Keywords */}
   <meta
     name="keywords"
-    content="EVS Al Barsha, electric vehicle service Al Barsha, EV service center Dubai, electric car repair Al Barsha, EV maintenance Dubai, EVS Express Dubai"
+    content="EVS Al Muwafjah, electric vehicle service Sharjah, EV service center Sharjah, electric car repair Al Muwafjah, EV maintenance Sharjah, EVS Express Sharjah"
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://evsuae.com/evs-dubai-al-barsha" />
+  <link rel="canonical" href="https://evsuae.com/evs-sharjah-al-muwafjah" />
 
   {/* Robots */}
   <meta
@@ -51,26 +51,31 @@ export default function About() {
   <link
     rel="alternate"
     hrefLang="en"
-    href="https://evsuae.com/evs-dubai-al-barsha"
+    href="https://evsuae.com/evs-sharjah-al-muwafjah"
   />
   <link
     rel="alternate"
     hrefLang="ar"
-    href="https://evsuae.com/ar/evs-dubai-al-barsha"
+    href="https://evsuae.com/ar/evs-sharjah-al-muwafjah"
+  />
+  <link
+    rel="alternate"
+    hrefLang="x-default"
+    href="https://evsuae.com/evs-sharjah-al-muwafjah"
   />
 
   {/* Open Graph */}
   <meta
     property="og:title"
-    content="EVS Express Dubai Al Barsha | Electric Vehicle Service Center"
+    content="EVS Express Sharjah Al Muwafjah | Electric Vehicle Service Center"
   />
   <meta
     property="og:description"
-    content="EVS Express Dubai Al Barsha provides professional electric vehicle servicing, diagnostics, and repairs in Al Barsha, Dubai."
+    content="Professional electric vehicle servicing, diagnostics, and repairs in Al Muwafjah, Sharjah by EVS Express."
   />
   <meta
     property="og:url"
-    content="https://evsuae.com/evs-dubai-al-barsha"
+    content="https://evsuae.com/evs-sharjah-al-muwafjah"
   />
   <meta property="og:type" content="website" />
   <meta
@@ -82,11 +87,11 @@ export default function About() {
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="EVS Express Dubai Al Barsha | EV Service Center"
+    content="EVS Express Sharjah Al Muwafjah | EV Service Center"
   />
   <meta
     name="twitter:description"
-    content="Professional electric vehicle service center in Al Barsha, Dubai. EVS Express offers diagnostics, maintenance, and repairs."
+    content="Reliable electric vehicle service center in Al Muwafjah, Sharjah. EVS Express offers diagnostics, maintenance, and repairs."
   />
   <meta
     name="twitter:image"
@@ -100,77 +105,28 @@ export default function About() {
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="manifest" href="/site.webmanifest" />
 
-  {/* Fonts */}
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-
   {/* Charset / Compatibility */}
   <meta charSet="UTF-8" />
   <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
-  {/* LocalBusiness Schema – EVS Express Dubai Al Barsha */}
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        name: "EVS Express Dubai Al Barsha",
-        image: "https://evsuae.com/.netlify/images?url=/img/EVS-logo.svg",
-        logo: "https://evsuae.com/.netlify/images?url=/img/EVS-logo.svg",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "Al Barsha, Dubai, United Arab Emirates",
-          addressLocality: "Dubai",
-          addressCountry: "UAE",
-        },
-        telephone: "+971547133313",
-        email: "info@evsuae.com",
-        url: "https://evsuae.com/evs-dubai-al-barsha",
-        openingHoursSpecification: [
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Saturday",
-              "Sunday",
-            ],
-            opens: "09:00",
-            closes: "18:00",
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: "Friday",
-            opens: "00:00",
-            closes: "00:00",
-            description: "Closed",
-          },
-        ],
-        areaServed: {
-          "@type": "Place",
-          name: "Al Barsha, Dubai, UAE",
-        },
-      }),
-    }}
-  />
+  {/* Fonts */}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
 </Head>
 
 <PageTitleWithMap
   eyebrowTitle="Electric Vehicle Service Center"
-  title="EVS Express Dubai"
-  highlight=" Al Barsha"
-  description="Electric vehicle servicing & repair in Al Barsha, Dubai"
+  title="EVS Express Sharjah"
+  highlight=" Al Muwafjah"
+  description="Electric vehicle servicing & repair in Al Muwafjah, Sharjah"
 
   primaryButtonText="Get Directions"
-  primaryButtonUrl="https://maps.app.goo.gl/ev86oBqgtJCqP75VA"
+  primaryButtonUrl="https://maps.app.goo.gl/BFwWNKZ5e3Sz8fRq5?g_st=ipc"
 
   secondaryButtonText="Call Us"
-  secondaryButtonUrl="tel:+9710566017771"
+  secondaryButtonUrl="tel:+971569863920"
 
-  mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6942796138956!2d55.2222448!3d25.0783491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6defee087cd1%3A0x4dfffaeded176e62!2sEVS%20Express%20Al%20Barsha%20South%20First%20(Electric%20Vehicle%20Services)!5e0!3m2!1sen!2s!4v1768377563205!5m2!1sen!2s"
+  mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.697272668753!2d55.4735625!3d25.347937500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f59bab02dbd61%3A0xb6779cc947ce1740!2sEVS%20Express%20Al%20Muwafjah%20(Electric%20Vehicle%20Services)!5e0!3m2!1sen!2s!4v1768380853270!5m2!1sen!2s"
 />
 
 
@@ -187,7 +143,7 @@ export default function About() {
       className="row row-cols-1 row-cols-lg-3 row-cols-sm-2 justify-content-center"
       data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
     >
-      {/* Feature box 1 – Address */}
+      {/* Address */}
       <div className="col icon-with-text-style-03">
         <div className="feature-box p-8">
           <div className="feature-box-icon">
@@ -196,14 +152,15 @@ export default function About() {
           <div className="feature-box-content last-paragraph-no-margin">
             <span className="d-block">
               <a
-                href="https://maps.app.goo.gl/ev86oBqgtJCqP75VA"
+                href="https://maps.app.goo.gl/BFwWNKZ5e3Sz8fRq5?g_st=ipc"
                 className="text-white fw-600"
               >
-                Al Barsha South First, Dubai, UAE
+                Al Muwafjah, Sharjah, United Arab Emirates
               </a>
             </span>
+
             <a
-              href="https://maps.app.goo.gl/ev86oBqgtJCqP75VA"
+              href="https://maps.app.goo.gl/BFwWNKZ5e3Sz8fRq5?g_st=ipc"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
@@ -215,7 +172,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* Feature box 2 – Phone */}
+      {/* Phone */}
       <div className="col icon-with-text-style-03">
         <div className="feature-box p-8">
           <div className="feature-box-icon">
@@ -223,18 +180,20 @@ export default function About() {
           </div>
           <div className="feature-box-content last-paragraph-no-margin">
             <p className="text-white fw-600">
-              EVS Express Dubai – Al Barsha
+              EVS Express Sharjah – Al Muwafjah
             </p>
+
             <span className="d-block">
               <a
-                href="tel:+9710566017771"
+                href="tel:+971569863920"
                 className="text-white fw-600 text-decoration-line-bottom"
               >
-                +971 056 601 7771
+                +971 56 986 3920
               </a>
             </span>
+
             <a
-              href="tel:+9710566017771"
+              href="tel:+971569863920"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
             >
               Call Us
@@ -244,7 +203,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* Feature box 3 – Email */}
+      {/* Email */}
       <div className="col icon-with-text-style-03">
         <div className="feature-box p-8">
           <div className="feature-box-icon">
@@ -252,6 +211,7 @@ export default function About() {
           </div>
           <div className="feature-box-content last-paragraph-no-margin">
             <p className="text-white fw-600">Send us an email</p>
+
             <span className="d-block">
               <a
                 href="mailto:info@evsuae.com"
@@ -260,6 +220,7 @@ export default function About() {
                 info@evsuae.com
               </a>
             </span>
+
             <a
               href="mailto:info@evsuae.com"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
@@ -273,6 +234,7 @@ export default function About() {
     </div>
   </div>
 </section>
+
 
 
           {/* Customer Reviews Section with Swiper Slider */}

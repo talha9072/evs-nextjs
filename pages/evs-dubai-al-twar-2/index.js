@@ -1,6 +1,6 @@
  import Head from "next/head";
  import PageTitleWithMap from "@/components/locations/PageTitleWithMap";
-import ServiceMarquee from "@/components/locations/ServiceMarquee";
+import ServiceMarquee from "@/components/locations/ServiceMarqueeExpress";
 import CustomerReviewsSection from "@/components/common/Customer";
 import StatsCounterSection from "@/components/common/StatsCounter";
 import BranchesSection from "@/components/common/Branches";
@@ -80,7 +80,7 @@ export default function About() {
   <meta property="og:type" content="website" />
   <meta
     property="og:image"
-    content="https://evsuae.com/.netlify/images?url=/img/EVS-logo.svg"
+    content="https://evsuae.com/.netlify/images?url=/img/graph-img.webp"
   />
 
   {/* Twitter */}
@@ -95,7 +95,7 @@ export default function About() {
   />
   <meta
     name="twitter:image"
-    content="https://evsuae.com/.netlify/images?url=/img/EVS-logo.svg"
+    content="https://evsuae.com/.netlify/images?url=/img/graph-img.webp"
   />
 
   {/* Icons */}

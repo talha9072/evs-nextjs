@@ -12,24 +12,27 @@ export default function ArabicHome() {
   return (
     <>
       
-    <Head>
+  <Head>
   {/* Title */}
-  <title>إي في إس إكسبريس دبي – البرشاء | مركز خدمة المركبات الكهربائية</title>
+  <title>إي في إس إكسبريس الشارقة – الموفجة | مركز خدمة المركبات الكهربائية</title>
 
   {/* Meta Description */}
   <meta
     name="description"
-    content="إي في إس إكسبريس دبي – البرشاء تقدم خدمات متخصصة لصيانة وإصلاح المركبات الكهربائية. مركز موثوق لخدمة السيارات الكهربائية في البرشاء، دبي."
+    content="إي في إس إكسبريس الشارقة – الموفجة يقدم خدمات متخصصة لصيانة وإصلاح المركبات الكهربائية. مركز موثوق لخدمة السيارات الكهربائية في الموفجة، الشارقة."
   />
 
   {/* Keywords */}
   <meta
     name="keywords"
-    content="إي في إس البرشاء, صيانة المركبات الكهربائية البرشاء, مركز خدمة السيارات الكهربائية دبي, إصلاح السيارات الكهربائية البرشاء, إي في إس إكسبريس دبي"
+    content="إي في إس الموفجة, صيانة المركبات الكهربائية الشارقة, مركز خدمة السيارات الكهربائية الشارقة, إصلاح السيارات الكهربائية الموفجة, إي في إس إكسبريس الشارقة"
   />
 
   {/* Canonical */}
-  <link rel="canonical" href="https://evsuae.com/ar/evs-dubai-al-barsha" />
+  <link
+    rel="canonical"
+    href="https://evsuae.com/ar/evs-sharjah-al-muwafjah"
+  />
 
   {/* Robots */}
   <meta
@@ -48,31 +51,31 @@ export default function ArabicHome() {
   <link
     rel="alternate"
     hrefLang="ar"
-    href="https://evsuae.com/ar/evs-dubai-al-barsha"
+    href="https://evsuae.com/ar/evs-sharjah-al-muwafjah"
   />
   <link
     rel="alternate"
     hrefLang="en"
-    href="https://evsuae.com/evs-dubai-al-barsha"
+    href="https://evsuae.com/evs-sharjah-al-muwafjah"
   />
   <link
     rel="alternate"
     hrefLang="x-default"
-    href="https://evsuae.com/evs-dubai-al-barsha"
+    href="https://evsuae.com/evs-sharjah-al-muwafjah"
   />
 
   {/* Open Graph */}
   <meta
     property="og:title"
-    content="إي في إس إكسبريس دبي – البرشاء | مركز خدمة المركبات الكهربائية"
+    content="إي في إس إكسبريس الشارقة – الموفجة | مركز خدمة المركبات الكهربائية"
   />
   <meta
     property="og:description"
-    content="مركز إي في إس إكسبريس في البرشاء يقدم خدمات صيانة وإصلاح احترافية للمركبات الكهربائية في دبي."
+    content="خدمات احترافية لصيانة وإصلاح المركبات الكهربائية في الموفجة، الشارقة عبر إي في إس إكسبريس."
   />
   <meta
     property="og:url"
-    content="https://evsuae.com/ar/evs-dubai-al-barsha"
+    content="https://evsuae.com/ar/evs-sharjah-al-muwafjah"
   />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ar_AE" />
@@ -85,11 +88,11 @@ export default function ArabicHome() {
   <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:title"
-    content="إي في إس إكسبريس دبي – البرشاء | خدمة السيارات الكهربائية"
+    content="إي في إس إكسبريس الشارقة – الموفجة"
   />
   <meta
     name="twitter:description"
-    content="خدمات متقدمة لصيانة وإصلاح المركبات الكهربائية في البرشاء، دبي عبر إي في إس إكسبريس."
+    content="مركز متخصص في صيانة وإصلاح المركبات الكهربائية في الموفجة، الشارقة."
   />
   <meta
     name="twitter:image"
@@ -121,17 +124,17 @@ export default function ArabicHome() {
 
 <PageHeroWithMap
   eyebrowTitle="مركز خدمات المركبات الكهربائية"
- mainTitle="إي في إس إكسبريس دبي – البرشاء"
+  mainTitle="إي في إس إكسبريس الشارقة – الموفجة"
   highlightDot={true}
-  description="خدمات وصيانة المركبات الكهربائية في البرشاء، دبي"
+  description="خدمات وصيانة المركبات الكهربائية في الموفجة، الشارقة"
 
   primaryButtonText="احصل على الاتجاهات"
-  primaryButtonUrl="https://maps.app.goo.gl/ev86oBqgtJCqP75VA"
+  primaryButtonUrl="https://maps.app.goo.gl/BFwWNKZ5e3Sz8fRq5?g_st=ipc"
 
   secondaryButtonText="اتصل بنا"
-  secondaryButtonUrl="tel:+9710566017771"
+  secondaryButtonUrl="tel:+971569863920"
 
-  mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6942796138956!2d55.2222448!3d25.0783491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6defee087cd1%3A0x4dfffaeded176e62!2sEVS%20Express%20Al%20Barsha%20South%20First%20(Electric%20Vehicle%20Services)!5e0!3m2!1sar!2sae!4v1768377563205!5m2!1sar!2sae"
+  mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.697272668753!2d55.4735625!3d25.347937500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f59bab02dbd61%3A0xb6779cc947ce1740!2sEVS%20Express%20Al%20Muwafjah%20(Electric%20Vehicle%20Services)!5e0!3m2!1sar!2sae!4v1768380853270!5m2!1sar!2sae"
 />
 
 <ServiceMarqueeAr />
@@ -153,18 +156,20 @@ export default function ArabicHome() {
           <div className="feature-box-icon">
             <i className="bi bi-pin-map icon-double-large text-base-color mb-20px"></i>
           </div>
+
           <div className="feature-box-content last-paragraph-no-margin">
             <span className="d-block">
               <a
-                href="https://maps.app.goo.gl/ev86oBqgtJCqP75VA"
+                href="https://maps.app.goo.gl/BFwWNKZ5e3Sz8fRq5?g_st=ipc"
                 className="text-white fw-600"
-                aria-label="موقع فرع إي في إس إكسبريس دبي – البرشاء على الخريطة"
+                aria-label="موقع فرع إي في إس إكسبريس الشارقة – الموفجة على الخريطة"
               >
-                البرشاء جنوب الأولى، دبي، الإمارات العربية المتحدة
+                الموفجة، الشارقة، الإمارات العربية المتحدة
               </a>
             </span>
+
             <a
-              href="https://maps.app.goo.gl/ev86oBqgtJCqP75VA"
+              href="https://maps.app.goo.gl/BFwWNKZ5e3Sz8fRq5?g_st=ipc"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
@@ -182,22 +187,25 @@ export default function ArabicHome() {
           <div className="feature-box-icon">
             <i className="bi bi-telephone icon-double-large text-base-color mb-20px"></i>
           </div>
+
           <div className="feature-box-content last-paragraph-no-margin">
             <p className="text-white fw-600">
-              إي في إس إكسبريس دبي – البرشاء
+              إي في إس إكسبريس الشارقة – الموفجة
             </p>
+
             <span className="d-block">
               <a
-                href="tel:+9710566017771"
+                href="tel:+971569863920"
                 className="text-white fw-600 text-decoration-line-bottom urbanist"
                 dir="ltr"
-                aria-label="اتصل بفرع إي في إس إكسبريس دبي – البرشاء"
+                aria-label="اتصل بفرع إي في إس إكسبريس الشارقة – الموفجة"
               >
-                +971 056 601 7771
+                +971 56 986 3920
               </a>
             </span>
+
             <a
-              href="tel:+9710566017771"
+              href="tel:+971569863920"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
             >
               اتصل بنا
@@ -213,17 +221,20 @@ export default function ArabicHome() {
           <div className="feature-box-icon">
             <i className="bi bi-envelope-at icon-double-large text-base-color mb-20px"></i>
           </div>
+
           <div className="feature-box-content last-paragraph-no-margin">
-            <p className="text-white fw-600">أرسل لنا بريدًا إلكترونيًا</p>
+            <p className="text-white fw-600">راسلنا</p>
+
             <span className="d-block">
               <a
                 href="mailto:info@evsuae.com"
                 className="text-white fw-600 text-decoration-line-bottom"
-                aria-label="راسل إي في إس إكسبريس دبي – البرشاء عبر البريد الإلكتروني"
+                aria-label="راسل إي في إس إكسبريس الشارقة – الموفجة عبر البريد الإلكتروني"
               >
                 info@evsuae.com
               </a>
             </span>
+
             <a
               href="mailto:info@evsuae.com"
               className="btn btn-large btn-round-edge btn-base-color btn-slide-right mt-15px xs-mt-25px"
@@ -237,6 +248,8 @@ export default function ArabicHome() {
     </div>
   </div>
 </section>
+
+
 
 
 {/* end section */}

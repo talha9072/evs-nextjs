@@ -28,12 +28,12 @@ export default function PageTitleWithMap({
               {eyebrowTitle}
             </h1>
 
-            <h2 className="fw-700 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100 mb-15px">
+            <h2 className="fw-700 alt-font ls-minus-1px text-white w-100 mb-0 lg-w-100 mb-15px">
               {title}
               <span className="text-base-color">{highlight}</span>
             </h2>
 
-            <h2 className="location-desc fw-400 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100">
+            <h2 className="location-desc fw-400 alt-font ls-minus-1px text-white w-100 mb-0 lg-w-100">
               {description}
             </h2>
 

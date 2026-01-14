@@ -1,6 +1,6 @@
 import Head from "next/head";
 import PageHeroWithMap from "@/components/ar/locations/PageHeroWithMap";
-import ServiceMarqueeAr from "@/components/ar/locations/ServiceMarqueeAr";
+import ServiceMarqueeAr from "@/components/ar/locations/ServiceMarqueeExpressAr";
 import BranchesSection from "@/components/ar/common/Branches";
 import StatsCounterSection from "@/components/ar/common/CounterStats";
 import CustomerReviewsSection from "@/components/ar/common/Customer";
@@ -78,7 +78,7 @@ export default function ArabicHome() {
   <meta property="og:locale" content="ar_AE" />
   <meta
     property="og:image"
-    content="https://evsuae.com/.netlify/images?url=/img/EVS-logo.svg"
+    content="https://evsuae.com/.netlify/images?url=/img/graph-img.webp"
   />
 
   {/* Twitter */}
@@ -93,7 +93,7 @@ export default function ArabicHome() {
   />
   <meta
     name="twitter:image"
-    content="https://evsuae.com/.netlify/images?url=/img/EVS-logo.svg"
+    content="https://evsuae.com/.netlify/images?url=/img/graph-img.webp"
   />
 
   {/* Icons */}
