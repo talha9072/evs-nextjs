@@ -208,6 +208,44 @@ export default function HeaderAr() {
                       <i className="fa-solid fa-angle-left btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
                     </a>
                   </li>
+                  {/* EVS Express – Arabic */}
+                  <li className="menu-item">
+                    <span className="nav-link alt-font d-inline-flex align-items-center">
+                      
+
+                      {/* Text (underline only here) */}
+                      <span
+                        style={{
+                          color: "var(--base-color)",
+                          textDecoration: "underline",
+                          textUnderlineOffset: "2px",
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        إي في إس إكسبريس
+                      </span>
+                      {/* Arrow (no underline) */}
+                      <span
+                        style={{
+                          color: "var(--base-color)",
+                          fontSize: "10px",
+                          marginRight: "4px",
+                          lineHeight: "1",
+                        }}
+                      >
+                        ↖
+                      </span>
+                    </span>
+                  </li>
+                  <li className="menu-item">
+                    <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/ar/evs-abu-dhabi-al-mushrif"> 
+                    إي في إس أبوظبي - المشرف
+                      <i className="fa-solid fa-angle-left btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
+                    </a>
+                  </li>
+
+                  
+
                 </ul>
               </li>
 
@@ -526,6 +564,43 @@ export default function HeaderAr() {
                         إي في إس الشارقة
                       </a>
                     </li>
+                    {/* EVS Express – Arabic */}
+                  <li className="menu-item">
+                    <span className="nav-link alt-font d-inline-flex align-items-center">
+                      
+
+                      {/* Text (underline only here) */}
+                      <span
+                        style={{
+                          color: "var(--base-color)",
+                          textDecoration: "underline",
+                          textUnderlineOffset: "2px",
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        إي في إس إكسبريس
+                      </span>
+                      {/* Arrow (no underline) */}
+                      <span
+                        style={{
+                          color: "var(--base-color)",
+                          fontSize: "10px",
+                          marginRight: "4px",
+                          lineHeight: "1",
+                        }}
+                      >
+                        ↖
+                      </span>
+                    </span>
+                  </li>
+                  <li className="menu-item">
+                      <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/ar/evs-abu-dhabi-al-mushrif">
+                        إي في إس أبوظبي - المشرف
+                      </a>
+                    </li>
+
+                  
+
                   </ul>
                 </li>
 

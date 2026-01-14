@@ -304,6 +304,47 @@ export default function Header() {
                       EVS Sharjah <i className="fa-solid fa-angle-right btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
                     </a>
                   </li>
+
+                {/* EVS Express */}
+<li className="menu-item">
+  <span className="nav-link alt-font text-uppercase d-inline-flex align-items-center pb-1">
+    {/* Text (underlined only here) */}
+    <span
+      style={{
+        color: "var(--base-color)",
+        textDecoration: "underline",
+        textUnderlineOffset: "2px",
+        whiteSpace: "nowrap",
+      }}
+    >
+      EVS Express
+    </span>
+
+    {/* Up arrow (no underline) */}
+    <span
+      style={{
+        color: "var(--base-color)",
+        fontSize: "10px",
+        marginLeft: "4px",
+        lineHeight: "1",
+      }}
+    >
+      ↗
+    </span>
+  </span>
+</li>
+
+<li className="menu-item">
+                    <a
+                      className="nav-link alt-font text-uppercase text-white btn-sub-dropdown"
+                      href="https://evsuae.com/evs-abu-dhabi-al-mushrif"
+                    >
+                     EVS Abu Dhabi - Al Mushrif <i className="fa-solid fa-angle-right btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
+                    </a>
+                  </li>
+                  
+
+
                 </ul>
               </li>
               <li className="menu-item">
@@ -602,6 +643,32 @@ export default function Header() {
                         EVS Sharjah
                       </a>
                     </li>
+                    {/* EVS Express */}
+<li className="menu-item">
+  <span className="nav-link alt-font text-uppercase d-inline-flex align-items-center">
+    {/* Text (underline only here) */}
+    <span
+      style={{
+        color: "var(--base-color)",
+        textDecoration: "underline",
+        textUnderlineOffset: "2px",
+        whiteSpace: "nowrap",
+      }}
+    >
+      EVS Express
+    </span>
+
+   
+  </span>
+</li>
+
+<li className="menu-item">
+                      <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/evs-abu-dhabi-al-mushrif">
+                        EVS Abu Dhabi - Al Mushrif
+                      </a>
+                    </li>
+
+                    
                   </ul>
                 </li>
                 <li className="menu-item">
