@@ -342,6 +342,15 @@ export default function Header() {
                      EVS Abu Dhabi - Al Mushrif <i className="fa-solid fa-angle-right btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
                     </a>
                   </li>
+
+<li className="menu-item">
+                    <a
+                      className="nav-link alt-font text-uppercase text-white btn-sub-dropdown"
+                      href="https://evsuae.com/evs-dubai-al-barsha"
+                    >
+                    EVS Dubai - Al Barsha <i className="fa-solid fa-angle-right btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
+                    </a>
+                  </li>                  
                   
 
 
@@ -667,6 +676,12 @@ export default function Header() {
                         EVS Abu Dhabi - Al Mushrif
                       </a>
                     </li>
+
+<li className="menu-item">
+                      <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/evs-dubai-al-barsha">
+                        EVS Dubai - Al Barsha
+                      </a>
+                    </li>                    
 
                     
                   </ul>

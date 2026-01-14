@@ -244,6 +244,13 @@ export default function HeaderAr() {
                     </a>
                   </li>
 
+                  <li className="menu-item">
+                    <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/ar/evs-dubai-al-barsha"> 
+                   إي في إس دبي – البرشاء
+                      <i className="fa-solid fa-angle-left btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
+                    </a>
+                  </li>
+
                   
 
                 </ul>
@@ -596,6 +603,12 @@ export default function HeaderAr() {
                   <li className="menu-item">
                       <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/ar/evs-abu-dhabi-al-mushrif">
                         إي في إس أبوظبي - المشرف
+                      </a>
+                    </li>
+
+                    <li className="menu-item">
+                      <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/ar/evs-dubai-al-barsha">
+                      إي في إس دبي – البرشاء
                       </a>
                     </li>
 
