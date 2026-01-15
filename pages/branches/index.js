@@ -239,7 +239,7 @@ export default function About() {
                 href="#others"
                 className="text-white fw-600 text-decoration-none border-bottom border-base-color pb-5px d-inline-block"
               >
-                Other Branches
+                Ajman & Al Ain
               </a>
             </li>
 
@@ -608,7 +608,7 @@ export default function About() {
   <div className="row justify-content-center mb-2">
     <div className="col-12 text-center">
       <h3 className="fw-700 alt-font text-white mb-0">
-        Other Branches<span className="text-base-color">.</span>
+        Ajman & Al Ain<span className="text-base-color">.</span>
       </h3>
     </div>
   </div>

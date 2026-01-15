@@ -173,7 +173,7 @@ export default function ArabicHome() {
                 href="#others"
                 className="text-white fw-600 text-decoration-none border-bottom border-base-color pb-5px d-inline-block"
               >
-                فروع أخرى
+               عجمان والعين
               </a>
             </li>
           </ul>
@@ -539,7 +539,7 @@ export default function ArabicHome() {
   <div className="row justify-content-center mb-2">
     <div className="col-12 text-center">
       <h3 className="fw-500 alt-font text-white mb-0">
-        فروع أخرى<span className="text-base-color">.</span>
+       عجمان والعين<span className="text-base-color">.</span>
       </h3>
     </div>
   </div>

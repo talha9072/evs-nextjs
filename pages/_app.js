@@ -94,55 +94,6 @@ export default function App({ Component, pageProps }) {
   return (
     <>
 
-{/* ===== GOOGLE TAG MANAGER ===== */}
-<Script
-  src="https://www.googletagmanager.com/gtm.js?id=GTM-NT2KKJB"
-  strategy="afterInteractive"
-/>
-
-{/* ===== UTM KEEPER ===== */}
-<Script id="utm-keeper" strategy="afterInteractive">
-  {`
-    (function () {
-      try {
-        const params = new URLSearchParams(window.location.search);
-        const utms = {};
-        params.forEach((v, k) => {
-          if (k.startsWith('utm_')) utms[k] = v;
-        });
-        if (!Object.keys(utms).length) return;
-
-        document.querySelectorAll('a[href]').forEach(link => {
-          const href = link.getAttribute('href');
-          if (
-            href &&
-            !href.startsWith('#') &&
-            !href.startsWith('mailto:') &&
-            !href.startsWith('tel:') &&
-            (href.startsWith('/') || href.includes(location.hostname))
-          ) {
-            const url = new URL(href, location.origin);
-            Object.entries(utms).forEach(([k,v]) =>
-              url.searchParams.set(k,v)
-            );
-            link.setAttribute('href', url.toString());
-          }
-        });
-      } catch (e) {}
-    })();
-  `}
-</Script>
-
-{/* ===== FACEBOOK DOMAIN VERIFICATION ===== */}
-<Script id="fb-domain-verification" strategy="afterInteractive">
-  {`
-    var meta = document.createElement('meta');
-    meta.name = 'facebook-domain-verification';
-    meta.content = 'sk2r8gyeykmhv0dcojlcbgez8lbbcp';
-    document.head.appendChild(meta);
-  `}
-</Script>
-
       {/* ===== LEGACY JS ===== */}
       {loadLegacy && (
         <>
