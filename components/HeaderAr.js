@@ -197,11 +197,7 @@ export default function HeaderAr() {
                       إي في إس العين <i className="fa-solid fa-angle-left btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
                     </a>
                   </li>
-                  <li className="menu-item">
-                    <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/ar/evs-riyadh">
-                      إي في إس الرياض <i className="fa-solid fa-angle-left btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
-                    </a>
-                  </li>
+                
                   <li className="menu-item">
                     <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/ar/evs-sharjah">
                       إي في إس الشارقة
@@ -575,11 +571,7 @@ export default function HeaderAr() {
                         إي في إس العين
                       </a>
                     </li>
-                    <li className="menu-item">
-                      <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/ar/evs-riyadh">
-                        إي في إس الرياض
-                      </a>
-                    </li>
+                   
                     <li className="menu-item">
                       <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/ar/evs-sharjah">
                         إي في إس الشارقة

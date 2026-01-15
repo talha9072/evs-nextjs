@@ -288,14 +288,7 @@ export default function Header() {
                       EVS Alain <i className="fa-solid fa-angle-right btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
                     </a>
                   </li>
-                  <li className="menu-item">
-                    <a
-                      className="nav-link alt-font text-uppercase text-white btn-sub-dropdown"
-                      href="https://evsuae.com/evs-riyadh"
-                    >
-                      EVS Riyadh <i className="fa-solid fa-angle-right btn-dropdown text-base-color fs-14" id="evDropdownMenuLink"></i>
-                    </a>
-                  </li>
+                  
                   <li className="menu-item">
                     <a
                       className="nav-link alt-font text-uppercase text-white btn-sub-dropdown"
@@ -660,11 +653,7 @@ export default function Header() {
                         EVS Alain
                       </a>
                     </li>
-                    <li className="menu-item">
-                      <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/evs-riyadh">
-                        EVS Riyadh
-                      </a>
-                    </li>
+                  
                     <li className="menu-item">
                       <a className="nav-link alt-font text-uppercase text-white btn-sub-dropdown" href="https://evsuae.com/evs-sharjah">
                         EVS Sharjah
