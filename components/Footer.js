@@ -117,15 +117,7 @@ export default function Footer() {
               </a>
             </div>
 
-            <div>
-              <a
-                href="https://evsuae.com/evs-riyadh"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                EVS Riyadh
-              </a>
-            </div>
+           
 
             <div>
               <a

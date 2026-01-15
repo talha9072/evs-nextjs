@@ -102,7 +102,6 @@ export default function FooterAr() {
             <div><a href="https://evsuae.com/ar/evs-dubai" target="_blank">إي في إس دبي</a></div>
             <div><a href="https://evsuae.com/ar/evs-ajman" target="_blank">إي في إس عجمان</a></div>
             <div><a href="https://evsuae.com/ar/evs-alain" target="_blank">إي في إس العين</a></div>
-            <div><a href="https://evsuae.com/ar/evs-riyadh" target="_blank">إي في إس الرياض</a></div>
             <div><a href="https://evsuae.com/ar/evs-sharjah" target="_blank">إي في إس الشارقة</a></div>
           </div>
 
