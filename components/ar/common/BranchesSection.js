@@ -17,7 +17,7 @@ export default function BranchesSection() {
 
           {/* LEFT TABS */}
           <div className="col-xl-4 offset-xl-1 col-lg-5 team-style-09 order-1 pb-5 pb-md-0">
-            <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-15px text-uppercase">
+            <h2 className="h1 alt-font fw-500 ls-minus-1px text-white mb-15px text-uppercase">
               فروعنا<span className="text-base-color">.</span>
             </h2>
 
@@ -192,7 +192,7 @@ function Branch({ title, address, map, phone, image, number }) {
           backgroundImage: `url('https://evsuae.com/.netlify/images?url=/img/${image}&w=1024')`,
         }}
       >
-        <span className="fs-190 fw-700 alt-font text-white position-absolute left-minus-30px bottom-minus-50px">
+        <span className="fs-190 fw-500 alt-font text-white position-absolute left-minus-30px bottom-minus-50px">
           {number}
         </span>
       </div>

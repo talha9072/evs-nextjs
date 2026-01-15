@@ -110,7 +110,7 @@ export default function ArabicHome() {
         className="col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-end text-center text-md-end page-title-extra-small sm-pt-50px sm-pb-50px"
         data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'
       >
-        <h2 className="fw-700 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100">
+        <h2 className="fw-500 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100">
           فروعنا<span className="text-base-color">.</span>
         </h2>
 
@@ -209,7 +209,7 @@ export default function ArabicHome() {
   {/* ===== HEADING ===== */}
   <div className="row justify-content-center mb-2">
     <div className="col-12 text-center">
-      <h3 className="fw-700 alt-font text-white mb-0">
+      <h3 className="fw-500 alt-font text-white mb-0">
         إي في إس دبي<span className="text-base-color">.</span>
       </h3>
     </div>
@@ -262,7 +262,7 @@ export default function ArabicHome() {
           <div className="feature-box-content last-paragraph-no-margin">
             {/* DESKTOP */}
             <div className="d-none d-lg-flex align-items-center justify-content-between gap-2">
-              <a href={branch.link} className="fw-700 text-white alt-font fs-19">
+              <a href={branch.link} className="fw-500 text-white alt-font fs-19">
                 {branch.title}
               </a>
 
@@ -288,7 +288,7 @@ export default function ArabicHome() {
 
             {/* MOBILE */}
             <div className="d-lg-none text-center">
-              <a href={branch.link} className="fw-700 text-white alt-font fs-19 d-block mb-10px">
+              <a href={branch.link} className="fw-500 text-white alt-font fs-19 d-block mb-10px">
                 {branch.title}
               </a>
 
@@ -324,7 +324,7 @@ export default function ArabicHome() {
   {/* ===== HEADING ===== */}
   <div className="row justify-content-center mb-2">
     <div className="col-12 text-center">
-      <h3 className="fw-700 alt-font text-white mb-0">
+      <h3 className="fw-500 alt-font text-white mb-0">
         إي في إس الشارقة<span className="text-base-color">.</span>
       </h3>
     </div>
@@ -369,7 +369,7 @@ export default function ArabicHome() {
           <div className="feature-box-content last-paragraph-no-margin">
             {/* DESKTOP */}
             <div className="d-none d-lg-flex align-items-center justify-content-between gap-2">
-              <a href={branch.link} className="fw-700 text-white alt-font fs-19">
+              <a href={branch.link} className="fw-500 text-white alt-font fs-19">
                 {branch.title}
               </a>
 
@@ -395,7 +395,7 @@ export default function ArabicHome() {
 
             {/* MOBILE */}
             <div className="d-lg-none text-center">
-              <a href={branch.link} className="fw-700 text-white alt-font fs-19 d-block mb-10px">
+              <a href={branch.link} className="fw-500 text-white alt-font fs-19 d-block mb-10px">
                 {branch.title}
               </a>
 
@@ -431,7 +431,7 @@ export default function ArabicHome() {
   {/* ===== HEADING ===== */}
   <div className="row justify-content-center mb-2">
     <div className="col-12 text-center">
-      <h3 className="fw-700 alt-font text-white mb-0">
+      <h3 className="fw-500 alt-font text-white mb-0">
         إي في إس أبوظبي<span className="text-base-color">.</span>
       </h3>
     </div>
@@ -476,7 +476,7 @@ export default function ArabicHome() {
           <div className="feature-box-content last-paragraph-no-margin">
             {/* DESKTOP */}
             <div className="d-none d-lg-flex align-items-center justify-content-between gap-2">
-              <a href={branch.link} className="fw-700 text-white alt-font fs-19">
+              <a href={branch.link} className="fw-500 text-white alt-font fs-19">
                 {branch.title}
               </a>
 
@@ -502,7 +502,7 @@ export default function ArabicHome() {
 
             {/* MOBILE */}
             <div className="d-lg-none text-center">
-              <a href={branch.link} className="fw-700 text-white alt-font fs-19 d-block mb-10px">
+              <a href={branch.link} className="fw-500 text-white alt-font fs-19 d-block mb-10px">
                 {branch.title}
               </a>
 
@@ -538,7 +538,7 @@ export default function ArabicHome() {
   {/* ===== HEADING ===== */}
   <div className="row justify-content-center mb-2">
     <div className="col-12 text-center">
-      <h3 className="fw-700 alt-font text-white mb-0">
+      <h3 className="fw-500 alt-font text-white mb-0">
         فروع أخرى<span className="text-base-color">.</span>
       </h3>
     </div>
@@ -583,7 +583,7 @@ export default function ArabicHome() {
           <div className="feature-box-content last-paragraph-no-margin">
             {/* DESKTOP */}
             <div className="d-none d-lg-flex align-items-center justify-content-between gap-2">
-              <a href={branch.link} className="fw-700 text-white alt-font fs-19">
+              <a href={branch.link} className="fw-500 text-white alt-font fs-19">
                 {branch.title}
               </a>
 
@@ -609,7 +609,7 @@ export default function ArabicHome() {
 
             {/* MOBILE */}
             <div className="d-lg-none text-center">
-              <a href={branch.link} className="fw-700 text-white alt-font fs-19 d-block mb-10px">
+              <a href={branch.link} className="fw-500 text-white alt-font fs-19 d-block mb-10px">
                 {branch.title}
               </a>
 

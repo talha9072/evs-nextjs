@@ -196,7 +196,7 @@ export default function ArabicHome() {
         className="col-12"
         data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'
       >
-        <h2 className="alt-font fs-44 fw-700 ls-minus-1px text-white mb-30px">
+        <h2 className="alt-font fs-44 fw-500 ls-minus-1px text-white mb-30px">
           باقات الضمان لدينا<span className="text-base-color">.</span>
         </h2>
 
@@ -352,7 +352,7 @@ export default function ArabicHome() {
         className="col-xl-5 col-lg-6 md-mb-50px sm-mb-20px"
         data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
       >
-        <span className="bg-slate-blue box-shadow-bottom text-uppercase fs-13 ps-25px pe-25px alt-font fw-700 text-base-color lh-40 sm-lh-55 border-radius-100px d-inline-block mb-25px">
+        <span className="bg-slate-blue box-shadow-bottom text-uppercase fs-13 ps-25px pe-25px alt-font fw-500 text-base-color lh-40 sm-lh-55 border-radius-100px d-inline-block mb-25px">
           استثمر في راحة البال
         </span>
 
@@ -433,7 +433,7 @@ export default function ArabicHome() {
         className="col-12 text-center"
         data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
       >
-        <h2 className="fw-700 text-white alt-font ls-minus-1px mb-25px d-block">
+        <h2 className="fw-500 text-white alt-font ls-minus-1px mb-25px d-block">
           كيف يعمل ضمانك الممتد
         </h2>
       </div>
@@ -445,7 +445,7 @@ export default function ArabicHome() {
     >
       {/* Step 01 */}
       <div className="col process-step-style-06 text-center last-paragraph-no-margin hover-box md-mb-50px">
-        <h4 className="d-block text-base-color mb-0 fw-700 ls-minus-2px">01</h4>
+        <h4 className="d-block text-base-color mb-0 fw-500 ls-minus-2px">01</h4>
         <div className="process-step-icon-box position-relative mt-25px mb-25px">
           <span className="progress-step-separator bg-dark-gray w-100 separator-line-1px opacity-1"></span>
           <div className="step-box d-flex align-items-center justify-content-center bg-slate-blue box-shadow-medium-bottom border-radius-100 mx-auto w-30px h-30px">
@@ -463,7 +463,7 @@ export default function ArabicHome() {
 
       {/* Step 02 */}
       <div className="col process-step-style-06 text-center last-paragraph-no-margin hover-box xs-mb-50px">
-        <h4 className="d-block text-base-color mb-0 fw-700 ls-minus-2px">02</h4>
+        <h4 className="d-block text-base-color mb-0 fw-500 ls-minus-2px">02</h4>
         <div className="process-step-icon-box position-relative mt-25px mb-25px">
           <span className="progress-step-separator bg-dark-gray w-100 separator-line-1px opacity-1"></span>
           <div className="step-box d-flex align-items-center justify-content-center bg-slate-blue box-shadow-medium-bottom border-radius-100 mx-auto w-30px h-30px">
@@ -480,7 +480,7 @@ export default function ArabicHome() {
 
       {/* Step 03 */}
       <div className="col process-step-style-06 text-center last-paragraph-no-margin hover-box">
-        <h4 className="d-block text-base-color mb-0 fw-700 ls-minus-2px">03</h4>
+        <h4 className="d-block text-base-color mb-0 fw-500 ls-minus-2px">03</h4>
         <div className="process-step-icon-box position-relative mt-25px mb-25px">
           <span className="progress-step-separator bg-dark-gray w-100 separator-line-1px opacity-1"></span>
           <div className="step-box d-flex align-items-center justify-content-center bg-slate-blue box-shadow-medium-bottom border-radius-100 mx-auto w-30px h-30px">
@@ -498,7 +498,7 @@ export default function ArabicHome() {
 
       {/* Step 04 */}
       <div className="col process-step-style-06 text-center last-paragraph-no-margin hover-box md-mb-50px">
-        <h4 className="d-block text-base-color mb-0 fw-700 ls-minus-2px">04</h4>
+        <h4 className="d-block text-base-color mb-0 fw-500 ls-minus-2px">04</h4>
         <div className="process-step-icon-box position-relative mt-25px mb-25px">
           <span className="progress-step-separator bg-dark-gray w-100 separator-line-1px opacity-1"></span>
           <div className="step-box d-flex align-items-center justify-content-center bg-slate-blue box-shadow-medium-bottom border-radius-100 mx-auto w-30px h-30px">

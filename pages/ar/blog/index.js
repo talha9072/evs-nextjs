@@ -107,7 +107,7 @@ export default function ArabicHome() {
     <div className="row align-items-center justify-content-center">
       <div className="col-12 col-xl-6 col-lg-8 text-center-sm text-end-md position-relative page-title-double-large pt-5">
         <div className="d-flex flex-column justify-content-center extra-very-small-screen">
-          <h1 className="text-white alt-font-lh ls-0px fw-700 text-center">
+          <h1 className="text-white alt-font-lh ls-0px fw-500 text-center">
             مرحبًا بكم في مدونتنا – مركز خدمات المركبات الكهربائية
           </h1>
           <h2 className="text-white d-block fw-400 ls-0px w-80 xs-w-100 mx-auto text-center">

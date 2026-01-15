@@ -251,7 +251,7 @@ export default function ArabicHome() {
     <div className="row justify-content-center align-items-stretch">
       <div className="col-md-8 d-flex flex-column text-center page-title-extra-small py-5 sm-pt-80px sm-pb-50px">
         <div className="content-box pt-4">
-          <h2 className="fw-700 alt-font ls-minus-1px text-white w-90 mb-0 mx-auto">
+          <h2 className="fw-500 alt-font ls-minus-1px text-white w-90 mb-0 mx-auto">
             البرمجة والبرمجيات
           </h2>
           <p className="text-white alt-font fw-500 fs-26 mx-auto mt-1">
@@ -284,7 +284,7 @@ export default function ArabicHome() {
     <div className="row justify-content-center align-items-center">
       <div className="col-md-8 py-90 d-flex flex-column justify-content-between align-items-center text-center page-title-extra-small sm-pt-80px sm-pb-50px">
         <div className="content-box">
-          <h2 className="fw-700 alt-font ls-minus-1px text-white w-90 mb-0 mx-auto">
+          <h2 className="fw-500 alt-font ls-minus-1px text-white w-90 mb-0 mx-auto">
             الخدمات الميكانيكية
           </h2>
           <p className="text-white alt-font fw-500 fs-30 mx-auto mt-1">
@@ -317,7 +317,7 @@ export default function ArabicHome() {
     <div className="row justify-content-center align-items-stretch">
       <div className="col-md-8 d-flex flex-column text-center page-title-extra-small py-5 sm-pt-80px sm-pb-50px">
         <div className="content-box pt-4">
-          <h2 className="fw-700 alt-font ls-minus-1px text-white w-90 mb-0 mx-auto">
+          <h2 className="fw-500 alt-font ls-minus-1px text-white w-90 mb-0 mx-auto">
             البطارية والكهرباء
           </h2>
           <p className="text-white alt-font fw-500 fs-26 mx-auto mt-1">
@@ -350,7 +350,7 @@ export default function ArabicHome() {
     <div className="row justify-content-center align-items-center">
       <div className="col-md-8 py-90 d-flex flex-column justify-content-between align-items-center text-center page-title-extra-small sm-pt-80px sm-pb-50px">
         <div className="content-box">
-          <h2 className="fw-700 alt-font ls-minus-1px text-white w-90 mb-0 mx-auto">
+          <h2 className="fw-500 alt-font ls-minus-1px text-white w-90 mb-0 mx-auto">
             الهيكل والدهان
           </h2>
           <p className="text-white alt-font fw-500 fs-30 mx-auto mt-1">
@@ -383,7 +383,7 @@ export default function ArabicHome() {
     <div className="row justify-content-center align-items-center">
       <div className="col-md-8 py-90 d-flex flex-column justify-content-between align-items-center text-center page-title-extra-small sm-pt-80px sm-pb-50px">
         <div className="content-box">
-          <h2 className="fw-700 alt-font ls-minus-1px text-white w-90 mb-0 mx-auto">
+          <h2 className="fw-500 alt-font ls-minus-1px text-white w-90 mb-0 mx-auto">
             خدمات التأمين
           </h2>
           <p className="text-white alt-font fw-500 fs-30 mx-auto mt-1">
@@ -408,7 +408,7 @@ export default function ArabicHome() {
 <section className="snap-section dark-overlay">
   <div className="container position-relative">
     <div className="row">
-      <h2 className="alt-font fw-700 ls-minus-1px text-white mb-5">
+      <h2 className="alt-font fw-500 ls-minus-1px text-white mb-5">
         جميع الخدمات<span className="text-base-color">.</span>
       </h2>
 

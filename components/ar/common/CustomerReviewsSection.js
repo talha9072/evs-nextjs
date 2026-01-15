@@ -12,7 +12,7 @@ export default function CustomerReviewsSection() {
               آراء العملاء
             </span>
 
-            <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-10px w-80 lg-w-100">
+            <h2 className="h1 alt-font fw-500 ls-minus-1px text-white mb-10px w-80 lg-w-100">
               ماذا يقول الناس عن خدماتنا<span className="text-base-color">.</span>
             </h2>
 
@@ -114,7 +114,7 @@ function Review({ name, text }) {
             <p className="lh-22 d-block">عميل موثق</p>
           </div>
 
-          <div className="border-radius-30px bg-base-color ps-15px pe-15px fs-14 fw-700 text-white d-inline-block align-middle me-auto md-position-absolute md-right-15px md-top-15px urbanist">
+          <div className="border-radius-30px bg-base-color ps-15px pe-15px fs-14 fw-500 text-white d-inline-block align-middle me-auto md-position-absolute md-right-15px md-top-15px urbanist">
             <i className="fa-solid fa-star me-5px"></i>5.0
           </div>
         </div>

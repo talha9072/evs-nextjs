@@ -166,7 +166,7 @@ export default function ArabicHome() {
     <div className="row justify-content-center align-items-stretch">
       <div className="col-md-8 d-flex flex-column text-center page-title-extra-small py-5 sm-pt-80px sm-pb-50px">
         <div className="content-box pt-4">
-          <h2 className="fw-700 alt-font ls-minus-1px text-white w-90 mb-0 text-center mx-auto">
+          <h2 className="fw-500 alt-font ls-minus-1px text-white w-90 mb-0 text-center mx-auto">
             روكس
           </h2>
           <p className="text-white alt-font fw-500 fs-26 text-center d-block mx-auto mt-1">
@@ -205,7 +205,7 @@ export default function ArabicHome() {
     <div className="row justify-content-center align-items-center">
       <div className="col-md-8 py-90 d-flex flex-column justify-content-between align-items-center text-center page-title-extra-small sm-pt-80px sm-pb-50px">
         <div className="content-box">
-          <h2 className="fw-700 alt-font ls-minus-1px text-white w-90 mb-0 text-center mx-auto">
+          <h2 className="fw-500 alt-font ls-minus-1px text-white w-90 mb-0 text-center mx-auto">
             زيكر
           </h2>
           <p className="text-white alt-font fw-500 fs-30 text-center d-block mx-auto mt-1">
@@ -244,7 +244,7 @@ export default function ArabicHome() {
     <div className="row justify-content-center align-items-stretch">
       <div className="col-md-8 d-flex flex-column text-center page-title-extra-small py-5 sm-pt-80px sm-pb-50px">
         <div className="content-box pt-4">
-          <h2 className="fw-700 alt-font ls-minus-1px text-white w-90 mb-0 text-center mx-auto">
+          <h2 className="fw-500 alt-font ls-minus-1px text-white w-90 mb-0 text-center mx-auto">
             أفاتر
           </h2>
           <p className="text-white alt-font fw-500 fs-26 text-center d-block mx-auto mt-1">
@@ -283,7 +283,7 @@ export default function ArabicHome() {
     <div className="row justify-content-center align-items-center">
       <div className="col-md-8 py-90 d-flex flex-column justify-content-between align-items-center text-center page-title-extra-small sm-pt-80px sm-pb-50px">
         <div className="content-box">
-          <h2 className="fw-700 alt-font ls-minus-1px text-white w-90 mb-0 text-center mx-auto">
+          <h2 className="fw-500 alt-font ls-minus-1px text-white w-90 mb-0 text-center mx-auto">
             بي واي دي
           </h2>
           <p className="text-white alt-font fw-500 fs-30 text-center d-block mx-auto mt-1">
@@ -322,7 +322,7 @@ export default function ArabicHome() {
     <div className="row justify-content-center align-items-center">
       <div className="col-md-8 py-90 d-flex flex-column justify-content-between align-items-center text-center page-title-extra-small sm-pt-80px sm-pb-50px">
         <div className="content-box">
-          <h2 className="fw-700 alt-font ls-minus-1px text-white w-90 mb-0 text-center mx-auto">
+          <h2 className="fw-500 alt-font ls-minus-1px text-white w-90 mb-0 text-center mx-auto">
             تسلا
           </h2>
           <p className="text-white alt-font fw-500 fs-30 text-center d-block mx-auto mt-1">
@@ -382,7 +382,7 @@ export default function ArabicHome() {
           حلك الشامل للمركبات الكهربائية
         </span>
 
-        <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-15px">
+        <h2 className="h1 alt-font fw-500 ls-minus-1px text-white mb-15px">
           من الصيانة الدورية إلى الإصلاحات المعقدة
           <span className="text-base-color">.</span>
         </h2>
@@ -620,52 +620,52 @@ export default function ArabicHome() {
 
       {/* First EV Center */}
       <div className="col text-center sm-mb-35px">
-        <span className="alt-font fs-h1 d-inline-flex text-white fw-700 mb-0 ls-minus-2px md-ls-0px position-relative z-index-0">
+        <span className="alt-font fs-h1 d-inline-flex text-white fw-500 mb-0 ls-minus-2px md-ls-0px position-relative z-index-0">
           الأول
           <span className="text-highlight position-absolute bottom-10px w-100">
             <span className="bg-base-color h-10px bottom-0px opacity-4"></span>
           </span>
         </span>
-        <span className="d-block fs-15 lh-20 fw-700 text-uppercase text-white">
+        <span className="d-block fs-15 lh-20 fw-500 text-uppercase text-white">
           أول مركز للمركبات الكهربائية في الإمارات
         </span>
       </div>
 
       {/* Branches */}
       <div className="col text-center sm-mb-35px">
-        <span className="alt-font fs-h1 d-inline-flex text-white fw-700 mb-0 ls-minus-2px md-ls-0px position-relative urbanist">
+        <span className="alt-font fs-h1 d-inline-flex text-white fw-500 mb-0 ls-minus-2px md-ls-0px position-relative urbanist">
           7
           <span className="text-highlight position-absolute bottom-10px w-100">
             <span className="bg-base-color h-10px bottom-0px opacity-4"></span>
           </span>
         </span>
-        <span className="d-block fs-15 lh-20 fw-700 text-uppercase text-white">
+        <span className="d-block fs-15 lh-20 fw-500 text-uppercase text-white">
           فروع
         </span>
       </div>
 
       {/* Experienced Staff */}
       <div className="col text-center xs-mb-35px">
-        <span className="alt-font fs-h1 d-inline-flex text-white fw-700 mb-0 ls-minus-2px md-ls-0px position-relative urbanist">
+        <span className="alt-font fs-h1 d-inline-flex text-white fw-500 mb-0 ls-minus-2px md-ls-0px position-relative urbanist">
           +200
           <span className="text-highlight position-absolute bottom-10px w-100">
             <span className="bg-base-color h-10px bottom-0px opacity-4"></span>
           </span>
         </span>
-        <span className="d-block fs-15 lh-20 fw-700 text-uppercase text-white">
+        <span className="d-block fs-15 lh-20 fw-500 text-uppercase text-white">
           موظفين ذوي خبرة
         </span>
       </div>
 
       {/* Happy Customers */}
       <div className="col text-center">
-        <span className="alt-font fs-h1 d-inline-flex text-white fw-700 mb-0 ls-minus-2px md-ls-0px position-relative urbanist">
+        <span className="alt-font fs-h1 d-inline-flex text-white fw-500 mb-0 ls-minus-2px md-ls-0px position-relative urbanist">
           21,452
           <span className="text-highlight position-absolute bottom-10px w-100">
             <span className="bg-base-color h-10px bottom-0px opacity-4"></span>
           </span>
         </span>
-        <span className="d-block fs-15 lh-20 fw-700 text-uppercase text-white">
+        <span className="d-block fs-15 lh-20 fw-500 text-uppercase text-white">
           عملاء راضين
         </span>
       </div>
@@ -712,28 +712,28 @@ export default function ArabicHome() {
 
         {/* slide 1 */}
         <div className="swiper-slide">
-          <div className="fs-150 lh-160 fw-700 ls-minus-2px text-outline text-outline-color-medium-gray">
+          <div className="fs-150 lh-160 fw-500 ls-minus-2px text-outline text-outline-color-medium-gray">
             نقود التحول العالمي نحو التنقل الكهربائي المستدام
           </div>
         </div>
 
         {/* slide 2 */}
         <div className="swiper-slide">
-          <div className="fs-150 lh-160 fw-700 ls-minus-2px text-outline text-outline-color-medium-gray">
+          <div className="fs-150 lh-160 fw-500 ls-minus-2px text-outline text-outline-color-medium-gray">
             احتضن الثورة الكهربائية.
           </div>
         </div>
 
         {/* slide 3 */}
         <div className="swiper-slide">
-          <div className="fs-150 lh-160 fw-700 ls-minus-2px text-outline text-outline-color-medium-gray">
+          <div className="fs-150 lh-160 fw-500 ls-minus-2px text-outline text-outline-color-medium-gray">
             حلول شاملة للمركبات الكهربائية.
           </div>
         </div>
 
         {/* slide 4 */}
         <div className="swiper-slide">
-          <div className="fs-150 lh-160 fw-700 ls-minus-2px text-outline text-outline-color-medium-gray">
+          <div className="fs-150 lh-160 fw-500 ls-minus-2px text-outline text-outline-color-medium-gray">
             الابتكار يلتقي بالاستدامة.
           </div>
         </div>

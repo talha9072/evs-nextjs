@@ -109,7 +109,7 @@ export default function ArabicHome() {
         className="col-lg-12 d-flex align-items-center justify-content-center position-relative xs-mb-0px xs-mt-15px"
         data-anime='{ "el": "childs", "translateX": [-50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
       >
-        <h2 className="fw-700 alt-font text-white text-center ls-minus-2px pb-2 xs-pb-0">
+        <h2 className="fw-500 alt-font text-white text-center ls-minus-2px pb-2 xs-pb-0">
           موديلات روكس التي نخدمها
         </h2>
       </div>
@@ -266,7 +266,7 @@ export default function ArabicHome() {
 
 
 <section className="pt-0 ps-7 pe-7 xl-ps-2 xl-pe-2 xs-px-0" dir="rtl">
-  <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-15px mb-4 text-center">
+  <h2 className="h1 alt-font fw-500 ls-minus-1px text-white mb-15px mb-4 text-center">
     أحدث المقالات<span className="text-base-color">.</span>
   </h2>
 

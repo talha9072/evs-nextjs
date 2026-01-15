@@ -95,7 +95,7 @@ export default function ArabicHome() {
         className="col-12 col-xl-6 col-lg-7 col-md-9 text-center"
         data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
       >
-        <h1 className="fs-200 text-base-color sm-fs-170 fw-700 ls-minus-8px">
+        <h1 className="fs-200 text-base-color sm-fs-170 fw-500 ls-minus-8px">
           404
         </h1>
 

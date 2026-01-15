@@ -34,7 +34,7 @@ export default function CounterStats() {
               key={index}
             >
               <span
-                className={`alt-font fs-h1 vertical-counter d-inline-flex text-white fw-700 mb-0 ls-minus-2px md-ls-0px position-relative ${
+                className={`alt-font fs-h1 vertical-counter d-inline-flex text-white fw-500 mb-0 ls-minus-2px md-ls-0px position-relative ${
                   item.isUrbanist ? "urbanist" : ""
                 }`}
               >
@@ -44,7 +44,7 @@ export default function CounterStats() {
                 </span>
               </span>
 
-              <span className="d-block fs-15 lh-20 fw-700 text-uppercase text-white">
+              <span className="d-block fs-15 lh-20 fw-500 text-uppercase text-white">
                 {item.label}
               </span>
             </div>

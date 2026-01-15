@@ -37,7 +37,7 @@ const ServicesAboutAr = ({
               {badgeText}
             </span>
 
-            <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-15px">
+            <h2 className="h1 alt-font fw-500 ls-minus-1px text-white mb-15px">
               {title}
               <span className="text-base-color">{highlight}</span>
             </h2>

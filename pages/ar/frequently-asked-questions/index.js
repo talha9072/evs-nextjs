@@ -117,7 +117,7 @@ export default function ArabicHome() {
         className="col-lg-12 position-relative md-mb-25px"
         data-anime='{ "el": "childs", "translateX": [-50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
       >
-        <h2 className="fw-700 alt-font text-center text-white ls-minus-2px">
+        <h2 className="fw-500 alt-font text-center text-white ls-minus-2px">
           الأسئلة الشائعة
         </h2>
       </div>

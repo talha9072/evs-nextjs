@@ -117,7 +117,7 @@ export default function ArabicHome() {
         className="col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start page-title-extra-small sm-pt-50px sm-pb-50px"
         data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'
       >
-        <h2 className="fw-700 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100 text-end">
+        <h2 className="fw-500 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100 text-end">
           تواصلوا معنا<span className="text-base-color">.</span>
         </h2>
 
@@ -147,7 +147,7 @@ export default function ArabicHome() {
         <div className="py-5">
           <div className="row">
             <div className="col-9">
-              <h2 className="fw-700 ls-minus-1px alt-font text-white">
+              <h2 className="fw-500 ls-minus-1px alt-font text-white">
                 أرسلوا لنا <span className="text-base-color">رسالة</span>
               </h2>
             </div>
@@ -198,7 +198,7 @@ export default function ArabicHome() {
           <div className="feature-box-content last-paragraph-no-margin">
             <a
               href="/ar/evs-abu-dhabi"
-              className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3"
+              className="d-inline-block fw-500 text-white mb-5px alt-font fs-32 mt-3"
             >
               إي في إس أبوظبي
             </a>
@@ -245,7 +245,7 @@ export default function ArabicHome() {
           <div className="feature-box-content last-paragraph-no-margin">
             <a
               href="/ar/evs-dubai"
-              className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3"
+              className="d-inline-block fw-500 text-white mb-5px alt-font fs-32 mt-3"
             >
               إي في إس دبي
             </a>
@@ -292,7 +292,7 @@ export default function ArabicHome() {
           <div className="feature-box-content last-paragraph-no-margin">
             <a
               href="/ar/evs-ajman"
-              className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3"
+              className="d-inline-block fw-500 text-white mb-5px alt-font fs-32 mt-3"
             >
               إي في إس عجمان
             </a>
@@ -339,7 +339,7 @@ export default function ArabicHome() {
           <div className="feature-box-content last-paragraph-no-margin">
             <a
               href="/ar/evs-alain"
-              className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3"
+              className="d-inline-block fw-500 text-white mb-5px alt-font fs-32 mt-3"
             >
               إي في إس العين
             </a>
@@ -386,7 +386,7 @@ export default function ArabicHome() {
           <div className="feature-box-content last-paragraph-no-margin">
             <a
               href="/ar/evs-sharjah"
-              className="d-inline-block fw-700 text-white mb-5px alt-font fs-32 mt-3"
+              className="d-inline-block fw-500 text-white mb-5px alt-font fs-32 mt-3"
             >
               إي في إس الشارقة
             </a>

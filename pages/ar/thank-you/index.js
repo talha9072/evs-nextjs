@@ -114,7 +114,7 @@ export default function ArabicHome() {
         className="col-12 col-xl-10 col-lg-10 col-md-10 text-center"
         data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
       >
-        <h1 className="fs-100 sm-fs-80 text-base-color fw-700 ls-minus-6px">
+        <h1 className="fs-100 sm-fs-80 text-base-color fw-500 ls-minus-6px">
           تم إرسال الرسالة!
         </h1>
 

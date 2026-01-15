@@ -111,7 +111,7 @@ export default function ArabicHome() {
         <div className="col-md-8 d-flex flex-column text-center page-title-extra-small py-5 sm-pt-80px sm-pb-50px">
           {/* top content */}
           <div className="content-box pt-4">
-            <h2 className="fw-700 alt-font ls-minus-1px text-dark-gray w-90 mb-0 text-center mx-auto text-uppercase">
+            <h2 className="fw-500 alt-font ls-minus-1px text-dark-gray w-90 mb-0 text-center mx-auto text-uppercase">
               باقات الضمان
             </h2>
             <p className="text-dark-gray alt-font fw-500 fs-26 text-center d-block mx-auto mt-1">
@@ -152,7 +152,7 @@ export default function ArabicHome() {
       <div className="row justify-content-center align-items-center">
         <div className="col-md-8 py-90 d-flex flex-column justify-content-between align-items-center text-center page-title-extra-small sm-pt-80px sm-pb-50px">
           <div className="content-box">
-            <h2 className="fw-700 alt-font ls-minus-1px text-dark-gray w-90 mb-0 text-center mx-auto text-uppercase">
+            <h2 className="fw-500 alt-font ls-minus-1px text-dark-gray w-90 mb-0 text-center mx-auto text-uppercase">
               التشخيص الذكي
             </h2>
             <p className="text-dark-gray alt-font fw-500 fs-30 text-center d-block mx-auto mt-1">
@@ -191,7 +191,7 @@ export default function ArabicHome() {
       <div className="row justify-content-center align-items-center">
         <div className="col-md-8 py-90 d-flex flex-column justify-content-between align-items-center text-center page-title-extra-small sm-pt-80px sm-pb-50px">
           <div className="content-box">
-            <h2 className="fw-700 alt-font ls-minus-1px text-dark-gray mb-0 text-center mx-auto text-uppercase">
+            <h2 className="fw-500 alt-font ls-minus-1px text-dark-gray mb-0 text-center mx-auto text-uppercase">
               صيانة سريعة
             </h2>
             <p className="text-dark-gray alt-font fw-500 fs-30 text-center d-block mx-auto mt-1">
@@ -226,7 +226,7 @@ export default function ArabicHome() {
 
 
 <section className="snap-section pt-0 ps-7 pe-7 xl-ps-2 xl-pe-2 xs-px-0">
-  <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-15px mb-4 text-center">
+  <h2 className="h1 alt-font fw-500 ls-minus-1px text-white mb-15px mb-4 text-center">
     أحدث المقالات<span className="text-base-color">.</span>
   </h2>
 

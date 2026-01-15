@@ -101,7 +101,7 @@ export default function ArabicHome() {
             className="col-md-6 py-90 d-flex flex-column justify-content-center align-items-start text-end page-title-extra-small sm-pt-50px sm-pb-50px"
             data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'
           >
-            <h2 className="fw-700 alt-font ls-minus-1px text-white w-90 mb-3">
+            <h2 className="fw-500 alt-font ls-minus-1px text-white w-90 mb-3">
               نحن في <span className="text-base-color">خدمتك</span> عند تعطل{" "}
               <span className="text-base-color">سيارتك الكهربائية</span>
             </h2>

@@ -22,7 +22,7 @@ export default function CarFaqAr({
             className="col-lg-12 d-flex align-items-center justify-content-center position-relative md-mb-0px"
             data-anime={headingAnime}
           >
-            <h2 className="fw-700 alt-font text-white text-center ls-minus-2px">
+            <h2 className="fw-500 alt-font text-white text-center ls-minus-2px">
               {heading}
             </h2>
           </div>

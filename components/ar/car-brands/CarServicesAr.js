@@ -21,7 +21,7 @@ export default function CarServicesAr({
             className="col-lg-12 d-flex align-items-center justify-content-center position-relative xs-mb-0px"
             data-anime={headingAnime}
           >
-            <h2 className="fw-700 alt-font text-white text-center ls-minus-2px pb-2">
+            <h2 className="fw-500 alt-font text-white text-center ls-minus-2px pb-2">
               {heading}
             </h2>
           </div>

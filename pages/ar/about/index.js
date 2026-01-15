@@ -111,7 +111,7 @@ export default function ArabicHome() {
           عن خدمات المركبات الكهربائية إي في إس
         </h1>
 
-        <h2 className="fw-700 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100">
+        <h2 className="fw-500 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100">
           نحن رواد التنقل الكهربائي
           <span className="text-base-color">.</span>
         </h2>
@@ -134,7 +134,7 @@ export default function ArabicHome() {
         <h1 className="ls-0px fw-600 text-white d-inline-block text-decoration-line-bottom-medium border-color-base-color mb-25px">
           عن خدمات المركبات الكهربائية إي في إس
         </h1>
-        <h2 className="fw-700 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100">
+        <h2 className="fw-500 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100">
           نحن رواد التنقل الكهربائي<span className="text-base-color">.</span>
         </h2>
       </div>
@@ -194,7 +194,7 @@ export default function ArabicHome() {
           رحلتنا
         </span>
 
-        <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-15px">
+        <h2 className="h1 alt-font fw-500 ls-minus-1px text-white mb-15px">
           من الرؤية إلى الواقع<span className="text-base-color">.</span>
         </h2>
 

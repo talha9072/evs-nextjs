@@ -12,7 +12,7 @@ const ServiceBenefitsAr = ({
         {/* Section title */}
         <div className="row justify-content-center mb-3">
           <div className="col-XL-7 col-lg-8 text-center">
-            <h2 className="text-white alt-font fw-700 ls-minus-1px">
+            <h2 className="text-white alt-font fw-500 ls-minus-1px">
               {title}
             </h2>
           </div>

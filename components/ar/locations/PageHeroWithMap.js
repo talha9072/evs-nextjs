@@ -32,7 +32,7 @@ export default function PageHeroWithMap({
               {eyebrowTitle}
             </h1>
 
-            <h2 className="fw-700 alt-font ls-minus-1px text-white w-100 mb-15px lg-w-100 text-end">
+            <h2 className="fw-500 alt-font ls-minus-1px text-white w-100 mb-15px lg-w-100 text-end">
               {mainTitle}
               {highlightDot && <span className="text-base-color">.</span>}
             </h2>

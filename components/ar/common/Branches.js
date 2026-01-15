@@ -95,7 +95,7 @@ export default function Branches() {
         <div className="row align-items-center">
           {/* LEFT NAV */}
           <div className="col-xl-4 offset-xl-1 col-lg-5 team-style-09 order-1 pb-5 pb-md-0">
-            <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-15px text-uppercase">
+            <h2 className="h1 alt-font fw-500 ls-minus-1px text-white mb-15px text-uppercase">
               فروعنا<span className="text-base-color">.</span>
             </h2>
 
@@ -141,7 +141,7 @@ export default function Branches() {
                       <div className="divider-style-03 divider-style-03-01 border-color-medium-gray mt-15px mb-15px"></div>
 
                       <div className="d-flex align-items-center mb-20px">
-                        <span className="fw-700 fs-20 text-white alt-font">
+                        <span className="fw-500 fs-20 text-white alt-font">
                           <a href={b.map} target="_blank" rel="noreferrer">
                             <i className="fa fa-directions text-base-color mx-2"></i>
                             الحصول على الاتجاهات
@@ -150,7 +150,7 @@ export default function Branches() {
                       </div>
 
                       <div className="d-flex align-items-center mb-20px">
-                        <span className="fw-700 fs-20 text-light-gray alt-font">
+                        <span className="fw-500 fs-20 text-light-gray alt-font">
                           <a href={b.phone}>
                             <i className="fa fa-phone text-base-color mx-2"></i>
                             اتصل بنا
@@ -159,7 +159,7 @@ export default function Branches() {
                       </div>
 
                       <div className="d-flex align-items-center">
-                        <span className="fw-700 fs-20 text-white alt-font">
+                        <span className="fw-500 fs-20 text-white alt-font">
                           <a
                             href="https://www.instagram.com/evs_uae/"
                             target="_blank"
@@ -178,7 +178,7 @@ export default function Branches() {
                         backgroundImage: `url('https://evsuae.com/.netlify/images?url=${b.image}&w=1024')`,
                       }}
                     >
-                      <span className="fs-190 fw-700 alt-font text-white position-absolute left-minus-30px bottom-minus-50px">
+                      <span className="fs-190 fw-500 alt-font text-white position-absolute left-minus-30px bottom-minus-50px">
                         {b.number}
                       </span>
                     </div>

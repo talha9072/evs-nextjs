@@ -107,7 +107,7 @@ export default function ArabicHome() {
           امتياز إي في إس
         </h1>
 
-        <h2 className="fw-700 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100">
+        <h2 className="fw-500 alt-font ls-minus-1px text-white w-80 mb-0 lg-w-100">
           كُن شريكًا لامتياز إي في إس
           <span className="text-base-color">.</span>
         </h2>
@@ -151,7 +151,7 @@ export default function ArabicHome() {
         className="col-lg-6 col-xxl-4 col-xl-5 order-1 order-lg-2 md-mb-50px sm-mb-30px"
         data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'
       >
-        <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-15px">
+        <h2 className="h1 alt-font fw-500 ls-minus-1px text-white mb-15px">
           انضم إلى فريق إي في إس الناجح
           <span className="text-base-color">.</span>
         </h2>

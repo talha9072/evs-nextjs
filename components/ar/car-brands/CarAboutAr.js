@@ -47,7 +47,7 @@ export default function CarAboutAr({
             className="col-lg-6 order-1 order-lg-2 md-mb-50px sm-mb-30px"
             data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'
           >
-            <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-15px">
+            <h2 className="h1 alt-font fw-500 ls-minus-1px text-white mb-15px">
               {heading}
               <span className="text-base-color">{headingDot}</span>
             </h2>

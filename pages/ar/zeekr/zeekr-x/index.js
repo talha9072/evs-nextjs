@@ -249,7 +249,7 @@ export default function ArabicHome() {
 
 
 <section className="pt-0 ps-7 pe-7 xl-ps-2 xl-pe-2 xs-px-0" dir="rtl">
-  <h2 className="h1 alt-font fw-700 ls-minus-1px text-white mb-15px mb-4 text-center">
+  <h2 className="h1 alt-font fw-500 ls-minus-1px text-white mb-15px mb-4 text-center">
     أحدث المقالات<span className="text-base-color">.</span>
   </h2>
 

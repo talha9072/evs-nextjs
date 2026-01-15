@@ -101,7 +101,7 @@ export default function ArabicHome() {
     <div className="row align-items-center justify-content-center">
       <div className="col-12 col-xl-8 col-lg-10 text-center position-relative page-title-double-large pt-5">
         <div className="d-flex flex-column justify-content-center extra-very-small-screen">
-          <h1 className="text-white alt-font ls-minus-1px fw-700">
+          <h1 className="text-white alt-font ls-minus-1px fw-500">
             سياسة الخصوصية – إي في إس الإمارات
           </h1>
           <h2 className="text-white d-inline-block fw-400 ls-0px w-85 xs-w-100 mx-auto">
